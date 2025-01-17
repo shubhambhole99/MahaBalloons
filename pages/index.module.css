@@ -1,0 +1,865 @@
+.subheading {
+  align-self: stretch;
+  position: relative;
+  line-height: 150%;
+  font-weight: 600;
+}
+.bookLuxuryHot {
+  margin: 0;
+  flex: 1;
+  position: relative;
+  font-size: inherit;
+  line-height: 120%;
+  font-weight: 700;
+  font-family: inherit;
+}
+.arrowsIcon {
+  width: 48px;
+  border-radius: 50px;
+  max-height: 100%;
+  object-fit: contain;
+}
+.sliderButtons {
+  display: flex;
+  flex-direction: row;
+  align-items: flex-start;
+  justify-content: flex-start;
+  gap: 15px;
+}
+.text {
+  position: relative;
+  font-size: 18px;
+  line-height: 150%;
+  display: none;
+}
+.content {
+  align-self: stretch;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  gap: 24px;
+  font-size: 48px;
+}
+.sectionTitle {
+  align-self: stretch;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: flex-start;
+  gap: 16px;
+}
+.wed07Aug {
+  height: 24px;
+  width: 87px;
+  position: relative;
+  line-height: 150%;
+  font-weight: 500;
+  display: inline-block;
+}
+.button {
+  border-radius: 50px;
+  background-color: #7ab342;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  padding: 8px 16px;
+  color: #fff;
+}
+.thu08Aug {
+  height: 24px;
+  width: 82px;
+  position: relative;
+  line-height: 150%;
+  display: inline-block;
+}
+.button1 {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  padding: 8px 16px;
+}
+.fri09Aug {
+  height: 24px;
+  width: 73px;
+  position: relative;
+  line-height: 150%;
+  display: inline-block;
+}
+.sat10Aug {
+  height: 24px;
+  width: 78px;
+  position: relative;
+  line-height: 150%;
+  display: inline-block;
+}
+.dates {
+  display: none;
+  flex-direction: row;
+  align-items: center;
+  justify-content: flex-start;
+}
+.placeholderImageIcon {
+  height: 300px;
+  flex: 1;
+  position: relative;
+  border-radius: 16px;
+  max-width: 100%;
+  overflow: hidden;
+  object-fit: cover;
+  z-index: 0;
+}
+.featured {
+  height: 21px;
+  width: 56px;
+  position: relative;
+  line-height: 150%;
+  font-weight: 600;
+  display: inline-block;
+}
+.tag {
+  border-radius: 16px;
+  background-color: #fff;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: flex-start;
+  padding: 4px 12px;
+}
+.tags {
+  margin: 0 !important;
+  position: absolute;
+  top: 24px;
+  left: 24px;
+  display: none;
+  flex-direction: row;
+  align-items: flex-start;
+  justify-content: flex-start;
+  z-index: 1;
+}
+.image {
+  align-self: stretch;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: flex-start;
+  position: relative;
+  gap: 10px;
+}
+.heading {
+  margin: 0;
+  width: 400px;
+  height: 34px;
+  position: relative;
+  font-size: inherit;
+  line-height: 140%;
+  font-weight: 600;
+  font-family: inherit;
+  display: inline-block;
+}
+.heading1 {
+  position: relative;
+  font-size: 16px;
+  line-height: 120%;
+  font-weight: 600;
+}
+.plan {
+  align-self: stretch;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: center;
+  gap: 16px;
+  font-size: 24px;
+}
+.text1 {
+  align-self: stretch;
+  position: relative;
+  line-height: 150%;
+}
+.content4 {
+  align-self: stretch;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: center;
+  gap: 8px;
+}
+.details1 {
+  align-self: stretch;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: flex-start;
+  gap: 8px;
+}
+.actions {
+  display: flex;
+  flex-direction: row;
+  align-items: flex-start;
+  justify-content: flex-start;
+  gap: 16px;
+}
+.content3 {
+  align-self: stretch;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: center;
+  gap: 16px;
+  font-size: 16px;
+}
+.card {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: center;
+  gap: 24px;
+}
+.heading4 {
+  margin: 0;
+  width: 400px;
+  position: relative;
+  font-size: inherit;
+  line-height: 140%;
+  font-weight: 600;
+  font-family: inherit;
+  display: inline-block;
+}
+.content2 {
+  display: flex;
+  flex-direction: row;
+  align-items: flex-start;
+  justify-content: flex-start;
+  gap: 40px;
+  font-size: 14px;
+}
+.content1 {
+  align-self: stretch;
+  gap: 24px;
+  display: grid;
+  grid-template-columns: 0px;
+  grid-row-gap: 0px;
+  grid-column-gap: 0px;
+}
+.quickBooking {
+  align-self: stretch;
+  background-color: #fff;
+  overflow: hidden;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: flex-start;
+  padding: 60px 80px;
+  gap: 40px;
+  text-align: left;
+  font-size: 16px;
+  color: #000;
+  font-family: Roboto;
+}
+.giftAnUnforgettable {
+  margin: 0;
+}
+.heading6 {
+  margin: 0;
+  align-self: stretch;
+  position: relative;
+  font-size: inherit;
+  line-height: 120%;
+  font-weight: 700;
+  font-family: inherit;
+}
+.column {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: flex-start;
+  min-width: 610px;
+  max-width: 100%;
+}
+.actions3 {
+  height: 48px;
+  display: flex;
+  flex-direction: row;
+  align-items: flex-start;
+  justify-content: flex-start;
+  gap: 16px;
+}
+.column1 {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: flex-start;
+  padding: 20px 0px;
+  gap: 24px;
+  font-size: 16px;
+}
+.container {
+  align-self: stretch;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: flex-start;
+  gap: 60px;
+  max-width: 100%;
+}
+.cta {
+  align-self: stretch;
+  overflow: hidden;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: flex-start;
+  padding: 80px;
+  box-sizing: border-box;
+  background-image: url("/cta@3x.png");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: top;
+  max-width: 100%;
+  text-align: left;
+  font-size: 40px;
+  color: #fff;
+  font-family: Roboto;
+}
+.bestPersonalizedHot {
+  margin: 0;
+  flex: 1;
+  position: relative;
+  font-size: inherit;
+  line-height: 120%;
+  font-weight: 700;
+  font-family: inherit;
+  display: inline-block;
+  min-width: 745px;
+  max-width: 100%;
+}
+.content12 {
+  align-self: stretch;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  flex-wrap: wrap;
+  align-content: center;
+  gap: 24px;
+  max-width: 100%;
+  font-size: 48px;
+}
+.sectionTitle1 {
+  align-self: stretch;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: flex-start;
+  gap: 16px;
+  max-width: 100%;
+}
+.wed07Aug1 {
+  position: relative;
+  line-height: 150%;
+  font-weight: 500;
+}
+.dates1 {
+  display: none;
+  flex-direction: row;
+  align-items: center;
+  justify-content: flex-start;
+  row-gap: 20px;
+}
+.placeholderImageIcon3 {
+  height: 300px;
+  flex: 1;
+  position: relative;
+  border-radius: 16px;
+  max-width: 100%;
+  overflow: hidden;
+  object-fit: cover;
+}
+.featured3 {
+  position: relative;
+  line-height: 150%;
+  font-weight: 600;
+}
+.image3 {
+  align-self: stretch;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: flex-start;
+  position: relative;
+  gap: 10px;
+  max-width: 100%;
+}
+.heading7 {
+  margin: 0;
+  align-self: stretch;
+  position: relative;
+  font-size: inherit;
+  line-height: 140%;
+  font-weight: 600;
+  font-family: inherit;
+}
+.planDescription {
+  position: relative;
+  line-height: 150%;
+}
+.text21 {
+  width: 401px;
+  position: relative;
+  line-height: 150%;
+  display: inline-block;
+  max-width: 100%;
+}
+.content17 {
+  align-self: stretch;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: center;
+  gap: 8px;
+  max-width: 100%;
+}
+.details7 {
+  align-self: stretch;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: flex-start;
+  gap: 8px;
+  max-width: 100%;
+}
+.content15 {
+  align-self: stretch;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: center;
+  gap: 16px;
+  max-width: 100%;
+  font-size: 16px;
+}
+.image5 {
+  width: 400px;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: flex-start;
+  position: relative;
+  gap: 10px;
+}
+.heading11 {
+  margin: 0;
+  width: 401px;
+  position: relative;
+  font-size: inherit;
+  line-height: 140%;
+  font-weight: 600;
+  font-family: inherit;
+  display: inline-block;
+}
+.heading12 {
+  position: relative;
+  font-size: 16px;
+  line-height: 120%;
+  font-weight: 600;
+  white-space: nowrap;
+}
+.plan5 {
+  align-self: stretch;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: center;
+  gap: 16px;
+  max-width: 100%;
+  font-size: 24px;
+}
+.text27 {
+  width: 400px;
+  position: relative;
+  line-height: 150%;
+  display: inline-block;
+}
+.text28 {
+  width: 401px;
+  position: relative;
+  line-height: 150%;
+  font-weight: 600;
+  display: inline-block;
+}
+.text29 {
+  width: 401px;
+  position: relative;
+  line-height: 150%;
+  display: inline-block;
+}
+.actions6 {
+  width: 284px;
+  height: 48px;
+  display: flex;
+  flex-direction: row;
+  align-items: flex-start;
+  justify-content: flex-start;
+  gap: 16px;
+}
+.card5 {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: center;
+  gap: 24px;
+  max-width: 100%;
+}
+.content14 {
+  display: flex;
+  flex-direction: row;
+  align-items: flex-start;
+  justify-content: flex-start;
+  gap: 40px;
+  max-width: 100%;
+  font-size: 14px;
+}
+.content13 {
+  align-self: stretch;
+  gap: 24px;
+  max-width: 100%;
+  display: grid;
+  grid-template-columns: 0px;
+  grid-row-gap: 0px;
+  grid-column-gap: 0px;
+}
+.quickBooking1 {
+  flex: 1;
+  background-color: #fff;
+  overflow: hidden;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: flex-start;
+  padding: 60px 80px;
+  box-sizing: border-box;
+  gap: 40px;
+  max-width: 100%;
+}
+.quickBookingWrapper {
+  align-self: stretch;
+  display: flex;
+  flex-direction: row;
+  align-items: flex-start;
+  justify-content: flex-start;
+  padding: 0px 0px 60px;
+  box-sizing: border-box;
+  max-width: 100%;
+  text-align: left;
+  font-size: 16px;
+  color: #000;
+  font-family: Roboto;
+}
+.subheading2 {
+  position: relative;
+  line-height: 150%;
+  font-weight: 600;
+  display: inline-block;
+  max-width: 100%;
+}
+.heading13 {
+  margin: 0;
+  align-self: stretch;
+  position: relative;
+  font-size: inherit;
+  line-height: 120%;
+  font-weight: 700;
+  font-family: inherit;
+}
+.content24 {
+  align-self: stretch;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: flex-start;
+  gap: 16px;
+  font-size: 48px;
+}
+.sectionTitle2 {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: flex-start;
+  gap: 16px;
+  max-width: 100%;
+}
+.title {
+  align-self: stretch;
+  display: flex;
+  flex-direction: row;
+  align-items: flex-end;
+  justify-content: center;
+  max-width: 100%;
+}
+.perfumes {
+  position: relative;
+  line-height: 150%;
+  display: none;
+}
+.perfumes1 {
+  position: relative;
+  line-height: 150%;
+  display: inline-block;
+  min-width: 32px;
+}
+.slideContent {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: flex-start;
+  padding: 10px 0px 0px;
+}
+.playButtonIcon {
+  height: 44px;
+  width: 44px;
+  position: relative;
+  overflow: hidden;
+  flex-shrink: 0;
+}
+.currentSlide {
+  border-radius: 16px;
+  overflow: hidden;
+  display: flex;
+  flex-direction: row;
+  align-items: flex-end;
+  justify-content: space-between;
+  padding: 24px;
+  box-sizing: border-box;
+  background-image: url("/slide-preview@3x.png");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: top;
+  min-height: 370px;
+  gap: 20px;
+}
+.slider {
+  align-self: stretch;
+  gap: 16px;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, 308px);
+  grid-row-gap: 0px;
+  grid-column-gap: 16px;
+  color: #fff;
+}
+.dot {
+  height: 8px;
+  width: 8px;
+  position: relative;
+  border-radius: 50%;
+  background-color: #000;
+}
+.dot1 {
+  height: 8px;
+  width: 8px;
+  position: relative;
+  border-radius: 50%;
+  background-color: #ccc;
+}
+.sliderDots {
+  display: flex;
+  flex-direction: row;
+  align-items: flex-start;
+  justify-content: flex-start;
+  gap: 8px;
+}
+.sliderDotsContainer {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: flex-start;
+  padding: 20px 0px 0px;
+}
+.content25 {
+  align-self: stretch;
+  display: flex;
+  flex-direction: row;
+  align-items: flex-start;
+  justify-content: space-between;
+  gap: 20px;
+}
+.testimonialSlider {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: flex-start;
+  gap: 40px;
+  max-width: 100%;
+}
+.testimonials {
+  align-self: stretch;
+  display: flex;
+  flex-direction: row;
+  align-items: flex-start;
+  justify-content: flex-start;
+  padding: 0px 80px 60px;
+  box-sizing: border-box;
+  max-width: 100%;
+  text-align: left;
+  font-size: 16px;
+  color: #000;
+  font-family: Roboto;
+}
+.deskHome {
+  width: 100%;
+  position: relative;
+  background-color: #fff;
+  overflow: hidden;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: flex-start;
+  line-height: normal;
+  letter-spacing: normal;
+}
+
+@media screen and (max-width: 1200px) {
+  .container {
+    flex-wrap: wrap;
+  }
+
+  .content14 {
+    flex-wrap: wrap;
+    justify-content: center;
+    grid-template-columns: repeat(2, minmax(300px, 520px));
+  }
+
+  .currentSlide {
+    min-height: auto;
+  }
+
+  .slider {
+    flex-wrap: wrap;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, 308px);
+    grid-row-gap: 0px;
+    grid-column-gap: 16px;
+  }
+}
+@media screen and (max-width: 1050px) {
+  .heading6 {
+    font-size: 32px;
+    line-height: 38px;
+  }
+
+  .column {
+    min-width: 100%;
+  }
+
+  .bestPersonalizedHot {
+    font-size: 38px;
+    line-height: 46px;
+    min-width: 100%;
+  }
+
+  .quickBooking1 {
+    padding-top: 39px;
+    padding-bottom: 39px;
+    box-sizing: border-box;
+  }
+
+  .quickBookingWrapper {
+    padding-bottom: 39px;
+    box-sizing: border-box;
+  }
+
+  .heading13 {
+    font-size: 38px;
+    line-height: 46px;
+  }
+}
+@media screen and (max-width: 750px) {
+  .container {
+    gap: 30px;
+  }
+
+  .cta {
+    gap: 30px;
+    padding-left: 40px;
+    padding-right: 40px;
+    box-sizing: border-box;
+  }
+
+  .dates1 {
+    flex-wrap: wrap;
+  }
+
+  .content14 {
+    gap: 20px;
+    grid-template-columns: minmax(300px, 1fr);
+  }
+
+  .quickBooking1 {
+    gap: 20px;
+    padding: 25px 40px;
+    box-sizing: border-box;
+  }
+
+  .quickBookingWrapper {
+    padding-bottom: 25px;
+    box-sizing: border-box;
+  }
+
+  .testimonialSlider {
+    gap: 20px;
+  }
+
+  .testimonials {
+    padding-left: 40px;
+    padding-right: 40px;
+    padding-bottom: 39px;
+    box-sizing: border-box;
+  }
+}
+@media screen and (max-width: 450px) {
+  .heading6 {
+    font-size: 24px;
+    line-height: 29px;
+  }
+
+  .cta {
+    gap: 15px;
+  }
+
+  .bestPersonalizedHot {
+    font-size: 29px;
+    line-height: 35px;
+  }
+
+  .heading7 {
+    font-size: 19px;
+    line-height: 27px;
+  }
+
+  .heading11 {
+    font-size: 19px;
+    line-height: 27px;
+  }
+
+  .heading13 {
+    font-size: 29px;
+    line-height: 35px;
+  }
+
+  .currentSlide {
+    flex-wrap: wrap;
+    justify-content: center;
+    flex: 1;
+  }
+
+  .content25 {
+    flex-wrap: wrap;
+  }
+}

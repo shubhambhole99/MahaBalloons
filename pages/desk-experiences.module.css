@@ -1,0 +1,1089 @@
+.linkFour {
+  position: relative;
+  line-height: 150%;
+}
+.chevronDownIcon {
+  height: 24px;
+  width: 24px;
+  position: relative;
+  overflow: hidden;
+  flex-shrink: 0;
+}
+.navLinkDropdown {
+  display: none;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  gap: 4px;
+}
+.pageGroupOne {
+  position: relative;
+  font-size: 14px;
+  line-height: 150%;
+  font-weight: 600;
+}
+.pageOne {
+  position: relative;
+  line-height: 150%;
+  font-weight: 600;
+}
+.loremIpsumDolor {
+  position: relative;
+  font-size: 14px;
+  line-height: 150%;
+}
+.content {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: flex-start;
+  min-width: 221px;
+  max-width: 100%;
+}
+.menuItem {
+  align-self: stretch;
+  display: flex;
+  flex-direction: row;
+  align-items: flex-start;
+  justify-content: flex-start;
+  padding: 8px 0px;
+  box-sizing: border-box;
+  gap: 12px;
+  max-width: 100%;
+}
+.menuList {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: flex-start;
+  gap: 16px;
+  min-width: 244px;
+  max-width: 100%;
+}
+.menu {
+  flex: 1;
+  display: flex;
+  flex-direction: row;
+  align-items: flex-start;
+  justify-content: flex-start;
+  padding: 32px 32px 32px 64px;
+  box-sizing: border-box;
+  gap: 32px;
+  min-width: 572px;
+  max-width: 100%;
+}
+.placeholderImageIcon {
+  height: 105px;
+  width: 160px;
+  position: relative;
+  object-fit: cover;
+}
+.loremIpsumDolor8 {
+  align-self: stretch;
+  position: relative;
+  font-size: 14px;
+  line-height: 150%;
+}
+.content9 {
+  align-self: stretch;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: flex-start;
+  gap: 4px;
+}
+.readMore {
+  position: relative;
+  font-size: 14px;
+  text-decoration: underline;
+  line-height: 150%;
+}
+.content8 {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: flex-start;
+  gap: 8px;
+  min-width: 161px;
+}
+.blogItem {
+  align-self: stretch;
+  display: flex;
+  flex-direction: row;
+  align-items: flex-start;
+  justify-content: flex-start;
+  padding: 8px 0px;
+  gap: 24px;
+}
+.blogList {
+  align-self: stretch;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: flex-start;
+  gap: 8px;
+}
+.button1 {
+  height: 24px;
+  width: 104px;
+  position: relative;
+  line-height: 150%;
+  display: inline-block;
+}
+.iconChevronRight {
+  width: 24px;
+  position: relative;
+  height: 24px;
+  overflow: hidden;
+  flex-shrink: 0;
+}
+.button {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  padding: 4px 0px;
+  gap: 8px;
+}
+.blog {
+  background-color: #eee;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: flex-start;
+  padding: 32px 96px 32px 32px;
+  box-sizing: border-box;
+  gap: 16px;
+  max-width: 100%;
+}
+.megaMenu {
+  width: 1440px;
+  overflow: hidden;
+  flex-shrink: 0;
+  display: none;
+  flex-direction: row;
+  align-items: flex-start;
+  justify-content: flex-start;
+  row-gap: 20px;
+  max-width: 100%;
+  color: #000;
+}
+.header {
+  align-self: stretch;
+  display: flex;
+  flex-direction: row;
+  align-items: flex-start;
+  justify-content: flex-start;
+  max-width: 100%;
+  text-align: left;
+  font-size: 16px;
+  color: #fff;
+  font-family: Roboto;
+}
+.subheading {
+  align-self: stretch;
+  position: relative;
+  line-height: 150%;
+  font-weight: 600;
+}
+.exploreOurPackages {
+  margin: 0;
+  flex: 1;
+  position: relative;
+  font-size: inherit;
+  line-height: 120%;
+  font-weight: 700;
+  font-family: inherit;
+  display: inline-block;
+  min-width: 375px;
+  max-width: 100%;
+}
+.arrowsIcon {
+  width: 48px;
+  border-radius: 50px;
+  max-height: 100%;
+  object-fit: contain;
+}
+.sliderButtons {
+  display: flex;
+  flex-direction: row;
+  align-items: flex-start;
+  justify-content: flex-start;
+  gap: 15px;
+}
+.text {
+  position: relative;
+  font-size: 18px;
+  line-height: 150%;
+  display: none;
+}
+.content12 {
+  align-self: stretch;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  flex-wrap: wrap;
+  align-content: center;
+  gap: 24px;
+  max-width: 100%;
+  font-size: 48px;
+}
+.sectionTitle {
+  align-self: stretch;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: flex-start;
+  gap: 16px;
+  max-width: 100%;
+}
+.wed07Aug {
+  position: relative;
+  line-height: 150%;
+  font-weight: 500;
+}
+.button2 {
+  border-radius: 50px;
+  background-color: #7ab342;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  padding: 8px 16px;
+  color: #fff;
+}
+.button3 {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  padding: 8px 16px;
+}
+.dates {
+  display: none;
+  flex-direction: row;
+  align-items: center;
+  justify-content: flex-start;
+  row-gap: 20px;
+}
+.placeholderImageIcon2 {
+  height: 300px;
+  flex: 1;
+  position: relative;
+  border-radius: 16px;
+  max-width: 100%;
+  overflow: hidden;
+  object-fit: cover;
+}
+.tag {
+  border-radius: 16px;
+  background-color: #fff;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: flex-start;
+  padding: 4px 12px;
+}
+.tags {
+  margin: 0 !important;
+  position: absolute;
+  top: 24px;
+  left: 24px;
+  display: none;
+  flex-direction: row;
+  align-items: flex-start;
+  justify-content: flex-start;
+  z-index: 1;
+}
+.image {
+  align-self: stretch;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: flex-start;
+  position: relative;
+  gap: 10px;
+  max-width: 100%;
+}
+.heading {
+  margin: 0;
+  align-self: stretch;
+  position: relative;
+  font-size: inherit;
+  line-height: 140%;
+  font-weight: 600;
+  font-family: inherit;
+}
+.heading1 {
+  position: relative;
+  font-size: 16px;
+  line-height: 120%;
+  font-weight: 600;
+}
+.plan {
+  align-self: stretch;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: center;
+  gap: 16px;
+  font-size: 24px;
+}
+.content16 {
+  align-self: stretch;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: center;
+  gap: 8px;
+}
+.content17 {
+  align-self: stretch;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: center;
+  gap: 8px;
+  max-width: 100%;
+}
+.details1 {
+  align-self: stretch;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: flex-start;
+  gap: 8px;
+  max-width: 100%;
+}
+.actions {
+  height: 48px;
+  display: flex;
+  flex-direction: row;
+  align-items: flex-start;
+  justify-content: flex-start;
+  gap: 16px;
+}
+.content15 {
+  align-self: stretch;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: center;
+  gap: 16px;
+  max-width: 100%;
+  font-size: 16px;
+}
+.card {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: center;
+  gap: 24px;
+}
+.empty {
+  width: 401px;
+  position: relative;
+  line-height: 150%;
+  display: inline-block;
+  max-width: 100%;
+}
+.image2 {
+  width: 400px;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: flex-start;
+  position: relative;
+  gap: 10px;
+}
+.heading4 {
+  margin: 0;
+  width: 401px;
+  position: relative;
+  font-size: inherit;
+  line-height: 140%;
+  font-weight: 600;
+  font-family: inherit;
+  display: inline-block;
+}
+.heading5 {
+  position: relative;
+  font-size: 16px;
+  line-height: 120%;
+  font-weight: 600;
+  white-space: nowrap;
+}
+.plan2 {
+  align-self: stretch;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: center;
+  gap: 16px;
+  max-width: 100%;
+  font-size: 24px;
+}
+.thirdDescription {
+  width: 400px;
+  position: relative;
+  line-height: 150%;
+  display: inline-block;
+}
+.text8 {
+  width: 401px;
+  position: relative;
+  line-height: 150%;
+  font-weight: 600;
+  display: inline-block;
+}
+.text9 {
+  width: 401px;
+  position: relative;
+  line-height: 150%;
+  display: inline-block;
+}
+.actions2 {
+  width: 273px;
+  height: 48px;
+  display: flex;
+  flex-direction: row;
+  align-items: flex-start;
+  justify-content: flex-start;
+  gap: 16px;
+}
+.card2 {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: center;
+  gap: 24px;
+  max-width: 100%;
+}
+.content14 {
+  display: flex;
+  flex-direction: row;
+  align-items: flex-start;
+  justify-content: flex-start;
+  gap: 40px;
+  max-width: 100%;
+  font-size: 14px;
+}
+.content13 {
+  align-self: stretch;
+  gap: 24px;
+  max-width: 100%;
+  display: grid;
+  grid-template-columns: 0px;
+  grid-row-gap: 0px;
+  grid-column-gap: 0px;
+}
+.quickBooking {
+  align-self: stretch;
+  background-color: #fff;
+  overflow: hidden;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: flex-start;
+  padding: 60px 80px;
+  box-sizing: border-box;
+  gap: 40px;
+  max-width: 100%;
+  text-align: left;
+  font-size: 16px;
+  color: #000;
+  font-family: Roboto;
+}
+.giftAnUnforgettable {
+  margin: 0;
+}
+.heading6 {
+  margin: 0;
+  align-self: stretch;
+  position: relative;
+  font-size: inherit;
+  line-height: 120%;
+  font-weight: 700;
+  font-family: inherit;
+}
+.column {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: flex-start;
+  min-width: 610px;
+  max-width: 100%;
+}
+.column1 {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: flex-start;
+  padding: 20px 0px;
+  gap: 24px;
+  font-size: 16px;
+}
+.container {
+  align-self: stretch;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: flex-start;
+  gap: 60px;
+  max-width: 100%;
+}
+.cta {
+  align-self: stretch;
+  overflow: hidden;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: flex-start;
+  padding: 80px;
+  box-sizing: border-box;
+  background-image: url("/cta@3x.png");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: top;
+  max-width: 100%;
+  text-align: left;
+  font-size: 40px;
+  color: #fff;
+  font-family: Roboto;
+}
+.bestPersonalizedHot {
+  margin: 0;
+  flex: 1;
+  position: relative;
+  font-size: inherit;
+  line-height: 120%;
+  font-weight: 700;
+  font-family: inherit;
+  display: inline-block;
+  min-width: 745px;
+  max-width: 100%;
+}
+.detailValue {
+  align-self: stretch;
+  position: relative;
+  line-height: 150%;
+}
+.actions6 {
+  width: 284px;
+  height: 48px;
+  display: flex;
+  flex-direction: row;
+  align-items: flex-start;
+  justify-content: flex-start;
+  gap: 16px;
+}
+.quickBooking1 {
+  flex: 1;
+  background-color: #fff;
+  overflow: hidden;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: flex-start;
+  padding: 60px 80px;
+  box-sizing: border-box;
+  gap: 40px;
+  max-width: 100%;
+}
+.quickBookingWrapper {
+  align-self: stretch;
+  display: flex;
+  flex-direction: row;
+  align-items: flex-start;
+  justify-content: flex-start;
+  padding: 0px 0px 60px;
+  box-sizing: border-box;
+  max-width: 100%;
+  text-align: left;
+  font-size: 16px;
+  color: #000;
+  font-family: Roboto;
+}
+.subheading2 {
+  position: relative;
+  line-height: 150%;
+  font-weight: 600;
+  display: inline-block;
+  max-width: 100%;
+}
+.heading13 {
+  margin: 0;
+  align-self: stretch;
+  position: relative;
+  font-size: inherit;
+  line-height: 120%;
+  font-weight: 700;
+  font-family: inherit;
+}
+.content36 {
+  align-self: stretch;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: flex-start;
+  gap: 16px;
+  font-size: 48px;
+}
+.sectionTitle2 {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: flex-start;
+  gap: 16px;
+  max-width: 100%;
+}
+.title {
+  align-self: stretch;
+  display: flex;
+  flex-direction: row;
+  align-items: flex-end;
+  justify-content: center;
+  max-width: 100%;
+}
+.perfumes {
+  position: relative;
+  line-height: 150%;
+  display: none;
+}
+.perfumes1 {
+  position: relative;
+  line-height: 150%;
+  display: inline-block;
+  min-width: 32px;
+}
+.previewDetails {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: flex-start;
+  padding: 10px 0px 0px;
+}
+.playButtonIcon {
+  height: 44px;
+  width: 44px;
+  position: relative;
+  overflow: hidden;
+  flex-shrink: 0;
+}
+.slidePreview {
+  border-radius: 16px;
+  overflow: hidden;
+  display: flex;
+  flex-direction: row;
+  align-items: flex-start;
+  justify-content: space-between;
+  padding: 302px 24px 24px;
+  box-sizing: border-box;
+  background-image: url("/slide-preview@3x.png");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: top;
+  min-width: 283px;
+  max-width: 308px;
+  gap: 20px;
+}
+.slider {
+  align-self: stretch;
+  gap: 16px;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, 308px);
+  grid-row-gap: 0px;
+  grid-column-gap: 16px;
+  color: #fff;
+}
+.dot {
+  height: 8px;
+  width: 8px;
+  position: relative;
+  border-radius: 50%;
+  background-color: #000;
+}
+.dot1 {
+  height: 8px;
+  width: 8px;
+  position: relative;
+  border-radius: 50%;
+  background-color: #ccc;
+}
+.sliderDots {
+  display: flex;
+  flex-direction: row;
+  align-items: flex-start;
+  justify-content: flex-start;
+  gap: 8px;
+}
+.navigationControls {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: flex-start;
+  padding: 20px 0px 0px;
+}
+.content37 {
+  align-self: stretch;
+  display: flex;
+  flex-direction: row;
+  align-items: flex-start;
+  justify-content: space-between;
+  gap: 20px;
+}
+.testimonialContent {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: flex-start;
+  gap: 40px;
+  max-width: 100%;
+}
+.testimonialContentWrapper {
+  align-self: stretch;
+  display: flex;
+  flex-direction: row;
+  align-items: flex-start;
+  justify-content: flex-start;
+  padding: 0px 80px 60px;
+  box-sizing: border-box;
+  max-width: 100%;
+  text-align: left;
+  font-size: 16px;
+  color: #000;
+  font-family: Roboto;
+}
+.subheading3 {
+  position: relative;
+  line-height: 150%;
+  font-weight: 600;
+  display: none;
+}
+.additionalServices {
+  margin: 0;
+  flex: 1;
+  position: relative;
+  font-size: inherit;
+  line-height: 120%;
+  font-weight: 700;
+  font-family: inherit;
+  display: inline-block;
+  min-width: 333px;
+  max-width: 100%;
+}
+.text24 {
+  width: 400px;
+  position: relative;
+  line-height: 150%;
+  display: inline-block;
+  max-width: 100%;
+}
+.details13 {
+  align-self: stretch;
+  display: none;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: flex-start;
+  gap: 8px;
+}
+.details12 {
+  align-self: stretch;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: flex-start;
+  padding: 0px 0px 48px;
+  box-sizing: border-box;
+  gap: 16px;
+  max-width: 100%;
+}
+.actions7 {
+  display: flex;
+  flex-direction: row;
+  align-items: flex-start;
+  justify-content: flex-start;
+  gap: 16px;
+}
+.details16 {
+  align-self: stretch;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: flex-start;
+  padding: 0px 0px 24px;
+  box-sizing: border-box;
+  gap: 16px;
+  max-width: 100%;
+}
+.actions9 {
+  width: 127px;
+  display: flex;
+  flex-direction: row;
+  align-items: flex-start;
+  justify-content: flex-start;
+  gap: 16px;
+}
+.additional {
+  align-self: stretch;
+  background-color: #fff;
+  overflow: hidden;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: flex-start;
+  padding: 60px 80px;
+  box-sizing: border-box;
+  gap: 40px;
+  max-width: 100%;
+  text-align: left;
+  font-size: 16px;
+  color: #000;
+  font-family: Roboto;
+}
+.deskExperiences {
+  width: 100%;
+  position: relative;
+  background-color: #fff;
+  overflow: hidden;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: flex-start;
+  line-height: normal;
+  letter-spacing: normal;
+}
+
+@media screen and (max-width: 1350px) {
+  .blog {
+    flex: 1;
+  }
+
+  .megaMenu {
+    flex-wrap: wrap;
+  }
+
+  .content14 {
+    flex-wrap: wrap;
+  }
+
+  .container {
+    flex-wrap: wrap;
+  }
+
+  .slider {
+    flex-wrap: wrap;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, 308px);
+    grid-row-gap: 0px;
+    grid-column-gap: 16px;
+  }
+}
+@media screen and (max-width: 1150px) {
+  .content14 {
+    justify-content: center;
+    grid-template-columns: repeat(2, minmax(300px, 520px));
+  }
+
+  .quickBooking {
+    padding-top: 39px;
+    padding-bottom: 39px;
+    box-sizing: border-box;
+  }
+
+  .column {
+    min-width: 100%;
+  }
+
+  .bestPersonalizedHot {
+    min-width: 100%;
+  }
+
+  .quickBooking1 {
+    padding-top: 39px;
+    padding-bottom: 39px;
+    box-sizing: border-box;
+  }
+
+  .quickBookingWrapper {
+    padding-bottom: 39px;
+    box-sizing: border-box;
+  }
+
+  .additional {
+    padding-top: 39px;
+    padding-bottom: 39px;
+    box-sizing: border-box;
+  }
+}
+@media screen and (max-width: 800px) {
+  .menu {
+    flex-wrap: wrap;
+    min-width: 100%;
+  }
+
+  .placeholderImageIcon {
+    flex: 1;
+  }
+
+  .blogItem {
+    flex-wrap: wrap;
+  }
+
+  .blog {
+    min-width: 100%;
+  }
+
+  .exploreOurPackages {
+    font-size: 38px;
+    line-height: 46px;
+    min-width: 100%;
+  }
+
+  .dates {
+    flex-wrap: wrap;
+  }
+
+  .content14 {
+    gap: 20px;
+    grid-template-columns: minmax(300px, 1fr);
+  }
+
+  .quickBooking {
+    gap: 20px;
+    padding: 25px 40px;
+    box-sizing: border-box;
+  }
+
+  .heading6 {
+    font-size: 32px;
+    line-height: 38px;
+  }
+
+  .container {
+    gap: 30px;
+  }
+
+  .cta {
+    gap: 30px;
+    padding-left: 40px;
+    padding-right: 40px;
+    box-sizing: border-box;
+  }
+
+  .bestPersonalizedHot {
+    font-size: 38px;
+    line-height: 46px;
+  }
+
+  .quickBooking1 {
+    gap: 20px;
+    padding: 25px 40px;
+    box-sizing: border-box;
+  }
+
+  .quickBookingWrapper {
+    padding-bottom: 25px;
+    box-sizing: border-box;
+  }
+
+  .heading13 {
+    font-size: 38px;
+    line-height: 46px;
+  }
+
+  .testimonialContent {
+    gap: 20px;
+  }
+
+  .testimonialContentWrapper {
+    padding-left: 40px;
+    padding-right: 40px;
+    padding-bottom: 39px;
+    box-sizing: border-box;
+  }
+
+  .additionalServices {
+    font-size: 38px;
+    line-height: 46px;
+  }
+
+  .additional {
+    gap: 20px;
+    padding-left: 40px;
+    padding-right: 40px;
+    box-sizing: border-box;
+  }
+}
+@media screen and (max-width: 450px) {
+  .menuItem {
+    flex-wrap: wrap;
+  }
+
+  .exploreOurPackages {
+    font-size: 29px;
+    line-height: 35px;
+  }
+
+  .heading {
+    font-size: 19px;
+    line-height: 27px;
+  }
+
+  .heading4 {
+    font-size: 19px;
+    line-height: 27px;
+  }
+
+  .heading6 {
+    font-size: 24px;
+    line-height: 29px;
+  }
+
+  .cta {
+    gap: 15px;
+  }
+
+  .bestPersonalizedHot {
+    font-size: 29px;
+    line-height: 35px;
+  }
+
+  .heading13 {
+    font-size: 29px;
+    line-height: 35px;
+  }
+
+  .slidePreview {
+    flex-wrap: wrap;
+    justify-content: center;
+    padding-top: 196px;
+    padding-bottom: 20px;
+    flex: 1;
+  }
+
+  .content37 {
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+
+  .additionalServices {
+    font-size: 29px;
+    line-height: 35px;
+  }
+
+  .additional {
+    padding-top: 25px;
+    padding-bottom: 25px;
+    box-sizing: border-box;
+  }
+}

@@ -1,0 +1,281 @@
+.mediumLengthHero {
+  margin: 0;
+  align-self: stretch;
+  position: relative;
+  font-size: inherit;
+  line-height: 120%;
+  font-weight: 700;
+  font-family: inherit;
+}
+.loremIpsumDolor {
+  align-self: stretch;
+  position: relative;
+  font-size: 16px;
+  line-height: 150%;
+}
+.mediumLengthHeroHeadlineGoParent {
+  width: 768px;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: flex-start;
+  gap: 16px;
+  max-width: 100%;
+}
+.banner {
+  flex: 1;
+  overflow: hidden;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: flex-start;
+  padding: 0px 80px 80px;
+  box-sizing: border-box;
+  gap: 54px;
+  background-image: url("/banner2@3x.png");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: top;
+  max-width: 100%;
+  font-size: 48px;
+}
+.linkFour {
+  position: relative;
+  line-height: 150%;
+}
+.chevronDownIcon {
+  height: 24px;
+  width: 24px;
+  position: relative;
+  overflow: hidden;
+  flex-shrink: 0;
+}
+.navLinkDropdown {
+  display: none;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  gap: 4px;
+}
+.pageGroupOne {
+  position: relative;
+  font-size: 14px;
+  line-height: 150%;
+  font-weight: 600;
+}
+.pageOne {
+  position: relative;
+  line-height: 150%;
+  font-weight: 600;
+}
+.loremIpsumDolor1 {
+  position: relative;
+  font-size: 14px;
+  line-height: 150%;
+}
+.content {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: flex-start;
+  min-width: 221px;
+  max-width: 100%;
+}
+.menuItem {
+  align-self: stretch;
+  display: flex;
+  flex-direction: row;
+  align-items: flex-start;
+  justify-content: flex-start;
+  padding: 8px 0px;
+  box-sizing: border-box;
+  gap: 12px;
+  max-width: 100%;
+}
+.menuList {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: flex-start;
+  gap: 16px;
+  min-width: 244px;
+  max-width: 100%;
+}
+.menu {
+  flex: 1;
+  display: flex;
+  flex-direction: row;
+  align-items: flex-start;
+  justify-content: flex-start;
+  padding: 32px 32px 32px 64px;
+  box-sizing: border-box;
+  gap: 32px;
+  min-width: 572px;
+  max-width: 100%;
+}
+.placeholderImageIcon {
+  height: 105px;
+  width: 160px;
+  position: relative;
+  object-fit: cover;
+}
+.loremIpsumDolor9 {
+  align-self: stretch;
+  position: relative;
+  font-size: 14px;
+  line-height: 150%;
+}
+.content9 {
+  align-self: stretch;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: flex-start;
+  gap: 4px;
+}
+.readMore {
+  position: relative;
+  font-size: 14px;
+  text-decoration: underline;
+  line-height: 150%;
+}
+.content8 {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: flex-start;
+  gap: 8px;
+  min-width: 161px;
+}
+.blogItem {
+  align-self: stretch;
+  display: flex;
+  flex-direction: row;
+  align-items: flex-start;
+  justify-content: flex-start;
+  padding: 8px 0px;
+  gap: 24px;
+}
+.blogList {
+  align-self: stretch;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: flex-start;
+  gap: 8px;
+}
+.button1 {
+  height: 24px;
+  width: 104px;
+  position: relative;
+  line-height: 150%;
+  display: inline-block;
+}
+.iconChevronRight {
+  width: 24px;
+  position: relative;
+  height: 24px;
+  overflow: hidden;
+  flex-shrink: 0;
+}
+.button {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  padding: 4px 0px;
+  gap: 8px;
+}
+.blog {
+  background-color: #eee;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: flex-start;
+  padding: 32px 96px 32px 32px;
+  box-sizing: border-box;
+  gap: 16px;
+  max-width: 100%;
+}
+.megaMenu {
+  width: 1440px;
+  overflow: hidden;
+  flex-shrink: 0;
+  display: none;
+  flex-direction: row;
+  align-items: flex-start;
+  justify-content: flex-start;
+  row-gap: 20px;
+  max-width: 100%;
+  color: #000;
+}
+.header {
+  align-self: stretch;
+  display: flex;
+  flex-direction: row;
+  align-items: flex-start;
+  justify-content: flex-start;
+  max-width: 100%;
+  text-align: left;
+  font-size: 16px;
+  color: #fff;
+  font-family: Roboto;
+}
+
+@media screen and (max-width: 1125px) {
+  .blog {
+    flex: 1;
+  }
+
+  .megaMenu {
+    flex-wrap: wrap;
+  }
+}
+@media screen and (max-width: 800px) {
+  .mediumLengthHero {
+    font-size: 38px;
+    line-height: 46px;
+  }
+
+  .banner {
+    gap: 27px;
+    padding-left: 40px;
+    padding-right: 40px;
+    box-sizing: border-box;
+  }
+
+  .menu {
+    flex-wrap: wrap;
+    min-width: 100%;
+  }
+
+  .placeholderImageIcon {
+    flex: 1;
+  }
+
+  .blogItem {
+    flex-wrap: wrap;
+  }
+
+  .blog {
+    min-width: 100%;
+  }
+}
+@media screen and (max-width: 450px) {
+  .mediumLengthHero {
+    font-size: 29px;
+    line-height: 35px;
+  }
+
+  .banner {
+    padding-bottom: 52px;
+    box-sizing: border-box;
+  }
+
+  .menuItem {
+    flex-wrap: wrap;
+  }
+}

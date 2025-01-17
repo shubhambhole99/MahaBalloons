@@ -1,0 +1,231 @@
+.mahaBalloonAdventuresLogo2 {
+  width: 140px;
+  height: 140px;
+  position: relative;
+  border-radius: 0px 0px 8px 8px;
+  object-fit: cover;
+  z-index: 1;
+}
+.mahaBalloonAdventuresLogo2Wrapper {
+  width: 182px;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: flex-start;
+}
+.linkTwo {
+  position: relative;
+  line-height: 150%;
+  display: inline-block;
+  min-width: 55px;
+  z-index: 1;
+}
+.linkFour {
+  position: relative;
+  line-height: 150%;
+  display: inline-block;
+  min-width: 88px;
+  z-index: 1;
+}
+.chevronDownIcon {
+  height: 24px;
+  width: 24px;
+  position: relative;
+  overflow: hidden;
+  flex-shrink: 0;
+  z-index: 1;
+}
+.linkFourParent {
+  display: flex;
+  flex-direction: row;
+  align-items: flex-start;
+  justify-content: flex-start;
+  gap: 4px;
+}
+.linkTwo1 {
+  position: relative;
+  line-height: 150%;
+  z-index: 1;
+}
+.linkTwo2 {
+  position: relative;
+  line-height: 150%;
+  display: inline-block;
+  min-width: 85px;
+  z-index: 1;
+}
+.linkTwo3 {
+  position: relative;
+  line-height: 150%;
+  display: inline-block;
+  min-width: 42px;
+  z-index: 1;
+}
+.linkFour1 {
+  position: relative;
+  line-height: 150%;
+  display: inline-block;
+  min-width: 80px;
+  z-index: 1;
+}
+.linkTwoParent {
+  display: flex;
+  flex-direction: row;
+  align-items: flex-start;
+  justify-content: flex-start;
+  gap: 16px;
+}
+.frameWrapper {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: flex-start;
+  padding: 28px 0px 0px;
+  box-sizing: border-box;
+  max-width: 100%;
+}
+.wishIcon {
+  height: 44px;
+  width: 44px;
+  position: relative;
+  z-index: 1;
+}
+.wishParent {
+  flex: 1;
+  display: flex;
+  flex-direction: row;
+  align-items: flex-start;
+  justify-content: flex-start;
+}
+.svgIcon {
+  height: 22px;
+  width: 22px;
+  position: relative;
+  z-index: 1;
+}
+.businessShortDesc {
+  text-decoration: none;
+  position: absolute;
+  margin: 0 !important;
+  top: -11px;
+  right: -4.9px;
+  line-height: 13px;
+  color: inherit;
+  display: inline-block;
+  min-width: 9px;
+  z-index: 2;
+}
+.svgParent {
+  display: flex;
+  flex-direction: row;
+  align-items: flex-start;
+  justify-content: flex-start;
+  position: relative;
+}
+.frameWrapper1 {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: flex-start;
+  padding: 11px 0px 0px;
+}
+.frameDiv {
+  flex: 1;
+  display: flex;
+  flex-direction: row;
+  align-items: flex-start;
+  justify-content: flex-start;
+  gap: 11px;
+}
+.button {
+  position: relative;
+  line-height: 150%;
+  display: inline-block;
+  min-width: 74px;
+}
+.btnLogin {
+  height: 42px;
+  border-radius: 50px;
+  background-color: #7ab342;
+  border: 1px solid #7ab342;
+  box-sizing: border-box;
+  display: flex;
+  flex-direction: row;
+  align-items: flex-start;
+  justify-content: flex-start;
+  padding: 8px 19px 8px 20px;
+  z-index: 1;
+}
+.btnLoginWrapper {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: flex-start;
+  padding: 2px 0px 0px;
+  font-size: 16px;
+  font-family: Roboto;
+}
+.frameGroup {
+  align-self: stretch;
+  display: flex;
+  flex-direction: row;
+  align-items: flex-start;
+  justify-content: flex-start;
+  gap: 27px;
+}
+.frameContainer {
+  width: 261px;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: flex-start;
+  padding: 18px 0px 0px;
+  box-sizing: border-box;
+  font-size: 13px;
+  font-family: Inter;
+}
+.frameParent {
+  align-self: stretch;
+  display: flex;
+  flex-direction: row;
+  align-items: flex-start;
+  justify-content: space-between;
+  max-width: 100%;
+  gap: 20px;
+  text-align: left;
+  font-size: 16px;
+  color: #fff;
+  font-family: Roboto;
+}
+/* .frameParent {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+  width: 100%;
+  gap: 20px;
+  text-align: left;
+  font-size: 16px;
+  font-family: Roboto, sans-serif;
+  background: transparent; 
+  padding: 16px 32px;
+  position: fixed; 
+  top: 0;
+  left: 0;
+  z-index: 10; 
+  color: inherit; 
+} */
+
+@media screen and (max-width: 1200px) {
+  .linkTwoParent {
+    display: none;
+  }
+}
+@media screen and (max-width: 450px) {
+  .linkTwo1 {
+    display: none;
+  }
+}
+/* General Navbar Styles */
+/* General Navbar Styles */
+/* General Navbar Styles */

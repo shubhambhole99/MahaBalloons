@@ -1,0 +1,150 @@
+.placeholderImageIcon {
+  height: 100%;
+  width: 100%;
+  position: absolute;
+  margin: 0 !important;
+  top: 0px;
+  right: 0px;
+  bottom: 0px;
+  left: 0px;
+  border-radius: 16px;
+  max-width: 100%;
+  overflow: hidden;
+  max-height: 100%;
+  object-fit: cover;
+}
+.playButtonIcon {
+  height: 64px;
+  width: 64px;
+  position: relative;
+  overflow: hidden;
+  flex-shrink: 0;
+  z-index: 1;
+}
+.img {
+  flex: 1;
+  display: flex;
+  flex-direction: row;
+  align-items: flex-start;
+  justify-content: center;
+  padding: 218px 20px;
+  box-sizing: border-box;
+  position: relative;
+  min-width: 260px;
+  max-width: 100%;
+}
+.imageOneContainer {
+  align-self: stretch;
+  display: flex;
+  flex-direction: row;
+  align-items: flex-start;
+  justify-content: flex-start;
+  gap: 40px;
+  max-width: 100%;
+}
+.placeholderImageIcon2 {
+  position: absolute;
+  top: 0px;
+  left: 0px;
+  border-radius: 16px;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+.playButtonIcon2 {
+  position: absolute;
+  top: calc(50% - 32px);
+  left: calc(50% - 32px);
+  width: 64px;
+  height: 64px;
+  overflow: hidden;
+  display: none;
+}
+.img2 {
+  align-self: stretch;
+  height: 500px;
+  position: relative;
+}
+.img3 {
+  height: 500px;
+  width: 400px;
+  display: flex;
+  flex-direction: row;
+  align-items: flex-start;
+  justify-content: flex-start;
+  max-width: 100%;
+}
+.imageOneContainerParent {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: flex-start;
+  gap: 40px;
+  min-width: 336px;
+  max-width: 100%;
+}
+.img5 {
+  align-self: stretch;
+  display: flex;
+  flex-direction: row;
+  align-items: flex-start;
+  justify-content: center;
+  padding: 218px 20px;
+  position: relative;
+}
+.imgParent {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: flex-start;
+  gap: 40px;
+  max-width: 100%;
+}
+.row {
+  align-self: stretch;
+  gap: 40px;
+  max-width: 100%;
+  display: grid;
+  grid-template-columns: 840px 400px;
+  grid-row-gap: 0px;
+  grid-column-gap: 40px;
+}
+
+@media screen and (max-width: 750px) {
+  .img {
+    padding-top: 142px;
+    padding-bottom: 142px;
+    box-sizing: border-box;
+  }
+
+  .imageOneContainer {
+    flex-wrap: wrap;
+  }
+
+  .img5 {
+    padding-top: 142px;
+    padding-bottom: 142px;
+    box-sizing: border-box;
+  }
+
+  .row {
+    gap: 20px;
+    display: grid;
+    grid-template-columns: 840px 400px;
+    grid-row-gap: 0px;
+    grid-column-gap: 40px;
+  }
+}
+@media screen and (max-width: 450px) {
+  .imageOneContainer {
+    gap: 20px;
+  }
+
+  .imageOneContainerParent {
+    gap: 20px;
+  }
+
+  .imgParent {
+    gap: 20px;
+  }
+}

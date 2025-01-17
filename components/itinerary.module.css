@@ -1,0 +1,150 @@
+.subheading {
+  position: relative;
+  line-height: 150%;
+  font-weight: 600;
+  display: none;
+}
+.heading {
+  margin: 0;
+  flex: 1;
+  position: relative;
+  font-size: inherit;
+  line-height: 120%;
+  font-weight: 700;
+  font-family: inherit;
+}
+.content {
+  align-self: stretch;
+  display: flex;
+  flex-direction: row;
+  align-items: flex-start;
+  justify-content: center;
+  font-size: 48px;
+}
+.sectionTitle {
+  align-self: stretch;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: flex-start;
+  gap: 16px;
+}
+.placeholderImageIcon {
+  border-radius: 24px;
+  width: 500px;
+  height: 500px;
+  object-fit: cover;
+}
+.date {
+  width: 700px;
+  position: relative;
+  line-height: 120%;
+  display: none;
+}
+.heading1 {
+  margin: 0;
+  align-self: stretch;
+  position: relative;
+  font-size: 32px;
+  line-height: 130%;
+  font-weight: 700;
+  font-family: inherit;
+  color: #000;
+}
+.titles {
+  align-self: stretch;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: flex-start;
+  gap: 16px;
+}
+.description {
+  align-self: stretch;
+  position: relative;
+  font-size: 18px;
+  line-height: 150%;
+  color: #000;
+}
+.arrowsIcon {
+  width: 48px;
+  border-radius: 50px;
+  max-height: 100%;
+  object-fit: contain;
+}
+.sliderButtons {
+  display: flex;
+  flex-direction: row;
+  align-items: flex-start;
+  justify-content: flex-start;
+  gap: 15px;
+}
+.content1 {
+  align-self: stretch;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: flex-start;
+  gap: 24px;
+}
+.button1 {
+  height: 24px;
+  width: 48px;
+  position: relative;
+  line-height: 150%;
+  display: inline-block;
+}
+.iconChevronRight {
+  height: 24px;
+  width: 24px;
+  position: relative;
+  overflow: hidden;
+  flex-shrink: 0;
+}
+.button {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  gap: 8px;
+}
+.actions {
+  display: none;
+  flex-direction: row;
+  align-items: center;
+  justify-content: flex-start;
+  padding: 16px 0px 0px;
+  gap: 24px;
+  font-size: 16px;
+  color: #000;
+}
+.contentTop {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: flex-start;
+  gap: 16px;
+}
+.container {
+  align-self: stretch;
+  gap: 80px;
+  display: grid;
+  grid-template-columns: 500px 1fr;
+  grid-row-gap: 0px;
+  grid-column-gap: 80px;
+  text-align: left;
+  font-size: 40px;
+  color: #7ab342;
+}
+.itinerary {
+  align-self: stretch;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: flex-start;
+  gap: 64px;
+  text-align: center;
+  font-size: 16px;
+  color: #000;
+  font-family: Roboto;
+}

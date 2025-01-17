@@ -1,0 +1,575 @@
+.name {
+  align-self: stretch;
+  position: relative;
+  line-height: 150%;
+}
+.placeholder {
+  position: relative;
+  line-height: 150%;
+  display: none;
+}
+.textInput {
+  align-self: stretch;
+  height: 48px;
+  border-radius: 8px;
+  background-color: #e9e9e9;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: flex-start;
+  padding: 12px;
+  box-sizing: border-box;
+  color: #666;
+}
+.inputRows {
+  align-self: stretch;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: flex-start;
+  gap: 8px;
+  flex-shrink: 0;
+}
+.inputRows1 {
+  align-self: stretch;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: flex-start;
+  gap: 8px;
+}
+.textInput3 {
+  align-self: stretch;
+  flex: 1;
+  border-radius: 8px;
+  background-color: #e9e9e9;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: flex-start;
+  padding: 12px;
+}
+.checkbox {
+  width: 20px;
+  height: 20px;
+  position: relative;
+  border-radius: 2px;
+  background-color: #e9e9e9;
+  border: 1px solid #000;
+  box-sizing: border-box;
+  overflow: hidden;
+  flex-shrink: 0;
+}
+.checkboxContainer {
+  width: 18px;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: flex-start;
+  padding: 1.5px 0px 0px;
+  box-sizing: border-box;
+}
+.label {
+  position: relative;
+  line-height: 150%;
+  display: inline-block;
+  min-width: 117px;
+}
+.checkboxRow {
+  display: flex;
+  flex-direction: row;
+  align-items: flex-start;
+  justify-content: flex-start;
+  gap: 8px;
+  font-size: 14px;
+  color: #000;
+}
+.messageInput {
+  align-self: stretch;
+  height: 225px;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: flex-start;
+  gap: 24px;
+  color: #666;
+}
+.submit {
+  position: relative;
+  line-height: 150%;
+  display: inline-block;
+  min-width: 52px;
+}
+.btnLoad {
+  border-radius: 50px;
+  background-color: #7ab342;
+  border: 1px solid #7ab342;
+  display: flex;
+  flex-direction: row;
+  align-items: flex-start;
+  justify-content: flex-start;
+  padding: 12px 34px;
+  color: #fff;
+}
+.formInputs {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: flex-start;
+  gap: 24px;
+  max-width: 100%;
+}
+.formFields {
+  width: 760px;
+  height: 701px;
+  display: flex;
+  flex-direction: row;
+  align-items: flex-start;
+  justify-content: flex-start;
+  padding: 0px 80px 60px;
+  box-sizing: border-box;
+  max-width: 100%;
+}
+.giftAnUnforgettable {
+  margin: 0;
+}
+.heading {
+  margin: 0;
+  align-self: stretch;
+  position: relative;
+  font-size: inherit;
+  line-height: 120%;
+  font-weight: 700;
+  font-family: inherit;
+}
+.column {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: flex-start;
+  max-width: 100%;
+}
+.actions {
+  height: 48px;
+  display: flex;
+  flex-direction: row;
+  align-items: flex-start;
+  justify-content: flex-start;
+  gap: 16px;
+}
+.column1 {
+  width: 282px;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: flex-start;
+  gap: 24px;
+  font-size: 16px;
+}
+.container {
+  align-self: stretch;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: flex-start;
+  gap: 60px;
+  max-width: 100%;
+}
+.cta {
+  align-self: stretch;
+  overflow: hidden;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: flex-start;
+  padding: 80px;
+  box-sizing: border-box;
+  background-image: url("/cta@3x.png");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: top;
+  max-width: 100%;
+  font-size: 40px;
+  color: #fff;
+}
+.mahaBalloonAdventuresLogo2 {
+  width: 93.8px;
+  height: 75px;
+  position: relative;
+  object-fit: cover;
+}
+.column2 {
+  flex: 1;
+  overflow: hidden;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: flex-start;
+}
+.quickLinks {
+  align-self: stretch;
+  position: relative;
+  line-height: 150%;
+  font-weight: 600;
+}
+.aboutUs {
+  flex: 1;
+  position: relative;
+  line-height: 150%;
+}
+.link {
+  align-self: stretch;
+  display: flex;
+  flex-direction: row;
+  align-items: flex-start;
+  justify-content: flex-start;
+  padding: 8px 0px;
+}
+.merchandise {
+  height: 21px;
+  width: 140px;
+  position: relative;
+  line-height: 150%;
+  display: inline-block;
+  flex-shrink: 0;
+}
+.link2 {
+  width: 140px;
+  display: none;
+  flex-direction: row;
+  align-items: flex-start;
+  justify-content: flex-start;
+  padding: 8px 0px;
+  box-sizing: border-box;
+}
+.footerLinks {
+  align-self: stretch;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: flex-start;
+  font-size: 14px;
+}
+.column3 {
+  flex: 1;
+  overflow: hidden;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: flex-start;
+  gap: 16px;
+}
+.infomahaballoonadventurescom {
+  height: 42px;
+  width: 140px;
+  position: relative;
+  line-height: 150%;
+  display: inline-block;
+  flex-shrink: 0;
+}
+.links {
+  flex: 1;
+  display: flex;
+  flex-direction: row;
+  align-items: flex-start;
+  justify-content: flex-start;
+  gap: 40px;
+}
+.newsletterContent {
+  align-self: stretch;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: flex-start;
+  gap: 16px;
+}
+.form {
+  align-self: stretch;
+  display: flex;
+  flex-direction: row;
+  align-items: flex-start;
+  justify-content: flex-start;
+  gap: 16px;
+}
+.privacyPolicy {
+  text-decoration: underline;
+}
+.actions1 {
+  align-self: stretch;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: flex-start;
+  gap: 16px;
+  font-size: 12px;
+  color: #000;
+}
+.newslatter {
+  width: 500px;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: flex-start;
+  gap: 24px;
+}
+.content {
+  align-self: stretch;
+  height: 248px;
+  display: flex;
+  flex-direction: row;
+  align-items: flex-start;
+  justify-content: flex-start;
+  gap: 100px;
+}
+.moreInformations {
+  position: relative;
+  line-height: 150%;
+}
+.credits1 {
+  flex: 1;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: flex-start;
+}
+.icon {
+  height: 21px;
+  width: 21px;
+  position: relative;
+  overflow: hidden;
+  flex-shrink: 0;
+  object-fit: contain;
+}
+.credits {
+  align-self: stretch;
+  border-top: 1px solid #fff;
+  display: flex;
+  flex-direction: row;
+  align-items: flex-start;
+  justify-content: flex-start;
+  padding: 16px 0px;
+  transition-property: all;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+  transition-duration: 150ms;
+  cursor: pointer;
+}
+.accordionContent {
+  position: relative;
+  color: transparent;
+  display: none;
+}
+.creditsOpen {
+  align-self: stretch;
+  border-top: 1px solid #fff;
+  display: flex;
+  flex-direction: row;
+  align-items: flex-start;
+  justify-content: flex-start;
+  padding: 16px 0px;
+  cursor: pointer;
+}
+.accordionContentWrap {
+  transition-property: all;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+  transition-duration: 150ms;
+  overflow: hidden;
+}
+.accordionContent1 {
+  align-self: stretch;
+  border-top: 1px solid #fff;
+  display: grid;
+  flex-direction: row;
+  align-items: flex-start;
+  justify-content: flex-start;
+  padding: 16px 0px;
+  cursor: default;
+  grid-template-rows: 0fr;
+  transition-property: all;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+  transition-duration: 150ms;
+}
+.accordionContent1.accordion__open {
+  grid-template-rows: 1fr;
+}
+.accordionContent1.accordion__close {
+  grid-template-rows: 0fr;
+}
+.accordionItemMock {
+  align-self: stretch;
+  display: none;
+  flex-direction: column;
+}
+.divider {
+  align-self: stretch;
+  position: relative;
+  background-color: #fff;
+  border: 1px solid #fff;
+  box-sizing: border-box;
+  height: 1px;
+}
+.igitalMarketingAgencyDubai {
+  color: inherit;
+}
+.termsOfService {
+  position: relative;
+  text-decoration: underline;
+  line-height: 150%;
+}
+.footerLinks3 {
+  display: flex;
+  flex-direction: row;
+  align-items: flex-start;
+  justify-content: flex-start;
+  gap: 24px;
+}
+.credits4 {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: flex-start;
+  gap: 24px;
+}
+.iconFacebook {
+  height: 24px;
+  width: 24px;
+  position: relative;
+  overflow: hidden;
+  flex-shrink: 0;
+}
+.iconLinkedin {
+  width: 24px;
+  position: relative;
+  height: 24px;
+  overflow: hidden;
+  flex-shrink: 0;
+}
+.socialLinks {
+  display: flex;
+  flex-direction: row;
+  align-items: flex-start;
+  justify-content: flex-start;
+  gap: 12px;
+}
+.row {
+  align-self: stretch;
+  display: flex;
+  flex-direction: row;
+  align-items: flex-start;
+  justify-content: space-between;
+}
+.credits3 {
+  align-self: stretch;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: flex-start;
+  gap: 24px;
+  transition-property: all;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+  transition-duration: 150ms;
+  cursor: pointer;
+}
+.footer {
+  align-self: stretch;
+  background-color: #000;
+  overflow: hidden;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: flex-start;
+  padding: 60px 80px;
+  gap: 60px;
+  text-align: left;
+  font-size: 16px;
+  color: #fff;
+  font-family: Roboto;
+}
+.formContainer {
+  height: 2409px;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: flex-start;
+  max-width: 100%;
+}
+.placeholderImageIcon {
+  height: 641px;
+  flex: 1;
+  position: relative;
+  border-radius: 24px;
+  max-width: 100%;
+  overflow: hidden;
+  object-fit: cover;
+  margin-left: -680px;
+}
+.formContainerParent {
+  align-self: stretch;
+  display: flex;
+  flex-direction: row;
+  align-items: flex-start;
+  justify-content: flex-start;
+  max-width: 100%;
+  text-align: left;
+  font-size: 16px;
+  color: #000;
+  font-family: Roboto;
+}
+.deskContactUs {
+  width: 100%;
+  position: relative;
+  background-color: #fff;
+  overflow: hidden;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: flex-start;
+  gap: 60px;
+  line-height: normal;
+  letter-spacing: normal;
+}
+
+@media screen and (max-width: 1150px) {
+  .column {
+    min-width: 100%;
+  }
+}
+@media screen and (max-width: 800px) {
+  .formFields {
+    padding-left: 40px;
+    padding-right: 40px;
+    padding-bottom: 39px;
+    box-sizing: border-box;
+  }
+
+  .heading {
+    font-size: 32px;
+    line-height: 38px;
+  }
+
+  .container {
+    gap: 30px;
+  }
+
+  .cta {
+    gap: 30px;
+    padding-left: 40px;
+    padding-right: 40px;
+    box-sizing: border-box;
+  }
+
+  .deskContactUs {
+    gap: 30px;
+  }
+}
+@media screen and (max-width: 450px) {
+  .heading {
+    font-size: 24px;
+    line-height: 29px;
+  }
+
+  .cta {
+    gap: 15px;
+  }
+}

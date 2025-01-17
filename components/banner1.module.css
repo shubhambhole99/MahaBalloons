@@ -1,0 +1,235 @@
+.linkTwo {
+  position: relative;
+  line-height: 150%;
+  display: inline-block;
+  min-width: 55px;
+  z-index: 1;
+}
+.linkFour {
+  position: relative;
+  line-height: 150%;
+  display: inline-block;
+  min-width: 88px;
+  z-index: 1;
+}
+.chevronDownIcon {
+  height: 24px;
+  width: 24px;
+  position: relative;
+  overflow: hidden;
+  flex-shrink: 0;
+  z-index: 1;
+}
+.innerLinks {
+  display: flex;
+  flex-direction: row;
+  align-items: flex-start;
+  justify-content: flex-start;
+  gap: 4px;
+}
+.linkTwo1 {
+  position: relative;
+  line-height: 150%;
+  z-index: 1;
+}
+.linkTwo2 {
+  position: relative;
+  line-height: 150%;
+  display: inline-block;
+  min-width: 85px;
+  z-index: 1;
+}
+.linkTwo3 {
+  position: relative;
+  line-height: 150%;
+  display: inline-block;
+  min-width: 42px;
+  z-index: 1;
+}
+.linkFour1 {
+  position: relative;
+  line-height: 150%;
+  display: inline-block;
+  min-width: 80px;
+  z-index: 1;
+}
+.topLinks {
+  position: absolute;
+  top: 28px;
+  left: 362px;
+  display: flex;
+  flex-direction: row;
+  align-items: flex-start;
+  justify-content: flex-start;
+  gap: 16px;
+}
+.a {
+  text-decoration: none;
+  position: absolute;
+  top: 18px;
+  left: 1215.9px;
+  font-size: 13px;
+  line-height: 13px;
+  font-family: Inter;
+  color: inherit;
+  display: flex;
+  align-items: center;
+  width: 9px;
+  height: 13px;
+  min-width: 9px;
+  z-index: 2;
+}
+.wishIcon {
+  height: 44px;
+  width: 44px;
+  position: relative;
+  z-index: 1;
+}
+.accountLogin {
+  display: flex;
+  flex-direction: row;
+  align-items: flex-start;
+  justify-content: flex-start;
+}
+.svgIcon {
+  width: 22px;
+  height: 22px;
+  position: relative;
+  z-index: 1;
+}
+.imagePlaceholder {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: flex-start;
+  padding: 11px 0px 0px;
+}
+.accountLoginParent {
+  display: flex;
+  flex-direction: row;
+  align-items: flex-start;
+  justify-content: flex-start;
+  gap: 11px;
+}
+.button {
+  position: relative;
+  line-height: 150%;
+  display: inline-block;
+  min-width: 74px;
+}
+.btnLogin {
+  height: 42px;
+  border-radius: 50px;
+  background-color: #7ab342;
+  border: 1px solid #7ab342;
+  box-sizing: border-box;
+  display: flex;
+  flex-direction: row;
+  align-items: flex-start;
+  justify-content: flex-start;
+  padding: 8px 19px 8px 20px;
+  z-index: 1;
+}
+.loginButton {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: flex-start;
+  padding: 2px 0px 0px;
+}
+.frameParent {
+  position: absolute;
+  top: 18px;
+  left: 1099px;
+  display: flex;
+  flex-direction: row;
+  align-items: flex-start;
+  justify-content: flex-start;
+  gap: 27px;
+}
+.mahaBalloonAdventuresLogo2 {
+  width: 140px;
+  height: 140px;
+  position: relative;
+  border-radius: 0px 0px 8px 8px;
+  object-fit: cover;
+  z-index: 1;
+}
+.mediumLengthHero {
+  margin: 0;
+  align-self: stretch;
+  position: relative;
+  font-size: inherit;
+  line-height: 120%;
+  font-weight: 700;
+  font-family: inherit;
+}
+.loremIpsumDolor {
+  align-self: stretch;
+  position: relative;
+  font-size: 16px;
+  line-height: 150%;
+}
+.heroContent {
+  align-self: stretch;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: flex-start;
+  gap: 16px;
+}
+.mahaBalloonAdventuresLogo2Parent {
+  position: absolute;
+  top: 0px;
+  left: 80px;
+  width: 768px;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: flex-start;
+  gap: 54px;
+  max-width: 100%;
+  font-size: 48px;
+}
+.banner {
+  height: 372px;
+  flex: 1;
+  position: relative;
+  overflow: hidden;
+  background-image: url("/banner4@3x.png");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: top;
+  max-width: 100%;
+  text-align: left;
+  font-size: 16px;
+  color: #fff;
+  font-family: Roboto;
+}
+
+@media screen and (max-width: 1050px) {
+  .mediumLengthHero {
+    font-size: 38px;
+    line-height: 46px;
+  }
+}
+@media screen and (max-width: 750px) {
+  .topLinks {
+    display: none;
+  }
+}
+@media screen and (max-width: 450px) {
+  .frameParent {
+    flex-wrap: wrap;
+  }
+
+  .mediumLengthHero {
+    font-size: 29px;
+    line-height: 35px;
+  }
+
+  .banner {
+    height: auto;
+    min-height: 372;
+  }
+}

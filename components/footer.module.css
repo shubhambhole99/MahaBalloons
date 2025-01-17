@@ -1,0 +1,246 @@
+.mahaBalloonAdventuresLogo2 {
+  width: 93.8px;
+  height: 75px;
+  position: relative;
+  object-fit: cover;
+}
+.column {
+  flex: 1;
+  overflow: hidden;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: flex-start;
+}
+.quickLinks {
+  align-self: stretch;
+  position: relative;
+  line-height: 150%;
+  font-weight: 600;
+}
+.aboutUs {
+  flex: 1;
+  position: relative;
+  line-height: 150%;
+}
+.link {
+  align-self: stretch;
+  display: flex;
+  flex-direction: row;
+  align-items: flex-start;
+  justify-content: flex-start;
+  padding: 8px 0px;
+}
+.merchandise {
+  height: 21px;
+  width: 140px;
+  position: relative;
+  line-height: 150%;
+  display: inline-block;
+  flex-shrink: 0;
+}
+.link2 {
+  width: 140px;
+  display: none;
+  flex-direction: row;
+  align-items: flex-start;
+  justify-content: flex-start;
+  padding: 8px 0px;
+  box-sizing: border-box;
+}
+.footerLinks {
+  align-self: stretch;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: flex-start;
+  font-size: 14px;
+}
+.column1 {
+  flex: 1;
+  overflow: hidden;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: flex-start;
+  gap: 16px;
+}
+.infomahaballoonadventurescom {
+  height: 42px;
+  width: 140px;
+  position: relative;
+  line-height: 150%;
+  display: inline-block;
+  flex-shrink: 0;
+}
+.links {
+  flex: 1;
+  display: flex;
+  flex-direction: row;
+  align-items: flex-start;
+  justify-content: flex-start;
+  gap: 40px;
+}
+.joinOurNewsletter {
+  align-self: stretch;
+  position: relative;
+  line-height: 150%;
+}
+.subscribeParent {
+  align-self: stretch;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: flex-start;
+  gap: 16px;
+}
+.form {
+  align-self: stretch;
+  display: flex;
+  flex-direction: row;
+  align-items: flex-start;
+  justify-content: flex-start;
+  gap: 16px;
+}
+.privacyPolicy {
+  text-decoration: underline;
+}
+.bySubscribingYouContainer {
+  align-self: stretch;
+  position: relative;
+  font-size: 12px;
+  line-height: 150%;
+  color: #000;
+}
+.newslatter {
+  width: 500px;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: flex-start;
+  gap: 24px;
+}
+.content {
+  align-self: stretch;
+  height: 248px;
+  display: flex;
+  flex-direction: row;
+  align-items: flex-start;
+  justify-content: flex-start;
+  gap: 100px;
+}
+.moreInformations {
+  position: relative;
+  line-height: 150%;
+}
+.credits1 {
+  flex: 1;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: flex-start;
+}
+.icon {
+  height: 21px;
+  width: 21px;
+  position: relative;
+  overflow: hidden;
+  flex-shrink: 0;
+  object-fit: contain;
+}
+.credits {
+  align-self: stretch;
+  border-top: 1px solid #fff;
+  display: flex;
+  flex-direction: row;
+  align-items: flex-start;
+  justify-content: flex-start;
+  padding: 16px 0px;
+}
+.divider {
+  align-self: stretch;
+  position: relative;
+  background-color: #fff;
+  border: 1px solid #fff;
+  box-sizing: border-box;
+  height: 1px;
+}
+.igitalMarketingAgencyDubai {
+  color: inherit;
+}
+.designedWithInContainer {
+  width: 502px;
+  position: relative;
+  line-height: 150%;
+  display: inline-block;
+}
+.termsOfService {
+  position: relative;
+  text-decoration: underline;
+  line-height: 150%;
+}
+.footerLinks3 {
+  display: flex;
+  flex-direction: row;
+  align-items: flex-start;
+  justify-content: flex-start;
+  gap: 24px;
+}
+.credits3 {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: flex-start;
+  gap: 24px;
+}
+.iconFacebook {
+  height: 24px;
+  width: 24px;
+  position: relative;
+  overflow: hidden;
+  flex-shrink: 0;
+}
+.iconYoutube {
+  width: 24px;
+  position: relative;
+  height: 24px;
+  overflow: hidden;
+  flex-shrink: 0;
+}
+.socialLinks {
+  display: flex;
+  flex-direction: row;
+  align-items: flex-start;
+  justify-content: flex-start;
+  gap: 12px;
+}
+.row {
+  align-self: stretch;
+  display: flex;
+  flex-direction: row;
+  align-items: flex-start;
+  justify-content: space-between;
+}
+.credits2 {
+  align-self: stretch;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: flex-start;
+  gap: 24px;
+}
+.footer {
+  align-self: stretch;
+  background-color: #000;
+  overflow: hidden;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: flex-start;
+  padding: 60px 80px;
+  gap: 60px;
+  text-align: left;
+  font-size: 16px;
+  color: #fff;
+  font-family: Roboto;
+}

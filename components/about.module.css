@@ -1,0 +1,212 @@
+.mediumLengthHero {
+  margin: 0;
+  position: relative;
+  font-size: inherit;
+  line-height: 120%;
+  font-weight: 700;
+  font-family: inherit;
+}
+.column {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: flex-start;
+  min-width: 390px;
+  max-width: 100%;
+}
+.loremIpsumDolor {
+  align-self: stretch;
+  position: relative;
+  line-height: 150%;
+  font-weight: 600;
+}
+.loremIpsumDolor1 {
+  position: relative;
+  line-height: 150%;
+}
+.actions {
+  height: 64px;
+  display: none;
+  flex-direction: row;
+  align-items: flex-start;
+  justify-content: flex-start;
+  padding: 16px 0px 0px;
+  box-sizing: border-box;
+  gap: 16px;
+}
+.column1 {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: flex-start;
+  gap: 16px;
+  min-width: 390px;
+  max-width: 100%;
+  font-size: 18px;
+}
+.content1 {
+  align-self: stretch;
+  display: flex;
+  flex-direction: row;
+  align-items: flex-start;
+  justify-content: flex-start;
+  flex-wrap: wrap;
+  align-content: flex-start;
+  gap: 80px;
+  max-width: 100%;
+}
+.logosIcon {
+  height: 48px;
+  width: 120px;
+  position: relative;
+  overflow: hidden;
+  flex-shrink: 0;
+  display: none;
+}
+.logos1 {
+  height: 80px;
+  flex: 1;
+  display: flex;
+  flex-direction: row;
+  align-items: flex-start;
+  justify-content: center;
+  padding: 16px 0px;
+  box-sizing: border-box;
+  gap: 24px;
+  min-width: 416px;
+  max-width: 100%;
+}
+.tripadvisorLogopngIcon {
+  height: 55px;
+  width: 137.5px;
+  position: relative;
+  overflow: hidden;
+  flex-shrink: 0;
+  object-fit: cover;
+}
+.makemytripLogosvgIcon {
+  height: 55px;
+  width: 130.6px;
+  position: relative;
+  overflow: hidden;
+  flex-shrink: 0;
+}
+.bookingcomLogosvgIcon {
+  height: 55px;
+  width: 135px;
+  position: relative;
+  overflow: hidden;
+  flex-shrink: 0;
+}
+.logos2 {
+  width: 600px;
+  display: flex;
+  flex-direction: row;
+  align-items: flex-start;
+  justify-content: space-between;
+  padding: 16px 0px;
+  box-sizing: border-box;
+  max-width: 100%;
+  gap: 20px;
+}
+.logos {
+  align-self: stretch;
+  display: flex;
+  flex-direction: row;
+  align-items: flex-start;
+  justify-content: center;
+  flex-wrap: wrap;
+  align-content: flex-start;
+  gap: 40px;
+  max-width: 100%;
+}
+.content {
+  align-self: stretch;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: flex-start;
+  gap: 24px;
+  max-width: 100%;
+}
+.placeholderLightboxIcon {
+  align-self: stretch;
+  position: relative;
+  border-radius: 24px;
+  max-width: 100%;
+  overflow: hidden;
+  max-height: 100%;
+}
+.about {
+  align-self: stretch;
+  background-color: #fff;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: flex-start;
+  padding: 60px 80px;
+  box-sizing: border-box;
+  gap: 40px;
+  max-width: 100%;
+  text-align: left;
+  font-size: 48px;
+  color: #000;
+  font-family: Roboto;
+}
+
+@media screen and (max-width: 1350px) {
+  .about {
+    padding-top: 39px;
+    padding-bottom: 39px;
+    box-sizing: border-box;
+  }
+}
+@media screen and (max-width: 800px) {
+  .mediumLengthHero {
+    font-size: 38px;
+    line-height: 46px;
+  }
+
+  .column {
+    min-width: 100%;
+  }
+
+  .column1 {
+    min-width: 100%;
+  }
+
+  .content1 {
+    gap: 40px;
+  }
+
+  .logos1 {
+    min-width: 100%;
+  }
+
+  .logos2 {
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+
+  .logos {
+    gap: 20px;
+  }
+
+  .about {
+    gap: 20px;
+    padding: 25px 40px;
+    box-sizing: border-box;
+  }
+}
+@media screen and (max-width: 450px) {
+  .mediumLengthHero {
+    font-size: 29px;
+    line-height: 35px;
+  }
+
+  .content1 {
+    gap: 20px;
+  }
+}
