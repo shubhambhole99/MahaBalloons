@@ -19,12 +19,11 @@ const DeskHome = ({pageProps}) => {
     
     <div className={styles.deskHome}>
       {/* <Navbar/> */}
-      <h1 className="red">hi</h1>
       {/* <br/> */}
       <FrameComponent1 />
       <AboutUs />
       <section className={styles.quickBooking}>
-      <OurPackages/>
+      {/* <OurPackages/> */}
       {/* <AuthComp
           // show={true}
           // setShow={setModalShow}
@@ -38,7 +37,7 @@ const DeskHome = ({pageProps}) => {
 
 
 
-        {/* <div className={styles.sectionTitle}>
+        <div className={styles.sectionTitle}>
           <div className={styles.subheading}>
             Choose From The Best Hot Air Balloon Packages in Dubai
           </div>
@@ -62,25 +61,10 @@ const DeskHome = ({pageProps}) => {
               >{`Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse varius enim in eros elementum tristique. `}</div>
           </div>
         </div>
+        
         <div className={styles.content1}>
-          <div className={styles.dates}>
-            <div className={styles.button}>
-              <div className={styles.wed07Aug}>Wed 07 Aug</div>
-            </div>
-            <div className={styles.button1}>
-              <div className={styles.thu08Aug}>Thu 08 Aug</div>
-            </div>
-            <div className={styles.button1}>
-              <div className={styles.fri09Aug}>Fri 09 Aug</div>
-            </div>
-            <div className={styles.button1}>
-              <div className={styles.sat10Aug}>Sat 10 Aug</div>
-            </div>
-            <div className={styles.button1}>
-              <div className={styles.thu08Aug}>Sun 11 Aug</div>
-            </div>
-          </div>
           <div className={styles.content2}>
+         {/* Classic Package*/}
             <div className={styles.card}>
               <div className={styles.image}>
                 <Image
@@ -148,6 +132,7 @@ const DeskHome = ({pageProps}) => {
                 </div>
               </div>
             </div>
+            {/* classic Package */}
             <div className={styles.card}>
               <div className={styles.image}>
                 <Image
@@ -283,7 +268,7 @@ const DeskHome = ({pageProps}) => {
               </div>
             </div>
           </div>
-        </div> */}
+        </div>
       </section>
       <section className={styles.cta}>
         <div className={styles.container}>
