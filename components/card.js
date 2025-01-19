@@ -6,7 +6,7 @@ import styles from "./card.module.css";
 const Card = ({ className = "", placeholderImage, text, heading, text1 }) => {
   return (
     <div className={[styles.card, className].join(" ")}>
-      <Image
+      <img
         className={styles.placeholderImageIcon}
         loading="lazy"
         width={411}

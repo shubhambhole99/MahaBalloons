@@ -17,6 +17,11 @@ import "swiper/css";
 import "swiper/css/navigation";
 import { useRef, useState, useEffect } from "react";
 import { Navigation } from "swiper/modules";
+import CustomPackages from "/Db/packages";
+import ourtestimonial from "../Db/Testimonial_home";
+import blogDataTs from "/Db/blogs";
+
+
 // import "swiper/swiper-bundle.min.css";
 
 // import Navbar from "/components/Layout/Navbar/Navbar";
@@ -209,215 +214,7 @@ const DeskHome = ({ pageProps }) => {
 
         <div className={styles.content1}>
           <div className={styles.content2}>
-            {/* Classic Package*/}
-
-            {/* <Slider {...settings}>
-         
-            <div className={styles.card}>
-              <div className={styles.image}>
-                <Image
-                  className={styles.placeholderImageIcon}
-                  loading="lazy"
-                  width={400}
-                  height={300}
-                  alt=""
-                  src="/placeholder-image-2@2x.png"
-                />
-                <div className={styles.tags}>
-                  <div className={styles.tag}>
-                    <div className={styles.featured}>Featured</div>
-                  </div>
-                </div>
-              </div>
-              <div className={styles.content3}>
-                <div className={styles.sectionTitle}>
-                  <div className={styles.plan}>
-                    <h3 className={styles.heading}>CLASSIC PACKAGE</h3>
-                    <div className={styles.heading1}>
-                      ADULTS: AED 1200 / CHILD: AED 1150
-                    </div>
-                  </div>
-                  <div className={styles.text1}>
-                    Experience breathtaking beauty in the Dubai desert with our
-                    Classic Hot Air Balloon Package. Enjoy stunning panoramic
-                    views as you gently ascend into the sky at an accessible,
-                    affordable price.
-                  </div>
-                  <div className={styles.details1}>
-                    <div className={styles.content4}>
-                      <div className={styles.subheading}>Time</div>
-                      <div className={styles.text1}>45 - 60 Minutes</div>
-                    </div>
-                    <div className={styles.content4}>
-                      <div className={styles.subheading}>Location</div>
-                      <div className={styles.text1}>
-                        Margham Dubai, United Arab Emirates
-                      </div>
-                    </div>
-                  </div>
-                </div>
-                <div className={styles.actions}>
-                  <BtnLearn
-                    showBtnLearn
-                    btnLearnBorder="unset"
-                    btnLearnBackgroundColor="#7ab342"
-                    button="Book Now"
-                    buttonHeight="unset"
-                    buttonDisplay="unset"
-                    buttonColor="#fff"
-                    buttonWidth="unset"
-                  />
-                  <BtnLearn
-                    showBtnLearn
-                    btnLearnBorder="1px solid #7ab342"
-                    btnLearnBackgroundColor="unset"
-                    button="View Details"
-                    buttonHeight="unset"
-                    buttonDisplay="unset"
-                    buttonColor="#000"
-                    buttonWidth="unset"
-                  />
-                </div>
-              </div>
-            </div>
-            </Slider> */}
-            {/* classic Package */}
-            {/* Majestic Package */}
-            {/* <div className={styles.card}>
-              <div className={styles.image}>
-                <Image
-                  className={styles.placeholderImageIcon}
-                  loading="lazy"
-                  width={400}
-                  height={300}
-                  alt=""
-                  src="/placeholder-image-3@2x.png"
-                />
-                <div className={styles.tags}>
-                  <div className={styles.tag}>
-                    <div className={styles.featured}>Featured</div>
-                  </div>
-                </div>
-              </div>
-              <div className={styles.content3}>
-                <div className={styles.sectionTitle}>
-                  <div className={styles.plan}>
-                    <h3 className={styles.heading}>MAJESTIC PACKAGE</h3>
-                    <div className={styles.heading1}>
-                      ADULTS: AED 1300 / CHILD: AED 1250
-                    </div>
-                  </div>
-                  <div className={styles.text1}>
-                    Elevate your adventure with our Deluxe Package. Enjoy
-                    exclusive extras and luxurious touches as you float gently
-                    over the stunning Dubai desert at sunrise, ensuring a
-                    memorable, sophisticated journey.
-                  </div>
-                  <div className={styles.details1}>
-                    <div className={styles.content4}>
-                      <div className={styles.subheading}>Time</div>
-                      <div className={styles.text1}>45 - 60 Minutes</div>
-                    </div>
-                    <div className={styles.content4}>
-                      <div className={styles.subheading}>Location</div>
-                      <div className={styles.text1}>
-                        Margham Dubai, United Arab Emirates
-                      </div>
-                    </div>
-                  </div>
-                </div>
-                <div className={styles.actions}>
-                  <BtnLearn
-                    showBtnLearn
-                    btnLearnBorder="unset"
-                    btnLearnBackgroundColor="#7ab342"
-                    button="Book Now"
-                    buttonHeight="unset"
-                    buttonDisplay="unset"
-                    buttonColor="#fff"
-                    buttonWidth="unset"
-                  />
-                  <BtnLearn
-                    showBtnLearn
-                    btnLearnBorder="1px solid #7ab342"
-                    btnLearnBackgroundColor="unset"
-                    button="View Details"
-                    buttonHeight="unset"
-                    buttonDisplay="unset"
-                    buttonColor="#000"
-                    buttonWidth="unset"
-                  />
-                </div>
-              </div>
-            </div> */}
-            {/* Royal Package */}
-            {/* <div className={styles.card}>
-              <div className={styles.image}>
-                <Image
-                  className={styles.placeholderImageIcon}
-                  loading="lazy"
-                  width={400}
-                  height={300}
-                  alt=""
-                  src="/placeholder-image-4@2x.png"
-                />
-                <div className={styles.tags}>
-                  <div className={styles.tag}>
-                    <div className={styles.featured}>Featured</div>
-                  </div>
-                </div>
-              </div>
-              <div className={styles.content3}>
-                <div className={styles.sectionTitle}>
-                  <div className={styles.plan}>
-                    <h3 className={styles.heading4}>ROYAL PACKAGE</h3>
-                    <div className={styles.heading1}>
-                      ADULTS: AED 1550 / CHILD: AED 1450
-                    </div>
-                  </div>
-                  <div className={styles.text1}>
-                    Enjoy a complete desert experience with pick-up and drop-off
-                    from Dubai. Start with unlimited refreshments before an
-                    unforgettable 45-60 minute hot air balloon flight, followed
-                    by a signed flight certificate.
-                  </div>
-                  <div className={styles.details1}>
-                    <div className={styles.content4}>
-                      <div className={styles.subheading}>Time</div>
-                      <div className={styles.text1}>45 - 60 Minutes</div>
-                    </div>
-                    <div className={styles.content4}>
-                      <div className={styles.subheading}>Location</div>
-                      <div className={styles.text1}>
-                        Margham Dubai, United Arab Emirates
-                      </div>
-                    </div>
-                  </div>
-                </div>
-                <div className={styles.actions}>
-                  <BtnLearn
-                    showBtnLearn
-                    btnLearnBorder="unset"
-                    btnLearnBackgroundColor="#7ab342"
-                    button="Book Now"
-                    buttonHeight="unset"
-                    buttonDisplay="unset"
-                    buttonColor="#fff"
-                    buttonWidth="unset"
-                  />
-                  <BtnLearn
-                    showBtnLearn
-                    btnLearnBorder="1px solid #7ab342"
-                    btnLearnBackgroundColor="unset"
-                    button="View Details"
-                    buttonHeight="unset"
-                    buttonDisplay="unset"
-                    buttonColor="#000"
-                    buttonWidth="unset"
-                  />
-                </div>
-              </div>
-            </div> */}
+          
           </div>
         </div>
       </section>
@@ -489,25 +286,32 @@ const DeskHome = ({ pageProps }) => {
               >{`Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse varius enim in eros elementum tristique. `}</div>
             </div>
           </div>
-          <div className={styles.content13}>
-            <div className={styles.dates1}>
-              <div className={styles.button}>
-                <div className={styles.wed07Aug1}>Wed 07 Aug</div>
-              </div>
-              <div className={styles.button1}>
-                <div className={styles.planDescription}>Thu 08 Aug</div>
-              </div>
-              <div className={styles.button1}>
-                <div className={styles.planDescription}>Fri 09 Aug</div>
-              </div>
-              <div className={styles.button1}>
-                <div className={styles.planDescription}>Sat 10 Aug</div>
-              </div>
-              <div className={styles.button1}>
-                <div className={styles.planDescription}>Sun 11 Aug</div>
-              </div>
-            </div>
-            <div className={styles.content14}>
+            
+              {/* celestial */}
+      <div className="self-stretch flex flex-row items-center justify-center flex-wrap content-start gap-4 max-w-full text-left text-xl ">
+          <Swiper
+            // style={{backgroundColor:"green",border:"1px solid red"}}
+            modules={[Navigation]}
+            spaceBetween={20}
+            slidesPerView={3}
+            navigation
+            breakpoints={{
+              640: { slidesPerView: 1 },
+              768: { slidesPerView: 2 },
+              1024: { slidesPerView: 3 },
+            }}
+            className="w-full max-w-full "
+          >
+             {CustomPackages?.map((item) => (
+              // <Card
+              //   {...item}
+              //   key={item?.id}
+              //   active={active}
+              //   setActive={setActive}
+              //   setExtraDetails={setExtraDetails}
+              // />
+          
+            <SwiperSlide>
               <div className={styles.card}>
                 <div className={styles.image3}>
                   <Image
@@ -528,15 +332,12 @@ const DeskHome = ({ pageProps }) => {
                   <div className={styles.sectionTitle1}>
                     <div className={styles.plan}>
                       <h3 className={styles.heading7}>
-                        CELESTIAL PRIVATE ROMANCE
+                        {item.title}
                       </h3>
                       <div className={styles.heading1}>PRICE ON REQUEST /</div>
                     </div>
                     <div className={styles.planDescription}>
-                      Elevate your proposal to new heights with this
-                      unforgettable hot air balloon ride over the Dubai desert.
-                      Experience a magical sunrise ride, pop the question, and
-                      enjoy a delightful breakfast together.
+                     {item.short_detail}
                     </div>
                     <div className={styles.details7}>
                       <div className={styles.content4}>
@@ -575,137 +376,11 @@ const DeskHome = ({ pageProps }) => {
                   </div>
                 </div>
               </div>
-              <div className={styles.card}>
-                <div className={styles.image3}>
-                  <Image
-                    className={styles.placeholderImageIcon3}
-                    loading="lazy"
-                    width={400}
-                    height={300}
-                    alt=""
-                    src="/placeholder-image-6@2x.png"
-                  />
-                  <div className={styles.tags}>
-                    <div className={styles.tag}>
-                      <div className={styles.featured3}>Featured</div>
-                    </div>
-                  </div>
-                </div>
-                <div className={styles.content15}>
-                  <div className={styles.sectionTitle1}>
-                    <div className={styles.plan}>
-                      <h3 className={styles.heading7}>GROUP BOOKING</h3>
-                      <div className={styles.heading1}>PRICE ON REQUEST /</div>
-                    </div>
-                    <div className={styles.planDescription}>
-                      Enjoy exclusive group rates, tailored packages, and
-                      personalized service:We offer tailored arrangements for
-                      all group types, ensuring a unique and personalized
-                      experience. Whether for family, friends, or colleagues.
-                    </div>
-                    <div className={styles.details7}>
-                      <div className={styles.content4}>
-                        <div className={styles.subheading}>Time</div>
-                        <div className={styles.text1}>45 - 60 Minutes</div>
-                      </div>
-                      <div className={styles.content17}>
-                        <div className={styles.subheading}>Location</div>
-                        <div className={styles.text21}>
-                          Margham Dubai, United Arab Emirates
-                        </div>
-                      </div>
-                    </div>
-                  </div>
-                  <div className={styles.actions3}>
-                    <BtnLearn
-                      showBtnLearn
-                      btnLearnBorder="unset"
-                      btnLearnBackgroundColor="#7ab342"
-                      button="Get a Quote"
-                      buttonHeight="24px"
-                      buttonDisplay="inline-block"
-                      buttonColor="#fff"
-                      buttonWidth="unset"
-                    />
-                    <BtnLearn
-                      showBtnLearn
-                      btnLearnBorder="1px solid #7ab342"
-                      btnLearnBackgroundColor="unset"
-                      button="View Details"
-                      buttonHeight="24px"
-                      buttonDisplay="inline-block"
-                      buttonColor="#000"
-                      buttonWidth="unset"
-                    />
-                  </div>
-                </div>
+              {/* celestial */}
+              </SwiperSlide>
+                ))}
+              </Swiper>
               </div>
-              <div className={styles.card5}>
-                <div className={styles.image5}>
-                  <Image
-                    className={styles.placeholderImageIcon3}
-                    loading="lazy"
-                    width={400}
-                    height={300}
-                    alt=""
-                    src="/placeholder-image-7@2x.png"
-                  />
-                  <div className={styles.tags}>
-                    <div className={styles.tag}>
-                      <div className={styles.featured3}>Featured</div>
-                    </div>
-                  </div>
-                </div>
-                <div className={styles.content15}>
-                  <div className={styles.sectionTitle1}>
-                    <div className={styles.plan5}>
-                      <h3 className={styles.heading11}>CORPORATE EVENT</h3>
-                      <div className={styles.heading12}>PRICE ON REQUEST /</div>
-                    </div>
-                    <div className={styles.text27}>
-                      CORPORATE EVENT Take your corporate event to new heights.
-                      4000 feet above sea level to be exact! Let your next
-                      corporate adventure be the best one yet for your friends
-                    </div>
-                    <div className={styles.details7}>
-                      <div className={styles.content17}>
-                        <div className={styles.text28}>Time</div>
-                        <div className={styles.text29}>45 - 60 Minutes</div>
-                      </div>
-                      <div className={styles.content17}>
-                        <div className={styles.text28}>Location</div>
-                        <div className={styles.text29}>
-                          Margham Dubai, United Arab Emirates
-                        </div>
-                      </div>
-                    </div>
-                  </div>
-                  <div className={styles.actions6}>
-                    <BtnLearn
-                      showBtnLearn
-                      btnLearnBorder="unset"
-                      btnLearnBackgroundColor="#7ab342"
-                      button="Get a Quote"
-                      buttonHeight="24px"
-                      buttonDisplay="inline-block"
-                      buttonColor="#fff"
-                      buttonWidth="unset"
-                    />
-                    <BtnLearn
-                      showBtnLearn
-                      btnLearnBorder="1px solid #7ab342"
-                      btnLearnBackgroundColor="unset"
-                      button="View Details"
-                      buttonHeight="24px"
-                      buttonDisplay="inline-block"
-                      buttonColor="#000"
-                      buttonWidth="unset"
-                    />
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
         </div>
       </section>
       <section className={styles.testimonials}>
@@ -723,6 +398,9 @@ const DeskHome = ({ pageProps }) => {
               </div>
             </div>
           </div>
+
+
+
           <div className={styles.slider}>
             <div className={styles.currentSlide}>
               <div className={styles.perfumes}>
