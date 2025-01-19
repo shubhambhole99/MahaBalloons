@@ -3,7 +3,7 @@ import TextInput from "./text-input";
 import Button from "./button";
 import PropTypes from "prop-types";
 import styles from "./footer.module.css";
-
+import { useRouter } from "next/router";
 const Footer = ({
   className = "",
   icon,
@@ -13,6 +13,7 @@ const Footer = ({
   iconLinkedIn,
   iconYoutube,
 }) => {
+  const router=useRouter();
   return (
     <footer className={[styles.footer, className].join(" ")}>
       <div className={styles.content}>
@@ -28,19 +29,19 @@ const Footer = ({
             />
           </div>
           <div className={styles.column1}>
-            <div className={styles.quickLinks}>Quick Links</div>
+            <div onClickclassName={styles.quickLinks}>Quick Links</div>
             <div className={styles.footerLinks}>
               <div className={styles.link}>
-                <div className={styles.aboutUs}>About Us</div>
+                <div style={{cursor:"pointer"}} onClick={()=> router.push("/en/why-us")} className={styles.aboutUs}>About Us</div>
               </div>
               <div className={styles.link}>
-                <div className={styles.aboutUs}>Experiences</div>
+                <div style={{cursor:"pointer"}} onClick={()=> router.push("/en/experiences")} className={styles.aboutUs}>Experiences</div>
               </div>
-              <div className={styles.link2}>
-                <div className={styles.merchandise}>Merchandise</div>
-              </div>
+              {/* <div className={styles.link2}>
+                <div style={{cursor:"pointer"}} onClick={()=> router.push("/en/things-to-do")} className={styles.merchandise}>Merchandise</div>
+              </div> */}
               <div className={styles.link}>
-                <div className={styles.aboutUs}>Things To Do</div>
+                <div style={{cursor:"pointer"}} onClick={()=> router.push("/en/things-to-do")} className={styles.aboutUs}>Things To Do</div>
               </div>
             </div>
           </div>
@@ -48,16 +49,16 @@ const Footer = ({
             <div className={styles.quickLinks}>Company</div>
             <div className={styles.footerLinks}>
               <div className={styles.link}>
-                <div className={styles.aboutUs}>Contact Us</div>
+                <div style={{cursor:"pointer"}} onClick={()=> router.push("/en/contact-us")} className={styles.aboutUs}>Contact Us</div>
               </div>
               <div className={styles.link}>
-                <div className={styles.aboutUs}>Blogs</div>
+                <div style={{cursor:"pointer"}} onClick={()=> router.push("/en/blogs")} className={styles.aboutUs}>Blogs</div>
               </div>
               <div className={styles.link}>
-                <div className={styles.aboutUs}>Faqs</div>
+                <div style={{cursor:"pointer"}} onClick={()=> router.push("/en/things-to-do")} className={styles.aboutUs}>Faqs</div>
               </div>
               <div className={styles.link2}>
-                <div className={styles.merchandise}>Careers</div>
+                <div style={{cursor:"pointer"}} onClick={()=> router.push("/en/things-to-do")} className={styles.merchandise}>Careers</div>
               </div>
             </div>
           </div>

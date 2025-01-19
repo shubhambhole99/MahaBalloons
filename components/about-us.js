@@ -2,8 +2,10 @@ import Image from "next/image";
 import BtnLearn from "./btn-learn";
 import PropTypes from "prop-types";
 import styles from "./about-us.module.css";
-
+import { useRouter } from "next/router";
 const AboutUs = ({ className = "" }) => {
+  let router=useRouter();
+
   return (
     <section className={[styles.aboutUs, className].join(" ")}>
       <div className={styles.container}>
@@ -63,7 +65,13 @@ const AboutUs = ({ className = "" }) => {
               />
             </div>
           </div>
-          <BtnLearn showBtnLearn button="Learn More" />
+          <button
+                  // className="btnNl-secondary Desktopd"
+                  className="btnNl-secondary"
+                  onClick={() => router.push(`en/why-us`)}
+                >
+                  Learn More
+                </button>
         </div>
         <Image
           className={styles.placeholderImageIcon}

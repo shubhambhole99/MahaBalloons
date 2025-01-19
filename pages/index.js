@@ -7,8 +7,10 @@ import Slide from "../components/slide";
 import FrameComponent2 from "../components/frame-component2";
 import BlogPosts from "../components/blog-posts";
 import Footer from "../components/footer";
-import styles from "./index.module.css";
+import styles from "./index.module.scss";
 import { useRouter } from "next/navigation";
+import OurPackages from "/components/Home/OurPackages/Index";
+// import Navbar from "/components/Layout/Navbar/Navbar";
 // import {fr}
 const DeskHome = ({pageProps}) => {
   console.log(pageProps)
@@ -16,11 +18,27 @@ const DeskHome = ({pageProps}) => {
   return (
     
     <div className={styles.deskHome}>
+      {/* <Navbar/> */}
+      <h1 className="red">hi</h1>
       {/* <br/> */}
       <FrameComponent1 />
       <AboutUs />
       <section className={styles.quickBooking}>
-        <div className={styles.sectionTitle}>
+      <OurPackages/>
+      {/* <AuthComp
+          // show={true}
+          // setShow={setModalShow}
+          // onHide={() => setModalShow(false)}
+        /> */}
+
+
+
+
+
+
+
+
+        {/* <div className={styles.sectionTitle}>
           <div className={styles.subheading}>
             Choose From The Best Hot Air Balloon Packages in Dubai
           </div>
@@ -265,7 +283,7 @@ const DeskHome = ({pageProps}) => {
               </div>
             </div>
           </div>
-        </div>
+        </div> */}
       </section>
       <section className={styles.cta}>
         <div className={styles.container}>
@@ -648,6 +666,7 @@ export default DeskHome;
 
 // import { useDispatch, useSelector } from 'react-redux';
 // import { increment, decrement, reset } from '../store/counter'; // Adjust the path as needed
+// import "./index.module.scss"
 
 // export default function Counter() {
 //   const dispatch = useDispatch();
@@ -656,7 +675,7 @@ export default DeskHome;
 //   return (
 //     <div style={{ textAlign: 'center', marginTop: '50px' }}>
 //       <h1>Redux Counter</h1>
-//       <h2>Count: {count}</h2>
+//       <h2 className={styles.red}>Count: {count}</h2>
 //       <div>
 //         <button onClick={() => dispatch(increment())}>Increment</button>
 //         <button onClick={() => dispatch(decrement())}>Decrement</button>
