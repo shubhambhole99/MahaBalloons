@@ -10,26 +10,73 @@ import Footer from "../components/footer";
 import styles from "./index.module.scss";
 import { useRouter } from "next/navigation";
 import OurPackages from "/components/Home/OurPackages/Index";
+import Slider from "react-slick";
+import { fetchPackagesData } from "/api/commonApi";
+import { Swiper, SwiperSlide } from "swiper/react";
+import "swiper/css";
+import "swiper/css/navigation";
+import { useRef, useState, useEffect } from "react";
+import { Navigation } from "swiper/modules";
+// import "swiper/swiper-bundle.min.css";
+
 // import Navbar from "/components/Layout/Navbar/Navbar";
 // import {fr}
-const DeskHome = ({pageProps}) => {
+const DeskHome = ({ pageProps }) => {
   console.log(pageProps)
-  let router=useRouter();
+  let router = useRouter();
+  const settings = {
+    dots: true,
+    infinite: true,
+    speed: 500,
+    slidesToShow: 1,
+    slidesToScroll: 1,
+    arrows: true,
+    autoplay: true,
+    autoplaySpeed: 3000,
+  };
+  let [isLoading, setIsLoading] = useState(false);
+  let [packagesData, setPackagesData] = useState([]);
+  const sliderRef = useRef();
+
+  useEffect(() => {
+    const fetchPackageListData = async () => {
+      try {
+        setIsLoading(true); // Show the loader
+        const data = await fetchPackagesData();
+        if (Array.isArray(data)) {
+          setPackagesData(data);
+        }
+        console.log(data)
+      } catch (error) {
+        console.error("Error fetching Data:", error);
+      } finally {
+        setIsLoading(false); // Hide the loader
+      }
+    };
+
+    fetchPackageListData();
+  }, []);
+
   return (
-    
+
     <div className={styles.deskHome}>
       {/* <Navbar/> */}
-      <h1 className="red">hi</h1>
       {/* <br/> */}
       <FrameComponent1 />
       <AboutUs />
       <section className={styles.quickBooking}>
-      <OurPackages/>
-      {/* <AuthComp
+        {/* <OurPackages/> */}
+        {/* <AuthComp
           // show={true}
           // setShow={setModalShow}
           // onHide={() => setModalShow(false)}
         /> */}
+        {/* h1 */}
+
+      
+
+
+        {/* h1 */}
 
 
 
@@ -37,8 +84,7 @@ const DeskHome = ({pageProps}) => {
 
 
 
-
-        {/* <div className={styles.sectionTitle}>
+        <div className={styles.sectionTitle}>
           <div className={styles.subheading}>
             Choose From The Best Hot Air Balloon Packages in Dubai
           </div>
@@ -54,33 +100,119 @@ const DeskHome = ({pageProps}) => {
                 height={48}
                 alt=""
                 src="/arrows1@2x.png"
-                />
+              />
               <Arrows fearrowUp="/fearrowup1@2x.png" />
             </div>
             <div
               className={styles.text}
-              >{`Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse varius enim in eros elementum tristique. `}</div>
+            >{`Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse varius enim in eros elementum tristique. `}</div>
           </div>
         </div>
+        <div className="self-stretch flex flex-row items-center justify-center flex-wrap content-start gap-4 max-w-full text-left text-xl ">
+          <Swiper
+            // style={{backgroundColor:"green",border:"1px solid red"}}
+            modules={[Navigation]}
+            spaceBetween={20}
+            slidesPerView={3}
+            navigation
+            breakpoints={{
+              640: { slidesPerView: 1 },
+              768: { slidesPerView: 2 },
+              1024: { slidesPerView: 3 },
+            }}
+            className="w-full max-w-full "
+          >
+            {packagesData?.map((item) => (
+              // <Card
+              //   {...item}
+              //   key={item?.id}
+              //   active={active}
+              //   setActive={setActive}
+              //   setExtraDetails={setExtraDetails}
+              //   PrevArrow={<PrevArrow />}
+              //   NextArrow={<NextArrow />}
+              //   packageVal={item}
+              // />
+
+              <SwiperSlide>
+                <div className={styles.card}>
+                  <div className={styles.image}>
+                    <Image
+                      className={styles.placeholderImageIcon}
+                      loading="lazy"
+                      width={300}
+                      height={300}
+                      alt=""
+                      src="/placeholder-image-2@2x.png"
+                    />
+                    <div className={styles.tags}>
+                      <div className={styles.tag}>
+                        <div className={styles.featured}>Featured</div>
+                      </div>
+                    </div>
+                  </div>
+                  <div className={styles.content3}>
+                    <div className={styles.sectionTitle}>
+                      <div className={styles.plan}>
+                        <h3 className={styles.heading}>{item.title}</h3>
+                        <div className={styles.heading1}>
+                          ADULTS: AED {item.price_adult} / CHILD: AED {item.price_child}
+                        </div>
+                      </div>
+                      <div className={styles.text1}>
+                      {item.short_detail}
+                      </div>
+                      <div className={styles.details1}>
+                        <div className={styles.content4}>
+                          <div className={styles.subheading}>Time</div>
+                          <div className={styles.text1}>{item.duration}</div>
+                        </div>
+                        <div className={styles.content4}>
+                          <div className={styles.subheading}>Location</div>
+                          <div className={styles.text1}>
+                            {item.location}
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                    <div className={styles.actions}>
+                      <BtnLearn
+                        showBtnLearn
+                        btnLearnBorder="unset"
+                        btnLearnBackgroundColor="#7ab342"
+                        button="Book Now"
+                        buttonHeight="unset"
+                        buttonDisplay="unset"
+                        buttonColor="#fff"
+                        buttonWidth="unset"
+                      />
+                      <BtnLearn
+                        showBtnLearn
+                        btnLearnBorder="1px solid #7ab342"
+                        btnLearnBackgroundColor="unset"
+                        button="View Details"
+                        buttonHeight="unset"
+                        buttonDisplay="unset"
+                        buttonColor="#000"
+                        buttonWidth="unset"
+                      />
+                    </div>
+                  </div>
+                </div>
+              </SwiperSlide>
+            ))}
+
+
+          </Swiper>
+
+        </div>
+
         <div className={styles.content1}>
-          <div className={styles.dates}>
-            <div className={styles.button}>
-              <div className={styles.wed07Aug}>Wed 07 Aug</div>
-            </div>
-            <div className={styles.button1}>
-              <div className={styles.thu08Aug}>Thu 08 Aug</div>
-            </div>
-            <div className={styles.button1}>
-              <div className={styles.fri09Aug}>Fri 09 Aug</div>
-            </div>
-            <div className={styles.button1}>
-              <div className={styles.sat10Aug}>Sat 10 Aug</div>
-            </div>
-            <div className={styles.button1}>
-              <div className={styles.thu08Aug}>Sun 11 Aug</div>
-            </div>
-          </div>
           <div className={styles.content2}>
+            {/* Classic Package*/}
+
+            {/* <Slider {...settings}>
+         
             <div className={styles.card}>
               <div className={styles.image}>
                 <Image
@@ -148,7 +280,10 @@ const DeskHome = ({pageProps}) => {
                 </div>
               </div>
             </div>
-            <div className={styles.card}>
+            </Slider> */}
+            {/* classic Package */}
+            {/* Majestic Package */}
+            {/* <div className={styles.card}>
               <div className={styles.image}>
                 <Image
                   className={styles.placeholderImageIcon}
@@ -214,8 +349,9 @@ const DeskHome = ({pageProps}) => {
                   />
                 </div>
               </div>
-            </div>
-            <div className={styles.card}>
+            </div> */}
+            {/* Royal Package */}
+            {/* <div className={styles.card}>
               <div className={styles.image}>
                 <Image
                   className={styles.placeholderImageIcon}
@@ -281,9 +417,9 @@ const DeskHome = ({pageProps}) => {
                   />
                 </div>
               </div>
-            </div>
+            </div> */}
           </div>
-        </div> */}
+        </div>
       </section>
       <section className={styles.cta}>
         <div className={styles.container}>
