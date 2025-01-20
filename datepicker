@@ -13,8 +13,6 @@ import { GoDotFill } from "react-icons/go";
 import moment from "moment";
 import { useDispatch } from "react-redux";
 import { toast } from "react-toastify";
-import { ToastContainer } from "react-toastify";
-import "react-toastify/dist/ReactToastify.min.css";
 import { setBooking, setPackage, setPackageId } from "/store/booking";
 import useSize from "/utils/useSize";
 import { IoCloseCircleSharp } from "react-icons/io5";
@@ -22,9 +20,6 @@ import DatePicker from "react-date-picker";
 // import CalenderCom from "./Calender/index";
 import { fetchPackagesData } from "/api/commonApi";
 import { useSearchParams } from "next/navigation";
-import DatePickerComponent from '../components/DatePickerComponent';
-import { useRouter } from "next/navigation";
-
 import CalenderCom from "../components/Common/BookingField/Calender/index";
 const calender =
   "https://d3gelo9cifr8ed.cloudfront.net/assets/icons/calender.png";
@@ -44,7 +39,7 @@ const FrameComponent1 = ({ className = "" }) => {
   const wrapperRef = useRef(null);
   const [value, setValue] = useState(new Date());
   const [guestsAmont, setGuestsAmont] = useState({ adult: "1", child: "0" });
-  const router = useRouter();
+
   useEffect(() => {
     console.log("hello");
     const fetchPackageListData = async () => {
@@ -69,7 +64,7 @@ const FrameComponent1 = ({ className = "" }) => {
   let Range2 = new Date(today);
   Range2.setDate(today.getDate() + 1);
 
-  const params = useSearchParams();
+  const [searchParams, setSearchParams] = useSearchParams();
 
   const handleBookingUpdate = async () => {
     const selectedPackageData = await packagesData?.filter(
@@ -100,14 +95,11 @@ const FrameComponent1 = ({ className = "" }) => {
 
     dispatch(setPackageId(selectedPackageData?.id));
     dispatch(setPackage(selectedPackageData));
-    console.log(router.pathname)
-    router.push({
-      pathname: "en/booking/",
-      query: {
-        booking_date: dateValue,
-        adults: guestsAmont?.adult,
-        child: guestsAmont?.child,
-      },
+
+    setSearchParams({
+      booking_date: dateValue,
+      adults: guestsAmont?.adult,
+      child: guestsAmont?.child,
     });
   };
 
@@ -121,7 +113,6 @@ const FrameComponent1 = ({ className = "" }) => {
 
   return (
     <>
-    <ToastContainer/>
     <section className={[styles.headerParent, className].join(" ")}>
       <div className={styles.header}>
         <div className={styles.banner}>
@@ -179,7 +170,6 @@ const FrameComponent1 = ({ className = "" }) => {
                           />
                         </div>
                       ) : null}
-                      {/* <DatePickerComponent/> */}
                       <div
                         className={styles.value}
                         onClick={() => setOpenDatePicker(!openDatePicker)}

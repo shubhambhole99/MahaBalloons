@@ -107,7 +107,7 @@
   justify-content: flex-start;
   gap: 24px;
   max-width: 100%;
-  font-size: 56px;
+  font-size: 18px;
 }
 .banner {
   flex: 1;
@@ -123,6 +123,7 @@
   background-size: cover;
   background-repeat: no-repeat;
   background-position: top;
+  height: 1200px;
   max-width: 100%;
 }
 .linkFour {
@@ -518,6 +519,9 @@
 
 
 /* later addded */
+.red{
+  color:red
+}
 .bookingFieldk321 {
   width: 100%;
   background-color: #fff;

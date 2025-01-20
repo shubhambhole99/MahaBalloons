@@ -1,0 +1,202 @@
+.calender9dk3 {
+  position: absolute;
+  top: 100%;
+  width: 60%;
+  transform: translateX(-10%);
+  background-color: #fff;
+  padding: 30px;
+  border-radius: 24px;
+  z-index: 9999999;
+}
+
+@media (max-width: 580px) {
+  .calender9dk3 {
+    transform: translateX(-50%);
+    left: 50%;
+    width: 100%;
+  }
+}
+
+.calender9dk3 .react-calendar {
+  border-radius: 24px;
+  border: 1px solid var(--themePrimary);
+  width: 100%;
+}
+
+.calender9dk3 .react-calendar__navigation {
+  border-bottom: 1px solid var(--themePrimary);
+  padding-top: 30px;
+  padding-bottom: 50px;
+}
+
+.calender9dk3 .react-calendar__navigation__label__labelText {
+  font-size: 20px;
+  font-weight: 600;
+  line-height: 28px;
+  color: var(--themePrimary);
+}
+
+.calender9dk3 .react-calendar__viewContainer {
+  padding: 16px 24px;
+}
+
+.calender9dk3 .react-calendar__navigation__prev2-button,
+.calender9dk3 .react-calendar__navigation__next2-button {
+  display: none;
+}
+
+.calender9dk3 .react-calendar__navigation__arrow {
+  font-size: 24px;
+}
+
+.calender9dk3 .react-calendar__tile {
+  min-height: 59px;
+  min-width: 44px;
+  border-radius: 8px;
+  font-size: 20px;
+  padding: 8px;
+}
+
+.calender9dk3 .react-calendar__tile--now {
+  background-color: transparent;
+  color: #000;
+}
+
+.calender9dk3 .react-calendar__tile--now:enabled:hover,
+.calender9dk3 .react-calendar__tile--now:enabled:focus {
+  background-color: transparent;
+}
+
+.calender9dk3 .abbr {
+  text-decoration: none !important;
+}
+
+.calender9dk3 .react-calendar__tile--active:enabled:focus,
+.calender9dk3 .react-calendar__tile--active:enabled:hover,
+.calender9dk3 .react-calendar__tile--active {
+  background-color: var(--themePrimary);
+}
+
+.calender9dk3 .fullSeats,
+.calender9dk3 .fullSeats:enabled:focus {
+  background-color: #cc0000;
+}
+
+.calender9dk3 .limited,
+.calender9dk3 .limited:enabled:focus {
+  background-color: #fbbc05;
+}
+
+.calender9dk3 .clr-info {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.calender9dk3 .clr-info .sb-title {
+  font-size: 12px;
+  font-weight: 400;
+  line-height: 18px;
+}
+
+.calender9dk3 .clr-info .clr-list {
+  display: flex;
+  justify-content: end;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 16px;
+}
+
+.calender9dk3 .clr-info .dot_wrapper {
+  display: flex;
+  justify-content: start;
+  align-items: center;
+}
+
+.calender9dk3 .clr-info .dot_wrapper .dot {
+  height: 12px;
+  width: 12px;
+  border-radius: 50px;
+}
+
+.calender9dk3 .clr-info .dot_wrapper .label {
+  font-size: 12px;
+  font-weight: 400;
+  line-height: 18px;
+  margin-inline-start: 4px;
+}
+
+.calender9dk3 .clr-info .clr-available {
+  background-color: #7ab342;
+}
+
+.calender9dk3 .clr-info .clr-limited {
+  background-color: #fbbc05;
+}
+
+.calender9dk3 .clr-info .clr-full {
+  background-color: #cc0000;
+}
+
+.calender9dk3 .hover-tile {
+  position: relative;
+  cursor: pointer;
+}
+
+.calender9dk3 .hover-marker {
+  font-size: 14px;
+  color: #000;
+  position: absolute;
+  top: 0;
+  right: 1px;
+  font-style: italic;
+}
+
+.calender9dk3 .hover-info {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  background: #eee;
+  padding: 1rem;
+  border-radius: 8px;
+  box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+  z-index: 100;
+}
+
+.calender9dk3 .hover-info p {
+  margin: 0;
+  margin-bottom: 0.3rem;
+}
+
+.calender9dk3 .hover-info p:last-child {
+  margin-bottom: 0;
+}
+
+.calender9dk3 .slot-details {
+  background: #eee;
+  padding: 1rem;
+  border-radius: 8px;
+  box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.calender9dk3 .slot-details p {
+  margin: 0;
+  margin-bottom: 0.3rem;
+}
+
+.calender9dk3 .slot-details p:last-child {
+  margin-bottom: 0;
+}
+
+.calender9dk3 .availableSeats {
+  background: #7ab342;
+}
+
+.calender9dk3 .limitedSeats {
+  background-color: #ffdf7e;
+}
+
+.calender9dk3 .fullSeats {
+  background-color: #ff7e7e;
+}

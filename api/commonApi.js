@@ -18,14 +18,34 @@ export const fetchPackagesData = async () => {
 
 // Slots API
 
-export const fetchSlotData = () => {
+export const fetchSlotData = async() => {
+  try {
+    const response = await axios.get(
+      'https://pign230wc2.execute-api.us-east-1.amazonaws.com/prod/api/slot'
+    );
+    // console.log(response.data);
+    return response.data; // Return the data from the API
+  } catch (error) {
+    console.error('Error fetching data:', error);
+    throw error; // Throw the error to handle it later
+  }
   return API.get("/slot");
 };
 
 // Passenger API
 
-export const addPassengerData = (formData) => {
-  return API.post("/passenger", formData);
+export const addPassengerData = async(formData) => {
+  try {
+    const response = await axios.post(
+      'https://pign230wc2.execute-api.us-east-1.amazonaws.com/prod/api/passenger'
+    ,formData);
+    // console.log(response.data);
+    return response.data; // Return the data from the API
+  } catch (error) {
+    console.error('Error fetching data:', error);
+    throw error; // Throw the error to handle it later
+  }
+ 
 };
 export const makeBooking = (formData) => {
   return API.post("/booking", formData);

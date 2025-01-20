@@ -9,9 +9,11 @@ import FAQ from "../../components/f-a-q";
 import Footer from "../../components/footer";
 import styles from "../desk-about.module.css";
 // import styles from "../desk-about.css";
-
+import { useSearchParams } from "next/navigation";
 
 const DeskAbout = () => {
+  const params=useSearchParams()
+  console.log(params.get("booking_date"))
   return (
     <div className={styles.deskAbout}>
       <Header />

@@ -20,7 +20,8 @@ import { Navigation } from "swiper/modules";
 import CustomPackages from "/Db/packages";
 import ourtestimonial from "../Db/Testimonial_home";
 import blogDataTs from "/Db/blogs";
-
+import { ToastContainer } from "react-toastify";
+    import "react-toastify/dist/ReactToastify.min.css";
 
 // import "swiper/swiper-bundle.min.css";
 
@@ -63,8 +64,9 @@ const DeskHome = ({ pageProps }) => {
   }, []);
 
   return (
-
+    
     <div className={styles.deskHome}>
+      <ToastContainer/>
       {/* <Navbar/> */}
       {/* <br/> */}
       <FrameComponent1 />
