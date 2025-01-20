@@ -28,6 +28,9 @@ import { ToastContainer } from "react-toastify";
 // import Navbar from "/components/Layout/Navbar/Navbar";
 // import {fr}
 const DeskHome = ({ pageProps }) => {
+  const prevButtonRef = useRef(null);
+  const nextButtonRef = useRef(null);
+
   console.log(pageProps)
   let router = useRouter();
   const settings = {
@@ -80,7 +83,7 @@ const DeskHome = ({ pageProps }) => {
         /> */}
         {/* h1 */}
 
-      
+
 
 
         {/* h1 */}
@@ -100,15 +103,28 @@ const DeskHome = ({ pageProps }) => {
               Book Luxury Hot Air Balloon Packages in UAE
             </h1>
             <div className={styles.sliderButtons}>
+              <button ref={prevButtonRef} className={styles.arrows}>
               <Image
-                className={styles.arrowsIcon}
+                className={styles.fearrowUpIcon}
                 loading="lazy"
                 width={48}
                 height={48}
                 alt=""
-                src="/arrows1@2x.png"
+                src="/leftarrow.png"
+                ref={prevButtonRef} // Assigning ref to the previous button
               />
-              <Arrows fearrowUp="/fearrowup1@2x.png" />
+              </button>
+              <button ref={nextButtonRef} className={styles.arrows}>
+                <Image
+                  className={styles.fearrowUpIcon}
+                  loading="lazy"
+                  width={48}
+                  height={48}
+                  alt=""
+                  src="/fearrowup@2x.png" // Use the appropriate image for the next button
+                  ref={nextButtonRef}
+                />
+              </button>
             </div>
             <div
               className={styles.text}
@@ -117,17 +133,23 @@ const DeskHome = ({ pageProps }) => {
         </div>
         <div className="self-stretch flex flex-row items-center justify-center flex-wrap content-start gap-4 max-w-full text-left text-xl ">
           <Swiper
-            // style={{backgroundColor:"green",border:"1px solid red"}}
             modules={[Navigation]}
             spaceBetween={20}
-            slidesPerView={3}
-            navigation
+            slidesPerView={1}
+            navigation={{
+              prevEl: prevButtonRef.current,
+              nextEl: nextButtonRef.current,
+            }}
+            onBeforeInit={(swiper) => {
+              swiper.params.navigation.prevEl = prevButtonRef.current;
+              swiper.params.navigation.nextEl = nextButtonRef.current;
+            }}
             breakpoints={{
               640: { slidesPerView: 1 },
               768: { slidesPerView: 2 },
               1024: { slidesPerView: 3 },
             }}
-            className="w-full max-w-full "
+            className="w-full max-w-full"
           >
             {packagesData?.map((item) => (
               // <Card
@@ -167,7 +189,7 @@ const DeskHome = ({ pageProps }) => {
                         </div>
                       </div>
                       <div className={styles.text1}>
-                      {item.short_detail}
+                        {item.short_detail}
                       </div>
                       <div className={styles.details1}>
                         <div className={styles.content4}>

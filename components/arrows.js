@@ -3,7 +3,8 @@ import Image from "next/image";
 import PropTypes from "prop-types";
 import styles from "./arrows.module.css";
 
-const Arrows = ({ className = "", arrowsHeight, fearrowUp }) => {
+const Arrows = ({ className = "", arrowsHeight, fearrowUp, nextButtonRef }) => {
+  console.log("arrowsHeight", nextButtonRef);
   const arrowsStyle = useMemo(() => {
     return {
       height: arrowsHeight,
@@ -19,6 +20,7 @@ const Arrows = ({ className = "", arrowsHeight, fearrowUp }) => {
         height={24}
         alt=""
         src={fearrowUp}
+        ref={nextButtonRef}
       />
     </div>
   );

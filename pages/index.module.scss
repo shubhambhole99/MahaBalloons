@@ -13,11 +13,43 @@
   font-weight: 700;
   font-family: inherit;
 }
+.fearrowUpIcon {
+  height: 24px;
+  width: 24px;
+  position: relative;
+  overflow: hidden;
+  flex-shrink: 0;
+  object-fit: contain;
+  transition: color 0.3s ease; /* Add transition for smooth color change */
+}
+
+.fearrowUpIcon:hover {
+  color: green; /* Change the icon color to green on hover */
+}
+
+.arrows {
+  border-radius: 50px;
+  border: 1px solid #7ab342;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  padding: 12px;
+  transition: background-color 0.3s ease, border-color 0.3s ease; /* Add transition for smooth hover effect */
+}
+
+.arrows:hover {
+  background-color: #7ab342; /* Change background color to green on hover */
+  border-color: #7ab342; /* Change border color to green on hover */
+}
+
 .arrowsIcon {
   width: 48px;
   border-radius: 50px;
   max-height: 100%;
   object-fit: contain;
+  position: relative;
+  overflow: hidden;
 }
 .sliderButtons {
   display: flex;
@@ -65,7 +97,7 @@
   align-items: center;
   justify-content: center;
   padding: 8px 16px;
-  color: #fff;
+  color: #000;
 }
 .thu08Aug {
   height: 24px;
