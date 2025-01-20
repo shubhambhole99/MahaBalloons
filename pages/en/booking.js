@@ -6,7 +6,7 @@ import Step4 from "/components/Booking/Step4/Index";
 import TotalInfo from "/components/Booking/TotalInfo/Index";
 import FooterB from "/components/Booking/Footer/Index";
 // import DetailsForm from "/components/Booking/DetailsForm";
-import AddressForm from "/components/Booking/AddressForm";
+import AddressForm from "/components/Booking/AddressForm/Index";
 import { Container } from "react-bootstrap";
 import Modal from "react-bootstrap/Modal";
 import { useDispatch, useSelector } from "react-redux";
