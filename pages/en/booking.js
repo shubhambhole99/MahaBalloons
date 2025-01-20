@@ -1,12 +1,12 @@
 import React, { useEffect, useState } from "react";
 import TopBar from "/components/Booking/TopBar/Index";
 import Step1 from "/components/Booking/Step1/Index"; //also Step 2
-import Step3 from "/components/Booking/Step3/Index";
+// import Step3 from "/components/Booking/Step3/Index";
 import Step4 from "/components/Booking/Step4/Index";
 import TotalInfo from "/components/Booking/TotalInfo/Index";
 import FooterB from "/components/Booking/Footer/Index";
-import DetailsForm from "/components/Booking/DetailsForm";
-import AddressForm from "/components/Booking/AddressForm";
+// import DetailsForm from "/components/Booking/DetailsForm";
+// import AddressForm from "/components/Booking/AddressForm";
 import { Container } from "react-bootstrap";
 import Modal from "react-bootstrap/Modal";
 import { useDispatch, useSelector } from "react-redux";
