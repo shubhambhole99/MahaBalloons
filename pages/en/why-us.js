@@ -8,9 +8,11 @@ import BtnLearn from "../../components/btn-learn";
 import FAQ from "../../components/f-a-q";
 import Footer from "../../components/footer";
 import styles from "../desk-about.module.css";
+import whyusData from "/Db/whyus";
+
 // import styles from "../desk-about.css";
 import { useSearchParams } from "next/navigation";
-
+// import FAQ from "../../components/Faqs/Index"
 const DeskAbout = () => {
   const params=useSearchParams()
   console.log(params.get("booking_date"))
@@ -501,7 +503,10 @@ const DeskAbout = () => {
           </div>
         </div>
       </section>
-      <FAQ />
+      <FAQ 
+      content={whyusData?.faqsList}
+      title={"Frequently Asked Questions "}
+      />
       <Footer
         icon="/icon-20@2x.png"
         iconFacebook="/icon--facebook11.svg"

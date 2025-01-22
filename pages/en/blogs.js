@@ -8,8 +8,33 @@ import TextInput from "../../components/text-input";
 import Button from "../../components/button";
 import styles from "../desk-blogs.module.css";
 import FrameComponent from "../../components/frame-component";
+import FAQ from "../../components/f-a-q";
+
 // import "../desk-blogs.module.css"
 const DeskBlogs = () => {
+  
+  let faqsData = [
+    {
+      id: 0,
+      qes: {en:"Why should I fly in a hot air balloon in Dubai?"},
+      ans: {en:"Undoubtedly, one of the best ways to view the beautiful scenery of the rejuvenating desert versus the magic of Dubai skyline is by a Hot Air Balloon Ride. You can enjoy what a wonderful comfort is to be lightly lifted off the ground in a hot air balloon ride."},
+    },
+    {
+      id: 0,
+      qes: {en:"Do you sell gifts or souvenirs for a hot air balloon flight?"},
+      ans: {en:"Yes indeed! Sure, you can take an enormous variety of gifts, mementos and souvenirs as a proof of having taken the hot air balloon uae. Carry back trendy merchandise by your side with you as a souvenir of your great ride."},
+    },
+    {
+      id: 0,
+      qes: {en:"How do I get to the take-off site?"},
+      ans: {en:"We always know in our hearts to help you with your travel plans with all the questions for directions. The transport team will give detailed on how conveyance will be scheduled."},
+    },
+    {
+      id: 0,
+      qes: {en:"What happens if the weather is bad?"},
+      ans: {en:"For us, security is the foremost. If the weather is not flight-compatible, we can reschedule your flight for a time when things are deemed best. Our weather experts forecast 24/7 to ensure smooth and safe experience for our beloved passengers."},
+    },
+  ];
   const onAccordionHeaderClick = useCallback((event) => {
     const element = event.target;
 
@@ -23,11 +48,11 @@ const DeskBlogs = () => {
       accItem?.parentElement?.previousElementSibling;
     const siblingContainerAccItem = accItem?.hasAttribute("data-acc-original")
       ? accItem?.nextElementSibling ||
-        nextOuterSibling?.querySelector("[data-acc-item]") ||
-        nextOuterSibling
+      nextOuterSibling?.querySelector("[data-acc-item]") ||
+      nextOuterSibling
       : accItem?.previousElementSibling ||
-        prevOuterSibling?.querySelector("[data-acc-item]") ||
-        prevOuterSibling;
+      prevOuterSibling?.querySelector("[data-acc-item]") ||
+      prevOuterSibling;
     const siblingAccItem =
       siblingContainerAccItem?.querySelector("[data-acc-item]") ||
       siblingContainerAccItem;
@@ -85,7 +110,7 @@ const DeskBlogs = () => {
     <div className={styles.deskBlogs}>
       <header className={styles.header}>
         <div className={styles.banner}>
-          <FrameComponent/>
+          <FrameComponent />
           {/* <div className={styles.frameParent}>
             <div className={styles.mahaBalloonAdventuresLogo2Wrapper}>
               <Image
@@ -393,189 +418,11 @@ const DeskBlogs = () => {
           </div>
         </div>
       </section>
-      <section className={styles.faq}>
-        <div className={styles.container1}>
-          <Image
-            className={styles.placeholderImageIcon2}
-            width={600}
-            height={418}
-            alt=""
-            src="/placeholder-image1@2x.png"
-          />
-          <div className={styles.details}>
-            <div className={styles.content12}>
-              <h1 className={styles.frequentlyAskedQuestions}>
-                Frequently Asked Questions
-              </h1>
-            </div>
-            <div className={styles.accordion} data-acc-group>
-              <AccordionItem3 />
-              <div
-                className={styles.accordionItemClose}
-                data-acc-item
-                data-acc-header
-                onClick={onAccordionHeaderClick}
-              >
-                <div className={styles.question}>
-                  <div className={styles.question1}>
-                    Why should I fly in a hot air balloon in Dubai?
-                  </div>
-                  <Image
-                    className={styles.icon}
-                    loading="lazy"
-                    width={32}
-                    height={32}
-                    alt=""
-                    src="/icon-24@2x.png"
-                  />
-                </div>
-                <div className={styles.answer}>
-                  <div className={styles.aboutUs}>
-                    Yes indeed! Sure, you can take an enormous variety of gifts,
-                    mementos and souvenirs as a proof of having taken the hot
-                    air balloon uae. Carry back trendy merchandise by your side
-                    with you as a souvenir of your great ride.
-                  </div>
-                </div>
-                <div className={styles.accordionContent} />
-                <div className={styles.div} />
-              </div>
-              <AccordionItem2
-                accordionItemBorderBottom="1px solid rgba(0, 0, 0, 0.16)"
-                question="Do you sell gifts or souvenirs for a hot air balloon flight?"
-                icon="/icon-24@2x.png"
-                text="Yes indeed! Sure, you can take an enormous variety of gifts, mementos and souvenirs as a proof of having taken the hot air balloon uae. Carry back trendy merchandise by your side with you as a souvenir of your great ride."
-              />
-              <div
-                className={styles.accordionItemOpen}
-                data-acc-item
-                data-acc-open
-              >
-                <div
-                  className={styles.question2}
-                  data-acc-header
-                  onClick={onAccordionHeaderClick}
-                >
-                  <div className={styles.question1}>
-                    Do you sell gifts or souvenirs for a hot air balloon flight?
-                  </div>
-                  <Image
-                    className={styles.icon1}
-                    loading="lazy"
-                    width={32}
-                    height={32}
-                    alt=""
-                    src="/icon.svg"
-                  />
-                </div>
-                <div className={styles.accordionContent1} data-acc-content>
-                  <div className={styles.container2}>
-                    <div className={styles.answer1}>
-                      <div className={styles.text2}>
-                        Undoubtedly, one of the best ways to view the beautiful
-                        scenery of the rejuvenating desert versus the magic of
-                        Dubai skyline is by a Hot Air Balloon Ride. You can
-                        enjoy what a wonderful comfort is to be lightly lifted
-                        off the ground in a hot air balloon ride.
-                      </div>
-                    </div>
-                  </div>
-                </div>
-                <div className={styles.accordionContent} />
-                <div className={styles.div} />
-              </div>
-              <AccordionItem2
-                accordionItemBorderBottom="1px solid rgba(0, 0, 0, 0.16)"
-                question="How do I get to the take-off site?"
-                icon="/icon-24@2x.png"
-                text="We always know in our hearts to help you with your travel plans with all the questions for directions. The transport team will give detailed on how conveyance will be scheduled."
-              />
-              <div
-                className={styles.accordionItemOpen}
-                data-acc-item
-                data-acc-open
-              >
-                <div
-                  className={styles.question2}
-                  data-acc-header
-                  onClick={onAccordionHeaderClick}
-                >
-                  <div className={styles.question1}>
-                    How do I get to the take-off site?
-                  </div>
-                  <Image
-                    className={styles.icon1}
-                    loading="lazy"
-                    width={32}
-                    height={32}
-                    alt=""
-                    src="/icon.svg"
-                  />
-                </div>
-                <div className={styles.accordionContent1} data-acc-content>
-                  <div className={styles.container2}>
-                    <div className={styles.answer1}>
-                      <div className={styles.text2}>
-                        Undoubtedly, one of the best ways to view the beautiful
-                        scenery of the rejuvenating desert versus the magic of
-                        Dubai skyline is by a Hot Air Balloon Ride. You can
-                        enjoy what a wonderful comfort is to be lightly lifted
-                        off the ground in a hot air balloon ride.
-                      </div>
-                    </div>
-                  </div>
-                </div>
-                <div className={styles.accordionContent} />
-                <div className={styles.div} />
-              </div>
-              <AccordionItem2
-                accordionItemBorderBottom="unset"
-                question="What happens if the weather is bad?"
-                icon="/icon-24@2x.png"
-                text="For us, security is the foremost. If the weather is not flight-compatible, we can reschedule your flight for a time when things are deemed best. Our weather experts forecast 24/7 to ensure smooth and safe experience for our beloved passengers."
-              />
-              <div
-                className={styles.accordionItemOpen}
-                data-acc-item
-                data-acc-open
-              >
-                <div
-                  className={styles.question2}
-                  data-acc-header
-                  onClick={onAccordionHeaderClick}
-                >
-                  <div className={styles.question1}>
-                    What happens if the weather is bad?
-                  </div>
-                  <Image
-                    className={styles.icon1}
-                    loading="lazy"
-                    width={32}
-                    height={32}
-                    alt=""
-                    src="/icon.svg"
-                  />
-                </div>
-                <div className={styles.accordionContent1} data-acc-content>
-                  <div className={styles.container2}>
-                    <div className={styles.answer1}>
-                      <div className={styles.text2}>
-                        Undoubtedly, one of the best ways to view the beautiful
-                        scenery of the rejuvenating desert versus the magic of
-                        Dubai skyline is by a Hot Air Balloon Ride. You can
-                        enjoy what a wonderful comfort is to be lightly lifted
-                        off the ground in a hot air balloon ride.
-                      </div>
-                    </div>
-                  </div>
-                </div>
-                <div className={styles.accordionContent} />
-                <div className={styles.div} />
-              </div>
-            </div>
-          </div>
-        </div>
-      </section>
+      <FAQ
+        content={faqsData}
+        title={"Frequently Asked Questions "}
+      />
+
       <footer className={styles.footer}>
         <div className={styles.content13}>
           <div className={styles.links}>

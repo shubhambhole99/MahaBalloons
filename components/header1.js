@@ -7,8 +7,8 @@ const Header1 = ({ className = "" }) => {
   return (
     <div className={[styles.header, className].join(" ")}>
       <div className={styles.banner}>
-        <header className={styles.mahaBalloonAdventuresLogo2Parent}>
           <FrameComponent/>
+        <header className={styles.mahaBalloonAdventuresLogo2Parent}>
           {/* <Image
             className={styles.mahaBalloonAdventuresLogo2}
             loading="lazy"

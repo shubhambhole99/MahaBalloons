@@ -1,4 +1,6 @@
 import { useCallback } from "react";
+import React, { useState } from "react";
+
 import Image from "next/image";
 import FrameComponent3 from "../../components/frame-component3";
 import BtnLearn from "../../components/btn-learn";
@@ -6,102 +8,130 @@ import FAQ3 from "../../components/f-a-q3";
 import TextInput from "../../components/text-input";
 import Button from "../../components/button";
 import styles from "../desk-contact-us.module.css";
+import FAQ from "../../components/f-a-q";
+import contactData from "/Db/contact";
+import { toast } from "react-toastify";
+import { ToastContainer } from "react-toastify";
+import "react-toastify/dist/ReactToastify.min.css";
+import { contactUs } from "/api/commonApi";
 
 const DeskContactUs = () => {
-  const onAccordionHeaderClick = useCallback((event) => {
-    const element = event.target;
+  const [formData, setFormData] = useState({});
+  const [checkTerms, setCheckTerms] = useState(false);
+  const [isLoaidng, setIsLoading] = useState(false);
+ 
+  const handleChange = (e) => {
+    setFormData((prev) => ({ ...prev, [e.target.name]: e.target.value }));
+  };
 
-    const accItem = element.closest("[data-acc-item]") || element;
-    const accContent = accItem.querySelector("[data-acc-content]");
-    const isOpen = accItem.hasAttribute("data-acc-open");
-    const nextOuterSibling =
-      accItem?.nextElementSibling || accItem?.parentElement?.nextElementSibling;
-    const prevOuterSibling =
-      accItem?.previousElementSibling ||
-      accItem?.parentElement?.previousElementSibling;
-    const siblingContainerAccItem = accItem?.hasAttribute("data-acc-original")
-      ? accItem?.nextElementSibling ||
-        nextOuterSibling?.querySelector("[data-acc-item]") ||
-        nextOuterSibling
-      : accItem?.previousElementSibling ||
-        prevOuterSibling?.querySelector("[data-acc-item]") ||
-        prevOuterSibling;
-    const siblingAccItem =
-      siblingContainerAccItem?.querySelector("[data-acc-item]") ||
-      siblingContainerAccItem;
-
-    if (!siblingAccItem) return;
-    const originalDisplay = "flex";
-    const siblingDisplay = "flex";
-
-    const openStyleObject = {
-      "grid-template-rows": "1fr",
-    };
-    const closeStyleObject = {
-      "padding-top": "0px",
-      "padding-bottom": "0px",
-      "margin-bottom": "0px",
-      "margin-top": "0px",
-      "grid-template-rows": "0fr",
-    };
-
-    function applyStyles(element, styleObject) {
-      Object.assign(element.style, styleObject);
+  const handleSubmit = async () => {
+    console.log("formData: ", formData);
+    if (!formData?.name) {
+      toast.info("Please fill your First name");
+      return;
+    }
+    if (!formData?.last_name) {
+      toast.info("Please fill your Last name");
+      return;
+    }
+    if (!formData?.email) {
+      toast.info("Please fill your email");
+      return;
+    }
+    if (!/^[A-Z0-9._%+-]+@[A-Z0-9.-]+\.[A-Z]{2,4}$/i.test(formData?.email)) {
+      toast.info("Please enter a valid email");
+      return;
+    }
+    if (!formData?.phone) {
+      toast.info("Please fill your phone");
+      return;
+    }
+    if (!checkTerms) {
+      toast.info("Please Accept our Terms");
+      return;
     }
 
-    function removeStyles(element, styleObject) {
-      Object.keys(styleObject).forEach((key) => {
-        element?.style.removeProperty(key);
-      });
-    }
-
-    if (isOpen) {
-      removeStyles(accContent, openStyleObject);
-      applyStyles(accContent, closeStyleObject);
-
-      setTimeout(() => {
-        if (accItem) {
-          accItem.style.display = "none";
-          siblingAccItem.style.display = siblingDisplay;
-        }
-      }, 100);
-    } else {
-      if (accItem) {
-        accItem.style.display = "none";
-        siblingAccItem.style.display = originalDisplay;
+    setIsLoading(true);
+    try {
+      const response = await contactUs(formData);
+      console.log("🚀 ~ handleChange ~ response:", response,response.status);
+      if (response?.status == 200 || response?.status == 201) {
+        toast.success("Thank you for sharing this with us");
+        setFormData({});
+      } else {
+        toast.error("Oops!, something went wrong please try again later");
       }
-      const siblingAccContent =
-        siblingAccItem?.querySelector("[data-acc-content]");
-      setTimeout(() => {
-        removeStyles(siblingAccContent, closeStyleObject);
-        applyStyles(siblingAccContent, openStyleObject);
-      }, 1);
+    } catch (err) {
+      console.log("Fomr Error: ", err);
+    } finally {
+      setIsLoading(false);
     }
-  }, []);
+  };
+
 
   return (
     <div className={styles.deskContactUs}>
       <FrameComponent3 />
+      <ToastContainer/>
       <section className={styles.formContainerParent}>
+
+
         <div className={styles.formContainer}>
+
+
+
           <div className={styles.formFields}>
             <div className={styles.formInputs}>
               <div className={styles.inputRows}>
                 <div className={styles.name}>Name</div>
                 <div className={styles.textInput}>
-                  <div className={styles.placeholder}>Placeholder</div>
+                  <input
+                    className="inputField"
+                    name="name"
+                    type="text"
+                    onChange={handleChange}
+                    value={formData?.first_name}
+                  />
+
                 </div>
+                <div className={styles.name}>Last Name</div>
+                <div className={styles.textInput}>
+                  <input
+                    className="inputField"
+                    name="last_name"
+                    type="text"
+                    onChange={handleChange}
+                    value={formData?.last_name}
+                  />
+
+                </div>
+
               </div>
               <div className={styles.inputRows1}>
                 <div className={styles.name}>Email</div>
                 <div className={styles.textInput}>
-                  <div className={styles.placeholder}>Placeholder</div>
+                  {/* <div className={styles.placeholder}>Placeholder</div> */}
+                  <input
+                    className="inputField"
+                    name="email"
+                    type="email"
+                    onChange={handleChange}
+                    value={formData?.email}
+                  />
                 </div>
               </div>
               <div className={styles.inputRows1}>
                 <div className={styles.name}>Phone</div>
                 <div className={styles.textInput}>
-                  <div className={styles.placeholder}>Placeholder</div>
+                  {/* <div className={styles.placeholder}>Placeholder</div> */}
+                  <input
+                    className="inputField"
+                    name="phone"
+                    type="phone"
+                    onChange={handleChange}
+                    value={formData?.phone}
+                  />
+
                 </div>
               </div>
               <div className={styles.inputRows}>
@@ -109,10 +139,27 @@ const DeskContactUs = () => {
                 <div className={styles.messageInput}>
                   <div className={styles.textInput3}>
                     <div className={styles.placeholder}>Placeholder</div>
+                    <textarea
+                      className="inputField"
+                      name="message"
+                      type="text"
+                      rows={8}
+                      onChange={handleChange}
+                      value={formData?.message}
+                    />
+
                   </div>
                   <div className={styles.checkboxRow}>
                     <div className={styles.checkboxContainer}>
-                      <div className={styles.checkbox} />
+                      {/* <div className={styles.checkbox} /> */}
+                      <input
+                        type="checkbox"
+                        id="terms"
+                        name="terms"
+                        onChange={(e) => {
+                          setCheckTerms(e.target.checked);
+                        }}
+                      />
                     </div>
                     <div className={styles.label}>
                       <span>{`I accept the `}</span>
@@ -122,10 +169,20 @@ const DeskContactUs = () => {
                 </div>
               </div>
               <div className={styles.btnLoad}>
-                <div className={styles.submit}>Submit</div>
+                <div
+                style={{
+                  cursor:"pointer"
+                }}
+                   onClick={handleSubmit}
+                  disabled={isLoaidng}
+                  className={styles.submit}>{isLoaidng ? "Submitting" : "Submit"}
+                </div>
               </div>
+              <br/>
             </div>
           </div>
+
+
           <div className={styles.cta}>
             <div className={styles.container}>
               <div className={styles.column}>
@@ -169,7 +226,12 @@ const DeskContactUs = () => {
               </div>
             </div>
           </div>
-          <FAQ3 />
+
+          <FAQ
+            content={contactData?.faqsList}
+            title={"Frequently Asked Questions "}
+          />
+
           <footer className={styles.footer}>
             <div className={styles.content}>
               <div className={styles.links}>
@@ -270,7 +332,6 @@ const DeskContactUs = () => {
                 data-acc-item
                 data-acc-header
                 data-acc-original
-                onClick={onAccordionHeaderClick}
               >
                 <div className={styles.credits1}>
                   <div className={styles.moreInformations}>
@@ -293,7 +354,6 @@ const DeskContactUs = () => {
                 <div
                   className={styles.creditsOpen}
                   data-acc-header
-                  onClick={onAccordionHeaderClick}
                 >
                   <div className={styles.credits1}>
                     <div className={styles.moreInformations}>
@@ -322,7 +382,6 @@ const DeskContactUs = () => {
                 data-acc-item
                 data-acc-header
                 data-acc-original
-                onClick={onAccordionHeaderClick}
               >
                 <div className={styles.divider} />
                 <div className={styles.row}>
@@ -405,7 +464,6 @@ const DeskContactUs = () => {
                 <div
                   className={styles.creditsOpen}
                   data-acc-header
-                  onClick={onAccordionHeaderClick}
                 >
                   <div className={styles.credits1}>
                     <div className={styles.moreInformations}>

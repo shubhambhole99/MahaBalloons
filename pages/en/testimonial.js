@@ -9,6 +9,8 @@ import TextInput from "../../components/text-input";
 import Button from "../../components/button";
 import styles from "../desk-testimonials.module.css";
 import FrameComponent from "../../components/frame-component";
+import FAQ from "../../components/f-a-q";
+import testimonial from "/Db/testimonial";
 
 const DeskTestimonials = () => {
   const onAccordionHeaderClick = useCallback((event) => {
@@ -24,11 +26,11 @@ const DeskTestimonials = () => {
       accItem?.parentElement?.previousElementSibling;
     const siblingContainerAccItem = accItem?.hasAttribute("data-acc-original")
       ? accItem?.nextElementSibling ||
-        nextOuterSibling?.querySelector("[data-acc-item]") ||
-        nextOuterSibling
+      nextOuterSibling?.querySelector("[data-acc-item]") ||
+      nextOuterSibling
       : accItem?.previousElementSibling ||
-        prevOuterSibling?.querySelector("[data-acc-item]") ||
-        prevOuterSibling;
+      prevOuterSibling?.querySelector("[data-acc-item]") ||
+      prevOuterSibling;
     const siblingAccItem =
       siblingContainerAccItem?.querySelector("[data-acc-item]") ||
       siblingContainerAccItem;
@@ -133,7 +135,10 @@ const DeskTestimonials = () => {
           </div>
         </div>
       </section>
-      <FAQ2 />
+      <FAQ
+        content={testimonial?.faqsList}
+        title={"Frequently Asked Questions "}
+      />
       <footer className={styles.footer}>
         <div className={styles.content}>
           <div className={styles.links}>

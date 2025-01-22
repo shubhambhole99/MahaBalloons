@@ -202,3 +202,133 @@
     box-sizing: border-box;
   }
 }
+
+.placeholderImageIcon {
+  align-self: stretch;
+  height: 300px;
+  position: relative;
+  border-radius: 16px;
+  max-width: 100%;
+  overflow: hidden;
+  flex-shrink: 0;
+  object-fit: cover;
+}
+.text {
+  position: relative;
+  line-height: 150%;
+  font-weight: 600;
+}
+.container {
+  border-radius: 50px;
+  background-color: #eee;
+  display: flex;
+  flex-direction: row;
+  align-items: flex-start;
+  justify-content: flex-start;
+  padding: 4px 11px 4px 12px;
+}
+.info {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: flex-start;
+  gap: 16px;
+}
+.heading {
+  margin: 0;
+  position: relative;
+  font-size: inherit;
+  line-height: 140%;
+  font-weight: 600;
+  font-family: inherit;
+}
+.text2 {
+  position: relative;
+  font-size: 16px;
+  line-height: 150%;
+}
+.content1 {
+  align-self: stretch;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: flex-start;
+  gap: 8px;
+  flex-shrink: 0;
+  font-size: 24px;
+}
+.content {
+  align-self: stretch;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: flex-start;
+  gap: 16px;
+}
+.card {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: flex-start;
+  gap: 24px;
+  max-width: 100%;
+  text-align: left;
+  font-size: 14px;
+  color: #000;
+  font-family: Roboto;
+}
+
+@media screen and (max-width: 450px) {
+  .heading {
+    font-size: 19px;
+    line-height: 27px;
+  }
+}
+
+
+.arrows {
+  border-radius: 50px;
+  border: 1px solid #7ab342;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 12px;
+  transition: background-color 0.3s ease, border-color 0.3s ease;
+}
+
+.arrows:hover {
+  background-color: #7ab342;
+  border-color: #7ab342;
+}
+
+.sliderButtons {
+  display: flex;
+  gap: 15px;
+}
+
+.fearrowUpIcon {
+  height: 24px;
+  width: 24px;
+  position: relative;
+  overflow: hidden;
+  flex-shrink: 0;
+  object-fit: contain;
+  transition: color 0.3s ease;
+}
+
+.fearrowUpIcon:hover {
+  color: green;
+}
+
+
+@media screen and (max-width: 750px) {
+  .quickBooking {
+    width: 80%;
+    padding: 25px 40px;
+  }
+
+  .sliderButtons {
+    justify-content: center;
+  }
+}
+

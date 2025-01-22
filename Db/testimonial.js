@@ -1,4 +1,4 @@
-import imgt1 from "src/assets/HomePage/testimonial.jpg";
+import imgt1 from "/assets/HomePage/testimonial.jpg";
 
 let testimonial = {
   testimonialList: [

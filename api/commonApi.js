@@ -54,7 +54,17 @@ export const makeBooking = (formData) => {
 export const getallusers = () => {
   return API.get("/users");
 };
-export const contactUs = (formData) => {
+export const contactUs = async (formData) => {
+  try {
+    const response = await axios.post(
+      'https://pign230wc2.execute-api.us-east-1.amazonaws.com/prod/api/contacts'
+    ,formData);
+    // console.log(response.data);
+    return response; // Return the data from the API
+  } catch (error) {
+    console.error('Error fetching data:', error);
+    throw error; // Throw the error to handle it later
+  }
   return API.post("/contacts", formData);
 };
 

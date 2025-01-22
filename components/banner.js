@@ -47,7 +47,7 @@ const Banner = ({
     };
   }, [linkTwoWidth, linkTwoDisplay]);
 
-  return (
+  return (<>
     <div className={[styles.banner, className].join(" ")} style={bannerStyle}>
       <FrameComponent mahaBalloonAdventuresLogo="/maha-balloon-adventures-logo-2@2x.png" />
       <div className={styles.frameParent}>
@@ -112,6 +112,7 @@ const Banner = ({
         </div>
       </div> */}
     </div>
+    </>
   );
 };
 

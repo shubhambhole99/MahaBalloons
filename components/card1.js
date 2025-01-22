@@ -19,7 +19,7 @@ const Card1 = ({
 
   return (
     <div className={[styles.card, className].join(" ")}>
-      <Image
+      <img
         className={styles.placeholderImageIcon}
         width={400}
         height={300}

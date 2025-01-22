@@ -303,14 +303,33 @@ const FrameComponent3 = ({ className = "" }) => {
               </div>
             </div>
           </div>
-          <Image
+          {/* MAP */}
+          <div 
+
+          className="map">
+            <iframe
+            style={{
+              width:"1300px",
+              height:"800px",
+              border:"1px solid grey"
+            }}
+              className={styles.iFramgeMap}
+              src="https://www.google.com/maps/embed?pb=!1m23!1m12!1m3!1d57920.9886785125!2d55.544209872160216!3d24.861739048193225!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!4m8!3e6!4m0!4m5!1s0x3ef57f936d1fe813%3A0xc7dba3988b5d01a2!2smaha%20balloon%20-%20Dubai%20-%20United%20Arab%20Emirates!3m2!1d24.8712891!2d55.5472793!5e0!3m2!1sen!2s!4v1728893796057!5m2!1sen!2s"
+              width="100"
+              height="500"
+              allowfullscreen=""
+              loading="lazy"
+              referrerpolicy="no-referrer-when-downgrade"
+            ></iframe>
+          </div>
+          {/* <Image
             className={styles.placeholderImageIcon2}
             loading="lazy"
             width={1280}
             height={500}
             alt=""
             src="/placeholder-image-22@2x.png"
-          />
+          /> */}
         </div>
       </div>
     </section>
