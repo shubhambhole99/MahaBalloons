@@ -508,14 +508,17 @@
   .content10 {
     flex-wrap: wrap;
   }
-
   .blogWrapper {
     padding-bottom: 25px;
     box-sizing: border-box;
   }
 } 
 
-
+.child1{
+  /* border:1px solid red; */
+  width: 1550px;
+  margin:auto;
+}
 
 
 

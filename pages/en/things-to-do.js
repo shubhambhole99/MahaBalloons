@@ -22,6 +22,7 @@ import Slider from "../../components/Sliders/Discoverthebestthings/Slider";
 import BlogPosts from "../../components/blog-posts"
 // import content from "/Db/thingsTodo";
 import FAQ from "../../components/f-a-q";
+import Gift from "../../components/Giftanunforgettable/index"
 
 const DeskThingsToDo = () => {
   const prevButtonRef = useRef(null);
@@ -77,6 +78,7 @@ const DeskThingsToDo = () => {
         /> */}
       </Helmet>
       <Header1 />
+      <div className={styles.child1}>
       <Slider
         data={content?.sightSeeing1}
         title={{ en: "Discover the Best Things to Do in Dubai" }}
@@ -96,53 +98,12 @@ const DeskThingsToDo = () => {
       
 
 
+     <Gift/>
 
       <div className={styles.deskThingsToDo}>
 
 
      
-        <section className={styles.cta}>
-          <div className={styles.container}>
-            <div className={styles.column}>
-              <h1 className={styles.heading4}>
-                <p
-                  className={styles.giftAnUnforgettable}
-                >{`Gift an Unforgettable Hot Air `}</p>
-                <p className={styles.giftAnUnforgettable}>
-                  Balloon Adventure Today !!
-                </p>
-              </h1>
-            </div>
-            <div className={styles.column1}>
-              <div className={styles.text4}>
-                Customize and Gift a Hot Air Balloon Package for your loved one
-                and get a Free Adventure for Yourself ! for a limited Time Only !!
-              </div>
-              <div className={styles.actions}>
-                <BtnLearn
-                  showBtnLearn
-                  btnLearnBorder="1px solid #fff"
-                  btnLearnBackgroundColor="#fff"
-                  button="Book Now"
-                  buttonHeight="24px"
-                  buttonDisplay="inline-block"
-                  buttonColor="#000"
-                  buttonWidth="unset"
-                />
-                <BtnLearn
-                  showBtnLearn
-                  btnLearnBorder="1px solid #fff"
-                  btnLearnBackgroundColor="unset"
-                  button="WhatsApp Us"
-                  buttonHeight="24px"
-                  buttonDisplay="inline-block"
-                  buttonColor="#fff"
-                  buttonWidth="unset"
-                />
-              </div>
-            </div>
-          </div>
-        </section>
           <FAQ 
               content={content?.faqsList}
               title={"Frequently Asked Questions "}
@@ -191,7 +152,8 @@ const DeskThingsToDo = () => {
                 <Arrows arrowsHeight="48px" fearrowUp="/fearrowup@2x.png" />
               </div>
             </div> */}
-          
+          </div>
+          </div>
         <Footer
           icon="/icon-25@2x.png"
           iconFacebook="/icon--facebook.svg"
@@ -200,7 +162,6 @@ const DeskThingsToDo = () => {
           iconLinkedIn="/icon--linkedin.svg"
           iconYoutube="/icon--youtube.svg"
         />
-    </div>
     </>
   );
 };

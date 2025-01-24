@@ -390,6 +390,7 @@
 }
 .giftAnUnforgettable {
   margin: 0;
+  // border:1px solid red
 }
 .heading4 {
   margin: 0;
@@ -401,6 +402,7 @@
   font-family: inherit;
 }
 .column4 {
+  // border:1px solid red;
   flex: 1;
   display: flex;
   flex-direction: column;
@@ -432,6 +434,9 @@
   font-size: 16px;
 }
 .container2 {
+  // border:1px solid red;
+  width: 1400px;
+  margin: 0 auto;
   align-self: stretch;
   display: flex;
   flex-direction: row;
@@ -440,27 +445,38 @@
   gap: 60px;
   max-width: 100%;
 }
+.parents{
+  height: 300px;
+}
 .cta {
+  // isolation: isoslate;
+  // border: 1px solid red;
+  position: absolute;
+  left: 0;
+  width: 100vw;
+  height: 300px;
+  // z-index: 4;
+  // margin-left: -800px;
   align-self: stretch;
   overflow: hidden;
   display: flex;
-  flex-direction: column;
-  align-items: flex-start;
-  justify-content: flex-start;
-  padding: 80px;
+  // flex-direction: column;
+  // align-items: flex-start;
+  // justify-content: flex-start;
+  padding: 80px ;
   box-sizing: border-box;
   background-image: url("/cta@3x.png");
   background-size: cover;
   background-repeat: no-repeat;
   background-position: top;
-  max-width: 100%;
   text-align: left;
   font-size: 40px;
   color: #fff;
   font-family: Roboto;
 }
 .deskAbout {
-  width: 100%;
+  /* width:50%; */
+  /* width: 100%; */
   position: relative;
   background-color: #fff;
   overflow: hidden;
@@ -474,6 +490,11 @@
   font-size: 40px;
   color: #000;
   font-family: Roboto;
+}
+.child1{
+  // border: 1px solid red;
+  width: 1550px;
+  margin:auto;
 }
 
 @media screen and (max-width: 1350px) {

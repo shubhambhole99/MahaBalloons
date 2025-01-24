@@ -51,16 +51,7 @@ const Banner = ({
     <div className={[styles.banner, className].join(" ")} style={bannerStyle}>
       <FrameComponent mahaBalloonAdventuresLogo="/maha-balloon-adventures-logo-2@2x.png" />
       <div className={styles.frameParent}>
-        <div className={styles.mahaBalloonAdventuresLogo2Parent}>
-          {/* <Image
-            className={styles.mahaBalloonAdventuresLogo2}
-            loading="lazy"
-            width={140}
-            height={140}
-            alt=""
-            src={mahaBalloonAdventuresLogo}
-          /> */}
-        </div>
+      
         <div className={styles.heroContent}>
           <h1 className={styles.mediumLengthHero}>
             {mediumLengthHeroHeadlineGoes}
@@ -70,47 +61,7 @@ const Banner = ({
           </div>
         </div>
       </div>
-      {/* <div className={styles.userActions}>
-        <div className={styles.frameGroup}>
-          <div className={styles.userAccountParent}>
-            <div className={styles.userAccount}>
-              <Image
-                className={styles.wishIcon}
-                loading="lazy"
-                width={44}
-                height={44}
-                alt=""
-                src={wish}
-              />
-              <Image
-                className={styles.wishIcon}
-                loading="lazy"
-                width={44}
-                height={44}
-                alt=""
-                src={account}
-              />
-            </div>
-            <div className={styles.notificationIcon}>
-              <div className={styles.iconContainer}>
-                <Image
-                  className={styles.svgIcon}
-                  width={22}
-                  height={22}
-                  alt=""
-                  src="/svg.svg"
-                />
-                <a className={styles.empty}>0</a>
-              </div>
-            </div>
-          </div>
-          <div className={styles.loginButtonContainer}>
-            <div className={styles.btnLogin}>
-              <div className={styles.button}>B2B Login</div>
-            </div>
-          </div>
-        </div>
-      </div> */}
+    
     </div>
     </>
   );

@@ -16,6 +16,7 @@ const Footer = ({
   const router=useRouter();
   return (
     <footer className={[styles.footer, className].join(" ")}>
+      <div className={styles.child1}>
       <div className={styles.content}>
         <div className={styles.links}>
           <div className={styles.column}>
@@ -185,6 +186,7 @@ const Footer = ({
             </div>
           </div>
         </div>
+      </div>
       </div>
     </footer>
   );

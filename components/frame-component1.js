@@ -123,9 +123,13 @@ const FrameComponent1 = ({ className = "" }) => {
     <>
     <ToastContainer/>
     <section className={[styles.headerParent, className].join(" ")}>
+
       <div className={styles.header}>
+
+        {/* Banner */}
         <div className={styles.banner}>
           <FrameComponent mahaBalloonAdventuresLogo="/maha-balloon-adventures-logo-2@2x.png" />
+          {/* Start */}
           <div className={styles.mediumLengthHeroHeadlineGoParent}>
             <h1 className={styles.mediumLengthHero}>
               The Best Hot Air Balloon Experience in Dubai
@@ -353,71 +357,10 @@ const FrameComponent1 = ({ className = "" }) => {
               </>
             ) : null}
 
-{/* asds */}
-
-
-            {/* <div className={styles.filter}>
-              <div className={styles.frameParent}>
-                <div className={styles.overlayParent}>
-                  <Image
-                    className={styles.overlayIcon}
-                    width={50}
-                    height={50}
-                    alt=""
-                    src="/overlay.svg"
-                  />
-                  <div className={styles.frameWrapper}>
-                    <div className={styles.heading5WhenParent}>
-                      <div className={styles.heading5}>Date</div>
-                      <div className={styles.premiumRomantic}>
-                        August 05 ~ September 06
-                      </div>
-                    </div>
-                  </div>
-                </div>
-                <div className={styles.overlayParent}>
-                  <Image
-                    className={styles.overlayIcon}
-                    width={50}
-                    height={50}
-                    alt=""
-                    src="/overlay-1.svg"
-                  />
-                  <div className={styles.frameWrapper}>
-                    <div className={styles.heading5WhenParent}>
-                      <div className={styles.heading51}>Package Type</div>
-                      <div className={styles.premiumRomantic}>
-                        Premium ~ Romantic
-                      </div>
-                    </div>
-                  </div>
-                </div>
-              </div>
-              <div className={styles.overlayContainer}>
-                <Image
-                  className={styles.overlayIcon}
-                  width={50}
-                  height={50}
-                  alt=""
-                  src="/overlay-2.svg"
-                />
-                <div className={styles.frameWrapper}>
-                  <div className={styles.heading5WhenParent}>
-                    <div className={styles.heading5}>Guests</div>
-                    <div className={styles.premiumRomantic}>Adult ~ Child</div>
-                  </div>
-                </div>
-              </div>
-              <Image
-                className={styles.buttonIcon}
-                width={50}
-                height={50}
-                alt=""
-                src="/button.svg"
-              />
-            </div> */}
           </div>
         </div>
+
+        {/*Ends Here */}
         {/* <div className={styles.navLinkDropdown}>
           <div className={styles.linkFour}>Merchandise</div>
           <Image
@@ -600,52 +543,7 @@ const FrameComponent1 = ({ className = "" }) => {
           </div>
         </div> */}
       </div>
-      <div className={styles.logo}>
-        <div className={styles.container}>
-          <h3 className={styles.heading}>As Featured In</h3>
-          <div className={styles.content12}>
-            <Image
-              className={styles.nationalGeographicLogosvgIcon}
-              loading="lazy"
-              width={100}
-              height={29}
-              alt=""
-              src="/national-geographic-logosvg.svg"
-            />
-            <Image
-              className={styles.logosvgIcon}
-              loading="lazy"
-              width={100}
-              height={47}
-              alt=""
-              src="/logosvg.svg"
-            />
-            <Image
-              className={styles.condNastTravelerLogosvgIcon}
-              loading="lazy"
-              width={100}
-              height={42}
-              alt=""
-              src="/cond-nast-traveler-logosvg@2x.png"
-            />
-            <Image
-              className={styles.travelLeisureLogosvgIcon}
-              width={100}
-              height={23}
-              alt=""
-              src="/travel--leisure-logosvg.svg"
-            />
-            <Image
-              className={styles.afarMediaLogopngIcon}
-              loading="lazy"
-              width={100}
-              height={31}
-              alt=""
-              src="/afar-media-logopng@2x.png"
-            />
-          </div>
-        </div>
-      </div>
+     
     </section>
     </>
   );

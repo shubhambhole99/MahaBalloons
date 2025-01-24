@@ -2,7 +2,7 @@ import Image from "next/image";
 import Card from "./card";
 import Arrows from "./arrows";
 import PropTypes from "prop-types";
-import styles from "./blog-posts.module.css";
+import styles from "./blog-posts.module.scss";
 import blogDataTs from "/Db/blogs";
 import { Swiper, SwiperSlide } from "swiper/react";
 import "swiper/css";
@@ -18,9 +18,9 @@ const BlogPosts = ({ className = "" }) => {
   return (
     <section className={[styles.blogPosts, className].join(" ")}>
       <div className={styles.blogSlider}>
+      <div className={styles.child1}>
 
         {/* <div className={styles.content1}> */}
-        <div className="self-stretch flex flex-row items-center justify-center flex-wrap content-start gap-4 max-w-full text-left text-xl ">
 
           <Swiper
             modules={[Navigation]}

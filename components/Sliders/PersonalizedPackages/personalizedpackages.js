@@ -21,8 +21,9 @@ const personalizedpackages = () => {
 
     return (
         <div className={styles.quickBooking}>
+        <div className="self-stretch flex flex-row items-center justify-center flex-wrap content-start gap-4 max-w-full text-left text-xl ">
 
-            <div className="self-stretch flex flex-row items-center justify-center flex-wrap content-start gap-4 max-w-full text-left text-xl ">
+            {/* <div className={styles.child1}> */}
                 <Swiper
                            modules={[Navigation]}
                            spaceBetween={20}
@@ -120,7 +121,6 @@ const personalizedpackages = () => {
                         </SwiperSlide>
                     ))}
                 </Swiper>
-            </div>
             <div className={styles.sliderButtons}>
               <button ref={prevButtonRef} className={styles.arrows}>
                 <Image
@@ -131,7 +131,7 @@ const personalizedpackages = () => {
                   alt=""
                   src="/leftarrow.png"
                   ref={prevButtonRef} // Assigning ref to the previous button
-                />
+                  />
               </button>
               <button ref={nextButtonRef} className={styles.arrows}>
                 <Image
@@ -142,8 +142,9 @@ const personalizedpackages = () => {
                   alt=""
                   src="/fearrowup@2x.png" // Use the appropriate image for the next button
                   ref={nextButtonRef}
-                />
+                  />
               </button>
+                  </div>
             </div>
         </div>
     )

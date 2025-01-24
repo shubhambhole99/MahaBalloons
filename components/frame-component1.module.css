@@ -5,7 +5,7 @@
   margin: 0;
   width: 769px;
   position: relative;
-  font-size: inherit;
+  font-size: 3rem;
   line-height: 120%;
   font-weight: 700;
   font-family: inherit;
@@ -101,12 +101,16 @@
   color: #05073c;
 }
 .mediumLengthHeroHeadlineGoParent {
+  /* border: 1px solid green; */
+  margin:auto;
+  margin-bottom: 40%;
   display: flex;
+  width: 1400px;
   flex-direction: column;
   align-items: flex-start;
   justify-content: flex-start;
   gap: 24px;
-  max-width: 100%;
+  /* max-width: 100%; */
   font-size: 18px;
 }
 .banner {
@@ -523,7 +527,7 @@
   color:red
 }
 .bookingFieldk321 {
-  width: 100%;
+  width: 50%;
   background-color: #fff;
   border-radius: 200px;
   padding: 10px;

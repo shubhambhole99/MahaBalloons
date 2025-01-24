@@ -206,8 +206,13 @@
   justify-content: flex-start;
   gap: 60px;
   max-width: 100%;
+  margin:auto;
+  width: 1400px;
+  /* border:1px solid red; */
 }
 .faq {
+  width:100;
+  /* border:1px solid red; */
   align-self: stretch;
   background-color: #fff;
   overflow: hidden;

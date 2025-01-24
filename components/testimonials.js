@@ -124,98 +124,92 @@ Excellent service with a nice and super friendly staff. The pilots were amazing!
 
     return (
         <>
-        <section className={styles.quickBooking}>
-            <section className={styles.testimonials}>
-                <div className={styles.testimonialSlider}>
-                    <div className={styles.title}>
-                        <div className={styles.sectionTitle2}>
-                            <div className={styles.subheading2}>
-                                Customer Feedback about the best hot air balloon in Uae
-                            </div>
-                            <div className={styles.content24}>
-                                <h1 className={styles.heading13}>Customer Testimonials</h1>
-                                <div
-                                    className={styles.text}
-                                >{`Lorem ipsum dolor sit amet, consectetur adipiscing elit. `}</div>
+            <section className={styles.quickBooking}>
+                        <div className={styles.title}>
+                            <div className={styles.sectionTitle2}>
+                                <div className={styles.subheading2}>
+                                    Customer Feedback about the best hot air balloon in Uae
+                                </div>
+                                <div className={styles.content24}>
+                                    <h1 className={styles.heading13}>Customer Testimonials</h1>
+                                   
+                                </div>
                             </div>
                         </div>
-                    </div>
-                </div>
-            </section>
-          
-            <div
-                style={{
-                    // border: "1px solid red",
-                    width: "100%",
-                    // height: "100vh", // Full height for proper vertical centering
-                    // display: "flex",
-                    // justifyContent: "center",
-                    // alignItems: "center",
-                    // margin: "0 auto", // Horizontal centering within the parent container
-                }}
-            >
-                <Swiper
-                    // style={{backgroundColor:"green",border:"1px solid red"}}
-                    modules={[Navigation]}
-                    spaceBetween={20}
-                    slidesPerView={3}
-                    navigation
-                    breakpoints={{
-                        640: { slidesPerView: 1 },
-                        768: { slidesPerView: 2 },
-                        1024: { slidesPerView: 3 },
-                    }}
-                    className="w-full max-w-full "
+                 <div   
+                 className={styles.child1}
+                    // style={{
+                        // border: "1px solid red",
+                        // width: "100%",
+                        // height: "100vh", // Full height for proper vertical centering
+                        // display: "flex",
+                        // justifyContent: "center",
+                        // alignItems: "center",
+                        // margin: "0 auto", // Horizontal centering within the parent container
+                    // }}
                 >
-                    {cardData?.map((item, i) => (
-                        <>
-                            <SwiperSlide>
-                                <section className={styles.testimonials}>
-                                    <div className={styles.testimonialSlider}>
-                                        <div style={{ cursor: "pointer" }} onClick={() => handleOpen(item.videoUrl, item.thumb)} className={styles.slider}>
-                                            <Slide
-                                                slideMinWidth="unset"
-                                                slideContentBackgroundImage={`url(${item.thumb})`}
-                                                perfumes={item.author}
-                                                perfumesDisplay="unset"
-                                                perfumesMinWidth="unset"
-                                                playButton="/play-button-11.svg"
-
-                                            />
-                                        </div>
-                                    </div>
-                                </section>
-                            </SwiperSlide>
-                        </>
-                    ))}
-
-                </Swiper>
-            </div>
-            {videoLink ? (
-                <div className={styles.cstModal} ref={wrapperRef}>
-                    <div className={styles.closeIconWrapper}>
-                        <div className={styles.closeIcon} onClick={() => handleClose()}>
-                            <IoIosCloseCircle className={styles.closeIcon} size={35} />
-                        </div>
-                    </div>
-                    <video
-                        autoPlay
-                        playsInline
-                        controls
-                        preload="metadata"
-                        ref={videoRef}
+                    <Swiper
+                        // style={{backgroundColor:"green",border:"1px solid red"}}
+                        modules={[Navigation]}
+                        spaceBetween={20}
+                        slidesPerView={3}
+                        navigation
+                        breakpoints={{
+                            640: { slidesPerView: 1 },
+                            768: { slidesPerView: 2 },
+                            1024: { slidesPerView: 3 },
+                        }}
+                        className="w-full max-w-full "
                     >
-                        <source
-                            poster={videoPoster}
-                            src={videoLink}
-                            // src={ReferalVideo}
-                            type="video/mp4"
-                        />
-                        Your browser does not support the video tag.
-                    </video>
+                        {cardData?.map((item, i) => (
+                            <>
+                                <SwiperSlide>
+                                    <section className={styles.testimonials}>
+                                        <div className={styles.testimonialSlider}>
+                                            <div style={{ cursor: "pointer" }} onClick={() => handleOpen(item.videoUrl, item.thumb)} className={styles.slider}>
+                                                <Slide
+                                                    slideMinWidth="unset"
+                                                    slideContentBackgroundImage={`url(${item.thumb})`}
+                                                    perfumes={item.author}
+                                                    perfumesDisplay="unset"
+                                                    perfumesMinWidth="unset"
+                                                    playButton="/play-button-11.svg"
+
+                                                />
+                                            </div>
+                                        </div>
+                                    </section>
+                                </SwiperSlide>
+                            </>
+                        ))}
+
+                    </Swiper>
                 </div>
-            ) : null}
-  </section>
+                {videoLink ? (
+                    <div className={styles.cstModal} ref={wrapperRef}>
+                        <div className={styles.closeIconWrapper}>
+                            <div className={styles.closeIcon} onClick={() => handleClose()}>
+                                <IoIosCloseCircle className={styles.closeIcon} size={35} />
+                            </div>
+                        </div>
+                        <video
+                            autoPlay
+                            playsInline
+                            controls
+                            preload="metadata"
+                            ref={videoRef}
+                        >
+                            <source
+                                poster={videoPoster}
+                                src={videoLink}
+                                // src={ReferalVideo}
+                                type="video/mp4"
+                            />
+                            Your browser does not support the video tag.
+                        </video>
+                    </div>
+                ) : null}
+            </section>
         </>
     )
 }

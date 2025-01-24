@@ -185,17 +185,20 @@
   font-family: Inter;
 }
 .frameParent {
-  align-self: stretch;
+  /* border:1px solid red; */
+  width:1400px;
   display: flex;
-  flex-direction: row;
-  align-items: flex-start;
   justify-content: space-between;
-  max-width: 100%;
   gap: 20px;
-  text-align: left;
+  margin: auto;
+  text-align: center;
   font-size: 16px;
   color: #fff;
   font-family: Roboto;
+  /* align-items: flex-start; */
+  /* align-self: stretch; */
+  /* flex-direction: row; */
+  /* max-width: 100%; */
 }
 /* .frameParent {
   display: flex;

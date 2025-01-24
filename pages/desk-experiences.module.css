@@ -531,6 +531,9 @@
   font-size: 16px;
 }
 .container {
+  /* border: 1px solid red; */
+  margin:auto;
+  width: 1400px;
   align-self: stretch;
   display: flex;
   flex-direction: row;
@@ -539,7 +542,19 @@
   gap: 60px;
   max-width: 100%;
 }
+.parents{
+height: 300px;
+
+}
+.parent{
+ width: 1400px;
+ /* border:1px solid red; */
+ margin:auto
+
+}
+
 .cta {
+  
   align-self: stretch;
   overflow: hidden;
   display: flex;
@@ -547,6 +562,10 @@
   align-items: flex-start;
   justify-content: flex-start;
   padding: 80px;
+  position: absolute;
+  left: 0;
+  width: 100vw;
+  margin: auto;
   box-sizing: border-box;
   background-image: url("/cta@3x.png");
   background-size: cover;

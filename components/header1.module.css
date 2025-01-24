@@ -222,8 +222,10 @@
   line-height: 150%;
 }
 .hero {
-  width: 768px;
+  /* border:1px solid red; */
+  width: 1400px;
   display: flex;
+  margin:auto;
   flex-direction: column;
   align-items: flex-start;
   justify-content: flex-start;
