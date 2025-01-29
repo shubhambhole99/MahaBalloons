@@ -768,6 +768,19 @@
   line-height: normal;
   letter-spacing: normal;
 }
+.parent{
+  width: 1500px;
+  // border: 1px solid red;
+  margin: auto;
+}
+@media screen and (max-width: 1450px) {
+  .parent{
+    width: 100%;
+    // border: 1px solid red;
+    // margin: auto;
+  }
+}
+
 
 @media screen and (max-width: 1200px) {
   .container {
@@ -1018,12 +1031,6 @@
       transform: translate(-50%, -50%);
     }
   }
-}
-
-.parent{
-  width: 1500px;
-  // border: 1px solid red;
-  margin: auto;
 }
 
 

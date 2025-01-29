@@ -361,7 +361,18 @@
   letter-spacing: normal;
 }
 
+.child1{
+  /* border:1px solid red; */
+  width: 1550px;
+  margin:auto;
+}
+
 @media screen and (max-width: 1275px) {
+  .child1{
+    /* border:1px solid red; */
+    width: 100%;
+    margin:auto;
+  }
   .title {
     flex-wrap: wrap;
   }
@@ -514,11 +525,6 @@
   }
 } 
 
-.child1{
-  /* border:1px solid red; */
-  width: 1550px;
-  margin:auto;
-}
 
 
 

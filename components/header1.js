@@ -4,10 +4,10 @@ import styles from "./header1.module.css";
 import FrameComponent from "./frame-component";
 
 const Header1 = ({ className = "" }) => {
-  return (
+  return (<>
     <div className={[styles.header, className].join(" ")}>
       <div className={styles.banner}>
-          <FrameComponent/>
+        <div className="navbarspace"></div>
         <header className={styles.mahaBalloonAdventuresLogo2Parent}>
  
         </header>
@@ -20,6 +20,7 @@ const Header1 = ({ className = "" }) => {
       </div>
       
     </div>
+    </>
   );
 };
 

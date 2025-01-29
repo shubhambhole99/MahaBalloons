@@ -27,20 +27,21 @@ function Index(props) {
 
   return (
     <div className={styles.Step4DSds003j}>
-      <div className={`${styles.secTitle} ${styles.mt3}`}>Enter Passengers Details</div>
+      <div className={`${styles.secTitle} `}>Enter Passengers Details</div>
       <Row className={styles.step2Size}>
         <Col className={`${styles.colHalf} ${styles.PassengerLIStCol}`} md={8}>
           {fieldsAdults?.map((item, i) => (
-            <div className={`${styles.wrapper} ${styles.mt40}`} key={`adult-${i}`}>
-              <div className={`${styles.secTitle} ${styles.mt5}`}>Passenger Adult {i + 1}</div>
+            <div  className={`${styles.wrapper} `} key={`adult-${i}`}>
+              <div className={`${styles.secTitle} `}>Passenger Adult {i + 1}</div>
               <Row>
                 <Col xs="12" md="6">
-                  <div className={`${styles.formGroup} ${styles.mt3}`}>
+                  <div className={`${styles.formControl} ${styles.formGroup} ${styles.mt3}`}>
                     <label htmlFor="name">
                       Name <span style={{ color: "red" }}>*</span>
                     </label>
                     <div className={styles.inputGroup}>
                       <input
+                        style={{ width: "40%" }}
                         name="name"
                         type="text"
                         className={`${styles.formControl} ${styles.inputField}`}
@@ -59,6 +60,7 @@ function Index(props) {
                     </label>
                     <div className={styles.inputGroup}>
                       <input
+                        style={{ width: "40%" }}
                         name="last_name"
                         type="text"
                         className={`${styles.formControl} ${styles.inputField}`}
@@ -80,6 +82,7 @@ function Index(props) {
                   <input
                     name="email"
                     type="text"
+                    style={{ width: "40%" }}
                     className={`${styles.formControl} ${styles.inputField}`}
                     onChange={async (e) => {
                       await handleAdultChange(e, i);
@@ -106,6 +109,7 @@ function Index(props) {
                 </label>
                 <div className={styles.inputGroup}>
                   <input
+                    style={{ width: "40%" }}
                     name="weight"
                     type="number"
                     min="1"

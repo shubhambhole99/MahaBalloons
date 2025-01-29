@@ -6,6 +6,7 @@ import CalnderWraper from "./Calender/Index";
 import AsGiftCard from "./AsGiftCard/Index";
 import AsGiftCheckout from "./AsGiftCheckout/Index";
 import styles from "./styles.module.scss";
+// import "react-calendar/dist/Calendar.css";
 
 function Index(props) {
   const {
@@ -23,7 +24,7 @@ function Index(props) {
     {props?.asGiftStep == 2 ? (
       <AsGiftCheckout checkOutAmont={props?.checkOutAmont} />
     ) : (
-      <Row style={{border:"2px solid green"}}className={styles.step1Size}>
+      <Row  className={styles.step1Size}>
         <Col xs={12} className={styles.colHalf} md={8}>
           <div className={`${styles.wrapper}`}>
             <div className={styles.secTitle}>{packageval?.title}</div>
@@ -109,7 +110,7 @@ function Index(props) {
             </div>
           </div>
         </Col>
-        <Col className={styles.secTitle} md={4}>
+        <Col className={styles.colHalf} xs={12} md={8}>
           {props?.asGift ? (
             <AsGiftCard
               adultAmount={adultAmount}

@@ -49,7 +49,13 @@ const Banner = ({
 
   return (<>
     <div className={[styles.banner, className].join(" ")} style={bannerStyle}>
-      <FrameComponent mahaBalloonAdventuresLogo="/maha-balloon-adventures-logo-2@2x.png" />
+      <div
+      style={{height:'200px'}}
+      >
+
+
+      </div>
+      
       <div className={styles.frameParent}>
       
         <div className={styles.heroContent}>

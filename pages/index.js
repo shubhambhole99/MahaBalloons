@@ -15,13 +15,17 @@ import "swiper/css";
 import "swiper/css/navigation";
 import styles from "./index.module.scss";
 import Gift from "../components/Giftanunforgettable/index"
+import FrameComponent from "../components/frame-component";
+
 const DeskHome = ({ pageProps, className = "" }) => {
   return (
     <>
       <div className={styles.deskHome}>
         <ToastContainer />
+        <FrameComponent mahaBalloonAdventuresLogo="/maha-balloon-adventures-logo-2@2x.png" />
+
         <FrameComponent1 />
-        <div className={styles.parent}>
+        <div className="parent">
           <Featuredin />
           <AboutUs />
           <section className={styles.quickBooking}>
@@ -37,7 +41,7 @@ const DeskHome = ({ pageProps, className = "" }) => {
             </div>
             <Packages />
           </section>
-         <Gift/>
+          <Gift />
           <section className={styles.quickBookingWrapper}>
             <div className={styles.quickBooking1}>
               <div className={styles.sectionTitle1}>
@@ -71,16 +75,16 @@ const DeskHome = ({ pageProps, className = "" }) => {
             </div>
           </section>
           <BlogPosts />
-          </div>
-          <Footer
-            icon="/icon-20@2x.png"
-            iconFacebook="/icon--facebook12.svg"
-            iconInstagram="/icon--instagram12.svg"
-            iconX="/icon--x11.svg"
-            iconLinkedIn="/icon--linkedin11.svg"
-            iconYoutube="/icon--youtube2.svg"
-          />
         </div>
+        <Footer
+          icon="/icon-20@2x.png"
+          iconFacebook="/icon--facebook12.svg"
+          iconInstagram="/icon--instagram12.svg"
+          iconX="/icon--x11.svg"
+          iconLinkedIn="/icon--linkedin11.svg"
+          iconYoutube="/icon--youtube2.svg"
+        />
+      </div>
 
     </>
   );

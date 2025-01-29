@@ -32,6 +32,7 @@ const FrameComponent3 = ({ className = "" }) => {
         </div>
       
       </header>
+      <div className="parent">
       <div className={styles.contact}>
         <div className={styles.sectionTitle}>
           <div className={styles.subheading}>Contact</div>
@@ -160,6 +161,7 @@ const FrameComponent3 = ({ className = "" }) => {
             src="/placeholder-image-22@2x.png"
           /> */}
         </div>
+      </div>
       </div>
     </section>
   );

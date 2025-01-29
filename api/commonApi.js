@@ -40,7 +40,7 @@ export const addPassengerData = async(formData) => {
       'https://pign230wc2.execute-api.us-east-1.amazonaws.com/prod/api/passenger'
     ,formData);
     // console.log(response.data);
-    return response.data; // Return the data from the API
+    return response; // Return the data from the API
   } catch (error) {
     console.error('Error fetching data:', error);
     throw error; // Throw the error to handle it later

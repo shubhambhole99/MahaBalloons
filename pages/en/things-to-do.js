@@ -23,6 +23,7 @@ import BlogPosts from "../../components/blog-posts"
 // import content from "/Db/thingsTodo";
 import FAQ from "../../components/f-a-q";
 import Gift from "../../components/Giftanunforgettable/index"
+import FrameComponent from "../../components/frame-component";
 
 const DeskThingsToDo = () => {
   const prevButtonRef = useRef(null);
@@ -77,60 +78,63 @@ const DeskThingsToDo = () => {
           }things-to-do`}
         /> */}
       </Helmet>
+      <FrameComponent />
+
       <Header1 />
-      <div className={styles.child1}>
-      <Slider
-        data={content?.sightSeeing1}
-        title={{ en: "Discover the Best Things to Do in Dubai" }}
-      />
-         <Slider
-        data={content?.sightSeeing2}
-        title={{  en: "From Hot Air Balloon Rides to Desert Safaris: Dubai's Top Experiences" }}
-      />
-         <Slider
-        data={content?.sightSeeing3}
-        title={{ en: "Must-Visit Attractions for Every Visitor" }}
-      />
+      {/* <div className={styles.child1}> */}
+        <div className="parent">
         <Slider
-        data={content?.sightSeeing4}
-        title={{ en: "Tours and Safaris" }}
-      />
-      
+          data={content?.sightSeeing1}
+          title={{ en: "Discover the Best Things to Do in Dubai" }}
+        />
+        <Slider
+          data={content?.sightSeeing2}
+          title={{ en: "From Hot Air Balloon Rides to Desert Safaris: Dubai's Top Experiences" }}
+        />
+        <Slider
+          data={content?.sightSeeing3}
+          title={{ en: "Must-Visit Attractions for Every Visitor" }}
+        />
+        <Slider
+          data={content?.sightSeeing4}
+          title={{ en: "Tours and Safaris" }}
+        />
 
 
-     <Gift/>
 
-      <div className={styles.deskThingsToDo}>
+        <Gift />
+
+        <div className={styles.deskThingsToDo}>
 
 
-     
-          <FAQ 
-              content={content?.faqsList}
-              title={"Frequently Asked Questions "}
-            />
-        {/* <FrameComponent4 /> */}
-        <section className={styles.blogWrapper}>
-          <div className={styles.blog}>
-            <div className={styles.title4}>
-              <div className={styles.sectionTitle4}>
-                <div className={styles.subheading4}>Blogs</div>
-                <div className={styles.content}>
-                  <h1 className={styles.heading}>
-                    Tourist Guides on Things To Do In Dubai UAE
-                  </h1>
-                  <div
-                    className={styles.text}
-                  >{`Lorem ipsum dolor sit amet, consectetur adipiscing elit. `}</div>
+
+          <FAQ
+            content={content?.faqsList}
+            title={"Frequently Asked Questions "}
+          />
+          {/* <FrameComponent4 /> */}
+          <section className={styles.blogWrapper}>
+            <div className={styles.blog}>
+              <div className={styles.title4}>
+                <div className={styles.sectionTitle4}>
+                  <div className={styles.subheading4}>Blogs</div>
+                  <div className={styles.content}>
+                    <h1 className={styles.heading}>
+                      Tourist Guides on Things To Do In Dubai UAE
+                    </h1>
+                    <div
+                      className={styles.text}
+                    >{`Lorem ipsum dolor sit amet, consectetur adipiscing elit. `}</div>
+                  </div>
+                </div>
+                <div className={styles.button4}>
+                  <div className={styles.viewAll}>View All</div>
                 </div>
               </div>
-              <div className={styles.button4}>
-                <div className={styles.viewAll}>View All</div>
-              </div>
             </div>
-            </div>
-            </section>
-        <BlogPosts />
-            {/* <div className={styles.content10}>
+          </section>
+          <BlogPosts />
+          {/* <div className={styles.content10}>
               <div className={styles.dots}>
                 <div className={styles.sliderDots}>
                   <div className={styles.dot} />
@@ -152,16 +156,16 @@ const DeskThingsToDo = () => {
                 <Arrows arrowsHeight="48px" fearrowUp="/fearrowup@2x.png" />
               </div>
             </div> */}
-          </div>
-          </div>
-        <Footer
-          icon="/icon-25@2x.png"
-          iconFacebook="/icon--facebook.svg"
-          iconInstagram="/icon--instagram.svg"
-          iconX="/icon--x.svg"
-          iconLinkedIn="/icon--linkedin.svg"
-          iconYoutube="/icon--youtube.svg"
-        />
+        </div>
+      </div>
+      <Footer
+        icon="/icon-25@2x.png"
+        iconFacebook="/icon--facebook.svg"
+        iconInstagram="/icon--instagram.svg"
+        iconX="/icon--x.svg"
+        iconLinkedIn="/icon--linkedin.svg"
+        iconYoutube="/icon--youtube.svg"
+      />
     </>
   );
 };

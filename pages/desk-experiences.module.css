@@ -542,16 +542,8 @@
   gap: 60px;
   max-width: 100%;
 }
-.parents{
-height: 300px;
 
-}
-.parent{
- width: 1400px;
- /* border:1px solid red; */
- margin:auto
 
-}
 
 .cta {
   
@@ -881,8 +873,23 @@ height: 300px;
   line-height: normal;
   letter-spacing: normal;
 }
-
+.parent{
+  width: 1400px;
+  /* border:1px solid red; */
+  margin:auto
+ 
+ }
+ .parents{
+  height: 300px;
+  
+  }
 @media screen and (max-width: 1350px) {
+  .parent{
+    width: 100%;
+    /* border:1px solid red; */
+    margin:auto
+   
+   }
   .blog {
     flex: 1;
   }

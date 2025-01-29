@@ -7,7 +7,8 @@ const Header = ({ className = "" }) => {
   return (
     <header className={[styles.header, className].join(" ")}>
       <div className={styles.banner}>
-        <FrameComponent mahaBalloonAdventuresLogo="/maha-balloon-adventures-logo-2@2x.png" />
+        {/* <FrameComponent mahaBalloonAdventuresLogo="/maha-balloon-adventures-logo-2@2x.png" /> */}
+        <div className="navbarspace"></div>
         <div className={styles.mediumLengthHeroHeadlineGoParent}>
           <h1 className={styles.mediumLengthHero}>Why Us</h1>
           <div className={styles.loremIpsumDolor}>Home - Why Us</div>

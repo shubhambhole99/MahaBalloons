@@ -1,7 +1,7 @@
 import React, { useState, useEffect } from "react";
 import { useSelector } from "react-redux";
 import Calendar from "react-calendar";
-import "react-calendar/dist/Calendar.css";
+// import "react-calendar/dist/Calendar.css";
 import styles from "./styles.module.scss";
 import moment from "moment";
 import BounceLoader from "react-spinners/BounceLoader";
@@ -214,23 +214,26 @@ function Index(props) {
   return (
     <div  className={`${styles.Calender9393dd} ${styles.mt4}`}>
       <div className={styles.secTitle}>Select Date</div>
+      {/* Top */}
       <div className={`${styles.clrInfo} ${styles.mt2}`}>
-        <div className={styles.sbTitle}>Seats are Available!</div>
-        <div className={`${styles.clrList} ${styles.mb2}`}>
+        <div className={styles.sbTitle}>Seats are Available!::</div>
+        <br/>
+        <div className={`${styles.clrList} `}>
           <div className={styles.dotWrapper}>
-            <div className={`${styles.dot} ${styles.clrAvailable}`}></div>
-            <div className={styles.label}>Available</div>
+            <div className={`${styles.dot} ${styles.clravailable}`}></div>
+            <div className={styles.label}> Available</div>
           </div>
           <div className={styles.dotWrapper}>
             <div className={`${styles.dot} ${styles.clrLimited}`}></div>
-            <div className={styles.label}>Limited</div>
+            <div className={styles.label}> Limited</div>
           </div>
           <div className={styles.dotWrapper}>
             <div className={`${styles.dot} ${styles.clrFull}`}></div>
-            <div className={styles.label}>Full</div>
+            <div className={styles.label}> Full</div>
           </div>
         </div>
       </div>
+      {/* Top */}
       <div className={`${styles.calenderWrap} ${styles.mt2}`}>
         {isLoading ? (
           <div className={`${styles.dFlex} ${styles.alignItemsCenter} ${styles.justifyContentCenter} ${styles.my5} ${styles.py5}`}>
@@ -239,13 +242,14 @@ function Index(props) {
         ) : (
           <>
             <Calendar
+            style={{border:"100px solid red"}}
               onChange={handleDateChange}
               value={value}
               tileClassName={tileClassName}
               tileContent={tileContent} // Handle hover content dynamically
               tileDisabled={tileDisabled} // Disable dates not in slotsData
             />
-            {hoveredSlotInfo && (
+            {/* {hoveredSlotInfo && (
               <div className={styles.hoverInfo}>
                 <p>
                   <strong>Total Slots:</strong> {hoveredSlotInfo.totalSlots}
@@ -254,7 +258,7 @@ function Index(props) {
                   <strong>Booked Slots:</strong> {hoveredSlotInfo.bookedSlots}
                 </p>
               </div>
-            )}
+            )} */}
             {/* {slotInfo?.total && (
               <div className={`${styles.slotDetails} ${styles.mt4}`}>
                 <p>

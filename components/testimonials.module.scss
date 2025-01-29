@@ -1,30 +1,37 @@
 .quickBooking {
   // border:1px solid red;
-  width: 100%;
+  // width: 100%;
   display: flex;
   flex-direction: column;
   align-items: left;
+  padding: 60px 80px;
+  // gap: 40px;
+  text-align: left;
+  font-size: 16px;
+  color: #000;
+  font-family: Roboto;
 }
 
 .testimonials {
   // border:1px solid blue;
-  width: 1400px;
+  width: 100%;
+  // height: 200px;
   display: flex;
   flex-direction: column;
   margin: auto;
   // overflow: hidden;
   align-items: left;
 }
-.child1{
-  width:1300px;
-  margin:auto;
-}
+// .child1{
+//   width:1300px;
+//   margin:auto;
+// }
 
 .testimonialSlider {
   // border:1px solid green;
 
-  width: 30%;
-  max-width: 1200px;
+  // width: 30%;
+  // max-width: 1200px;
   // margin: 0 auto;
   // display: flex;
   // flex-direction: column;

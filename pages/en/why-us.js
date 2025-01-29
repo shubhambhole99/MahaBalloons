@@ -10,6 +10,7 @@ import Footer from "../../components/footer";
 import styles from "../desk-about.module.scss";
 import whyusData from "/Db/whyus";
 import Gift from "../../components/Giftanunforgettable/index"
+import FrameComponent from "../../components/frame-component";
 
 // import styles from "../desk-about.css";
 import { useSearchParams } from "next/navigation";
@@ -17,9 +18,11 @@ import { useSearchParams } from "next/navigation";
 const DeskAbout = () => {
   const params = useSearchParams()
   console.log(params.get("booking_date"))
-  return (
+  return (<>
+      <FrameComponent mahaBalloonAdventuresLogo="/maha-balloon-adventures-logo-2@2x.png" />
     <div className={styles.deskAbout}>
       <Header />
+
       <div className={styles.child1}>
         <About />
         <section className={styles.logo}>
@@ -464,7 +467,7 @@ const DeskAbout = () => {
           </div>
         </section>
 
-  <Gift/>
+        <Gift />
 
 
 
@@ -482,6 +485,7 @@ const DeskAbout = () => {
         iconYoutube="/icon--youtube1.svg"
       />
     </div>
+    </>
   );
 };
 

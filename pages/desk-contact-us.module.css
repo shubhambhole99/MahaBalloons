@@ -508,7 +508,6 @@
   align-self: stretch;
   display: flex;
   /* border: 1px solid red; */
-  width: 1500px;
   flex-direction: row;
   margin: auto;
   align-items: flex-start;

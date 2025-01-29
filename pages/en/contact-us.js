@@ -16,6 +16,7 @@ import "react-toastify/dist/ReactToastify.min.css";
 import { contactUs } from "/api/commonApi";
 import Gift from "../../components/Giftanunforgettable/index"
 import Footer from "../../components/footer";
+import FrameComponent from "../../components/frame-component";
 
 
 const DeskContactUs = () => {
@@ -76,6 +77,8 @@ const DeskContactUs = () => {
     <div className={styles.deskContactUs}>
       <FrameComponent3 />
       <ToastContainer/>
+      <FrameComponent />
+      <div className="parent">
       <section className={styles.formContainerParent}>
 
 
@@ -206,6 +209,7 @@ const DeskContactUs = () => {
           src="/placeholder-image-32@2x.png"
         />
       </section>
+      </div>
         <Footer
                 icon="/icon-25@2x.png"
                 iconFacebook="/icon--facebook.svg"

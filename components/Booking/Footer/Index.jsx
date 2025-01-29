@@ -6,7 +6,7 @@ import styles from "./styles.module.scss";
 import { toast } from "react-toastify";
 import { RiErrorWarningFill } from "react-icons/ri";
 function Index(props) {
-  const [viewDetails, SetVIewDetails] = useState(false);
+  const [viewDetails, SetVIewDetails] = useState(true);
   const {
     currentStep,
     asGift,
@@ -23,7 +23,7 @@ function Index(props) {
   } = props;
   return (
     <div className={styles.footer393ld}>
-      <div className={`${styles.FooterBTNS} ${styles.mt1} ${styles.mtMd5}`}>
+      <div className={`${styles.FooterBTNS}`}>
         {asGift ? (
           <div></div>
         ) : lastSubmit ? (
@@ -106,11 +106,12 @@ function Index(props) {
           )}
         </div>
       </div>
-      <div
-        className={`message ${styles.mt3} ${
+      {/* <div
+        className={`styles.mt3 ${
           viewDetails ? styles.notdisabled : styles.disabledCtn
         }`}
-      >
+      > */}
+      <div className={styles.bottom}>
         <div
           className={styles.infoIcon}
           onClick={() => SetVIewDetails(!viewDetails)}

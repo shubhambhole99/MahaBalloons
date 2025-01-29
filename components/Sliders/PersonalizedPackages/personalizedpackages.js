@@ -21,7 +21,7 @@ const personalizedpackages = () => {
 
     return (
         <div className={styles.quickBooking}>
-        <div className="self-stretch flex flex-row items-center justify-center flex-wrap content-start gap-4 max-w-full text-left text-xl ">
+        {/* <div className="self-stretch flex flex-row items-center justify-center flex-wrap content-start gap-4 max-w-full text-left text-xl "> */}
 
             {/* <div className={styles.child1}> */}
                 <Swiper
@@ -146,7 +146,7 @@ const personalizedpackages = () => {
               </button>
                   </div>
             </div>
-        </div>
+        // </div>
     )
 }
 

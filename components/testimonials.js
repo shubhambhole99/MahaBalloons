@@ -159,7 +159,7 @@ Excellent service with a nice and super friendly staff. The pilots were amazing!
                             768: { slidesPerView: 2 },
                             1024: { slidesPerView: 3 },
                         }}
-                        className="w-full max-w-full "
+                        // className="w-full max-w-full "
                     >
                         {cardData?.map((item, i) => (
                             <>

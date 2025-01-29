@@ -1,10 +1,10 @@
 import React, { useEffect, useState } from "react";
-import TopBar from "/components/Booking/TopBar/Index";
+import TopBar from "../../components/Booking/TopBar/Index";
 import Step1 from "/components/Booking/Step1/Index"; //also Step 2
 // import Step3 from "/components/Booking/Step3/Index";
 import Step4 from "/components/Booking/Step4/Index";
 import TotalInfo from "/components/Booking/TotalInfo/Index";
-import FooterB from "/components/Booking/Footer/Index";
+import FooterB from "../../components/Booking/Footer/Index";
 // import DetailsForm from "/components/Booking/DetailsForm";
 import AddressForm from "/components/Booking/AddressForm/Index";
 import { Container } from "react-bootstrap";
@@ -29,11 +29,14 @@ function Index() {
     const isBookingModal = useSelector((state) => state.booking.isBookingModal);
     const packageId = useSelector((state) => state?.booking?.packageId);
     const packageval = useSelector((state) => state?.booking?.package);
-    const userData = useSelector((state) => state?.auth?.userData);
+    // const packageId = 1
+    // const packageval = 1
 
+    const userData = useSelector((state) => state?.auth?.userData);
     const [asGift, setAsGift] = useState(false);
     const [asGiftStep, setAsGiftStep] = useState(1);
     const [currentStep, setCurrentStep] = useState(2);
+    // console.log(packageID)
 
     const [asGiftComplete, setAsGiftComplete] = useState(1);
     const [stepsComplete, setStepsComplete] = useState({
@@ -616,18 +619,23 @@ function Index() {
                 theme="light"
             />
             <Modal
+            style={{overflowY:"auto"}}
                 show={isBookingModal}
                 onHide={handleClose}
                 size="lg"
                 fullscreen={true}
                 aria-labelledby="contained-modal-title-vcenter"
                 centered
+                scrollable
             >
                 {/* <Modal.Header closeButton>
           <Modal.Title id="contained-modal-title-vcenter"></Modal.Title>
         </Modal.Header> */}
-                <Modal.Body>
-                    <Container>
+                <Modal.Body
+                className={styles.ModalMobile}
+                scrollable>
+                    <div className="parent">
+                    <Container >
                         <TopBar
                             asGiftStep={asGiftStep}
                             currentStep={currentStep}
@@ -729,6 +737,7 @@ function Index() {
                             slotDetails={slotDetails}
                         />
                     </Container>
+                        </div>
                 </Modal.Body>
 
                 {/* <Modal.Footer>

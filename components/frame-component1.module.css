@@ -20,6 +20,9 @@
   display: inline-block;
   max-width: 100%;
 }
+.navbarspace{
+  min-height:400px
+}
 .overlayIcon {
   height: 50px;
   width: 50px;
@@ -420,6 +423,10 @@
   }
 }
 @media screen and (max-width: 1050px) {
+  .mediumLengthHeroHeadlineGoParent{
+    width: 100%;
+  }
+
   .mediumLengthHero {
     font-size: 45px;
     line-height: 54px;
@@ -527,7 +534,7 @@
   color:red
 }
 .bookingFieldk321 {
-  width: 50%;
+  width: 700px;
   background-color: #fff;
   border-radius: 200px;
   padding: 10px;
@@ -538,6 +545,7 @@
 
 @media (max-width: 778px) {
   .bookingFieldk321 {
+    width: 100%;
     justify-content: start;
     flex-direction: column;
     border-radius: 16px;

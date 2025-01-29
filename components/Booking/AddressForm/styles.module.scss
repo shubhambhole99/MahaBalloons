@@ -1,145 +1,314 @@
-.AddressFormr903Dkfds {
+//  {
+//   padding: 20px;
+//   background-color: #f9f9f9;
+
+//   .colHalf {
+//     border-inline-end: 2px solid rgba(0, 0, 0, 0.16);
+//     padding-right: 20px;
+//     width:60%;
+//     margin-right:10%
+//   }
+
+//   .secTitle {
+//     font-size: 20px;
+//     font-weight: bold;
+//     margin-bottom: 16px;
+//     color: #333;
+//   }
+
+//   .formGroup {
+//     margin-bottom: 16px;
+
+//     label {
+//       font-size: 14px;
+//       font-weight: bold;
+//       display: block;
+//       margin-bottom: 8px;
+//       color: #555;
+//     }
+
+//     .inputField {
+//       width: 100%;
+//       padding: 10px;
+//       border: 1px solid #ddd;
+//       border-radius: 4px;
+//       font-size: 14px;
+//       color: #333;
+
+//       &:focus {
+//         border-color: #7ab342;
+//         outline: none;
+//       }
+//     }
+
+//     textarea {
+//       resize: none;
+//     }
+//   }
+
+//   .btnNl {
+//     display: inline-block;
+//     padding: 10px 20px;
+//     font-size: 14px;
+//     font-weight: bold;
+//     text-align: center;
+//     border: none;
+//     border-radius: 4px;
+//     cursor: pointer;
+//     transition: background-color 0.3s;
+
+//     &Primary {
+//       background-color: #7ab342;
+//       color: white;
+
+//       &:hover {
+//         background-color: #639b35;
+//       }
+
+//       &:disabled {
+//         background-color: #b7c8a1;
+//         cursor: not-allowed;
+//       }
+//     }
+
+//     &.mt4 {
+//       margin-top: 16px;
+//     }
+//   }
+
+//   .CardWrapper {
+//     background-color: #fff;
+//     border-radius: 8px;
+//     padding: 16px;
+//     box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+//     margin-top: 20px;
+
+//     .flightCard {
+//       padding: 16px;
+//       border-radius: 16px;
+//       background-color: rgba(122, 179, 66, 0.24);
+
+//       .details {
+//         .title {
+//           font-size: 16px;
+//           font-weight: bold;
+//           margin-bottom: 8px;
+//           color: #333;
+//         }
+
+//         .para {
+//           font-size: 14px;
+//           margin: 4px 0;
+//           color: #555;
+//         }
+
+//         strong {
+//           font-weight: bold;
+//         }
+
+//         p {
+//           margin-bottom: 8px;
+//         }
+//       }
+
+//       p {
+//         font-size: 12px;
+//         margin: 0;
+//       }
+//     }
+//   }
+
+//   .step2Size3 {
+//     margin-top: 30px;
+//     display: flex;
+//   }
+
+//   .input-group {
+//     display: flex;
+//     align-items: center;
+
+//     span {
+//       background-color: #e9e9e9;
+//       padding: 10px;
+//       border-radius: 4px;
+//     }
+
+//     .Checked {
+//       background-color: var(--themePrimary);
+//       color: #fff;
+//     }
+//   }
+
+//   select:has(option[value=""]:checked) {
+//     color: gray !important;
+//   }
+// }
+
+
+
+.AddressFormr903Dkfds{
   padding: 20px;
+  width: 100%;
   background-color: #f9f9f9;
+}
+.step2Size3{
+display: flex;
+// flex-direction: column;
 
-  .colHalf {
-    border-inline-end: 2px solid rgba(0, 0, 0, 0.16);
-    padding-right: 20px;
-    width:60%;
-    margin-right:10%
-  }
-
-  .secTitle {
-    font-size: 20px;
-    font-weight: bold;
-    margin-bottom: 16px;
-    color: #333;
-  }
-
-  .formGroup {
-    margin-bottom: 16px;
-
-    label {
-      font-size: 14px;
-      font-weight: bold;
-      display: block;
-      margin-bottom: 8px;
-      color: #555;
-    }
-
-    .inputField {
-      width: 100%;
-      padding: 10px;
-      border: 1px solid #ddd;
-      border-radius: 4px;
-      font-size: 14px;
-      color: #333;
-
-      &:focus {
-        border-color: #7ab342;
-        outline: none;
-      }
-    }
-
-    textarea {
-      resize: none;
-    }
-  }
-
-  .btnNl {
-    display: inline-block;
-    padding: 10px 20px;
-    font-size: 14px;
-    font-weight: bold;
-    text-align: center;
-    border: none;
-    border-radius: 4px;
-    cursor: pointer;
-    transition: background-color 0.3s;
-
-    &Primary {
-      background-color: #7ab342;
-      color: white;
-
-      &:hover {
-        background-color: #639b35;
-      }
-
-      &:disabled {
-        background-color: #b7c8a1;
-        cursor: not-allowed;
-      }
-    }
-
-    &.mt4 {
-      margin-top: 16px;
-    }
-  }
-
-  .CardWrapper {
-    background-color: #fff;
-    border-radius: 8px;
-    padding: 16px;
-    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
-    margin-top: 20px;
-
-    .flightCard {
-      padding: 16px;
-      border-radius: 16px;
-      background-color: rgba(122, 179, 66, 0.24);
-
-      .details {
-        .title {
-          font-size: 16px;
-          font-weight: bold;
-          margin-bottom: 8px;
-          color: #333;
-        }
-
-        .para {
-          font-size: 14px;
-          margin: 4px 0;
-          color: #555;
-        }
-
-        strong {
-          font-weight: bold;
-        }
-
-        p {
-          margin-bottom: 8px;
-        }
-      }
-
-      p {
-        font-size: 12px;
-        margin: 0;
-      }
-    }
-  }
-
+}
+.firsthalf{
+  width:60%
+}
+@media screen and (max-width: 1400px){
   .step2Size3 {
-    margin-top: 30px;
     display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    gap: 32px;
   }
+}
+ .colHalf {
+  border-inline-end: 2px solid rgba(0, 0, 0, 0.16);
+  padding-right: 20px;
+  margin-right: 10%;
+  // width: 100%;
+  // margin: auto;
+  // justify-content: space-evenly;
+  // margin: auto;
+}
 
-  .input-group {
-    display: flex;
-    align-items: center;
+ .secTitle {
+  font-size: 20px;
+  font-weight: bold;
+  margin-bottom: 16px;
+  color: #333;
+}
 
-    span {
-      background-color: #e9e9e9;
-      padding: 10px;
-      border-radius: 4px;
-    }
+ .formGroup {
+  margin-bottom: 16px;
+}
 
-    .Checked {
-      background-color: var(--themePrimary);
-      color: #fff;
-    }
-  }
+ .formGroup label {
+  font-size: 14px;
+  font-weight: bold;
+  display: block;
+  margin-bottom: 8px;
+  color: #555;
+}
 
-  select:has(option[value=""]:checked) {
-    color: gray !important;
-  }
+ .formGroup .inputField {
+  width: 100%;
+  padding: 10px;
+  border: 1px solid #ddd;
+  border-radius: 4px;
+  font-size: 14px;
+  color: #333;
+}
+
+ .formGroup .inputField:focus {
+  border-color: #7ab342;
+  outline: none;
+}
+
+ .formGroup textarea {
+  resize: none;
+}
+
+ .btnNl {
+  background-color: #7ab342;
+  color: white;
+  display: inline-block;
+  padding: 10px 20px;
+  font-size: 14px;
+  font-weight: bold;
+  text-align: center;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+ .btnNl.Primary {
+  background-color: #28a745; /* Green background */
+  color: white; /* White text */
+}
+
+ .btnNl.Primary:hover {
+  background-color: #218838; /* Darker green for hover effect */
+}
+
+ .btnNl.Primary:disabled {
+  background-color: #b7c8a1; /* Disabled button with a muted color */
+  cursor: not-allowed; /* Disable cursor for disabled state */
+}
+
+ .btnNl.mt4 {
+  margin-top: 16px;
+}
+
+ .CardWrapper {
+  width: 240px;
+  background-color: #fff;
+  border-radius: 8px;
+  padding: 16px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  margin-top: 20px;
+}
+
+ .CardWrapper .flightCard {
+  padding: 16px;
+  border-radius: 16px;
+  background-color: rgba(122, 179, 66, 0.24);
+}
+
+ .CardWrapper .flightCard .details .title {
+  font-size: 16px;
+  font-weight: bold;
+  margin-bottom: 8px;
+  color: #333;
+}
+
+ .CardWrapper .flightCard .details .para {
+  font-size: 14px;
+  margin: 4px 0;
+  color: #555;
+}
+
+ .CardWrapper .flightCard .details strong {
+  font-weight: bold;
+}
+
+ .CardWrapper .flightCard .details p {
+  margin-bottom: 8px;
+}
+
+ .CardWrapper .flightCard p {
+  font-size: 12px;
+  margin: 0;
+}
+
+ .step2Size3 {
+  margin-top: 30px;
+  display: flex;
+}
+
+ .input-group {
+  display: flex;
+  align-items: center;
+}
+
+ .input-group span {
+  background-color: #e9e9e9;
+  padding: 10px;
+  border-radius: 4px;
+}
+
+ .input-group .Checked {
+  background-color: var(--themePrimary);
+  color: #fff;
+}
+
+
+.AddressFormr903Dkfds select:has(option[value=""]:checked) {
+  color: gray !important;
 }

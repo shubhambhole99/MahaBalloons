@@ -8,12 +8,13 @@ import FAQ2 from "../../components/f-a-q2";
 import TextInput from "../../components/text-input";
 import Button from "../../components/button";
 import styles from "../desk-testimonials.module.css";
-import FrameComponent from "../../components/frame-component";
+// import FrameComponent from "../../components/frame-component";
 import FAQ from "../../components/f-a-q";
 import testimonial from "/Db/testimonial";
 import Footer from "../../components/footer";
 import Gift from "../../components/Giftanunforgettable/index"
 import Testimonial from "/components/testimonials"
+import FrameComponent from "../../components/frame-component";
 
 const DeskTestimonials = () => {
   const onAccordionHeaderClick = useCallback((event) => {
@@ -89,30 +90,34 @@ const DeskTestimonials = () => {
 
   return (
     <div className={styles.deskTestimonials}>
+      <FrameComponent />
       <TopNavigation />
-      <Testimonial/>
-      <br/>
-      {/* <section className={styles.mainContentWrapper}>
+
+      <div className="parent">
+        <Testimonial />
+        <br />
+        {/* <section className={styles.mainContentWrapper}>
         <div className={styles.mainContent}>
           <Title />
           <Row />
         </div>
       </section> */}
-    
-      <Gift/>
 
-      <FAQ
-        content={testimonial?.faqsList}
-        title={"Frequently Asked Questions "}
+        <Gift />
+
+        <FAQ
+          content={testimonial?.faqsList}
+          title={"Frequently Asked Questions "}
+        />
+      </div>
+      <Footer
+        icon="/icon-25@2x.png"
+        iconFacebook="/icon--facebook.svg"
+        iconInstagram="/icon--instagram.svg"
+        iconX="/icon--x.svg"
+        iconLinkedIn="/icon--linkedin.svg"
+        iconYoutube="/icon--youtube.svg"
       />
-   <Footer
-                icon="/icon-25@2x.png"
-                iconFacebook="/icon--facebook.svg"
-                iconInstagram="/icon--instagram.svg"
-                iconX="/icon--x.svg"
-                iconLinkedIn="/icon--linkedin.svg"
-                iconYoutube="/icon--youtube.svg"
-              />
     </div>
   );
 };

@@ -110,10 +110,10 @@ const DeskBlogs = () => {
 
   return (
     <div className={styles.deskBlogs}>
+          <FrameComponent />
       <header className={styles.header}>
         <div className={styles.banner}>
-          <FrameComponent />
-        
+        <div className="navbarspace"></div>
           <div className={styles.mediumLengthHeroHeadlineGoParent}>
             <h1 className={styles.mediumLengthHero}>Blogs</h1>
             <div className={styles.loremIpsumDolor}>Home - Blogs</div>
@@ -125,14 +125,16 @@ const DeskBlogs = () => {
         </div>
        
       </header>
-      <div className={styles.child1}>
+       <div className="parent">
+      {/* <div className={styles.child1}> */}
       <Blog />
      <Gift/>
       <FAQ
         content={faqsData}
         title={"Frequently Asked Questions "}
-      />
-      </div>
+        />
+      {/* </div> */}
+        </div> 
   <Footer
           icon="/icon-25@2x.png"
           iconFacebook="/icon--facebook.svg"

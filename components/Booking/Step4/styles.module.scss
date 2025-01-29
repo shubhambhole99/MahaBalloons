@@ -156,202 +156,213 @@
 //   }
 // }
 
+.colHalf{
+  width: 50%;
+}
 .Step4DSds003j {
-  width: 100%;
+ 
+  // width: 80%;
   padding: 60px;
   background-color: #f9f9f9;
 
-  .secTitle {
-    font-size: 20px;
-    font-weight: bold;
-    margin-bottom: 16px;
-    color: #333;
-  }
+}
 
-  .formGroup {
-    margin-bottom: 24px;
+.Step4DSds003j .secTitle {
+  font-size: 20px;
+  font-weight: bold;
+  margin-bottom: 16px;
+  color: #333;
+}
 
-    label {
-      display: block;
-      font-size: 16px;
-      margin-bottom: 8px;
-      font-weight: 600;
-      color: #555;
-    }
+.Step4DSds003j .formGroup {
+  margin-bottom: 24px;
+}
 
-    .inputGroup {
-      input {
-        width: 100%;
-        height: 48px;
-        border: 1px solid #ccc;
-        border-radius: 8px;
-        padding: 8px 12px;
-        font-size: 16px;
-        color: #333;
+.Step4DSds003j .formGroup label {
+  display: block;
+  font-size: 16px;
+  margin-bottom: 8px;
+  font-weight: 600;
+  color: #555;
+}
 
-        &:focus {
-          border-color: #7ab342;
-          outline: none;
-        }
-      }
-    }
-  }
+.Step4DSds003j .formGroup .inputGroup input {
+  width: 100%;
+  height: 48px;
+  border: 1px solid #ccc;
+  border-radius: 8px;
+  padding: 8px 12px;
+  font-size: 16px;
+  color: #333;
+}
 
-  .formGroupPhone {
-    .react-international-phone-input-container {
-      width: 100%;
-      height: 48px;
+.Step4DSds003j .formGroup .inputGroup input:focus {
+  border-color: #7ab342;
+  outline: none;
+}
 
-      input {
-        width: 100%;
-        height: 100%;
-        border: 1px solid #ccc;
-        border-radius: 8px;
-        padding: 8px 12px;
-        font-size: 16px;
+.Step4DSds003j .formGroupPhone .react-international-phone-input-container {
+  width: 100%;
+  height: 48px;
+}
 
-        &:focus {
-          border-color: #7ab342;
-          outline: none;
-        }
-      }
+.Step4DSds003j .formGroupPhone .react-international-phone-input-container input {
+  width: 100%;
+  height: 100%;
+  border: 1px solid #ccc;
+  border-radius: 8px;
+  padding: 8px 12px;
+  font-size: 16px;
+}
 
-      button {
-        border: 1px solid #ccc;
-        border-radius: 8px;
-        height: 100%;
-        background-color: #fff;
+.Step4DSds003j .formGroupPhone .react-international-phone-input-container input:focus {
+  border-color: #7ab342;
+  outline: none;
+}
 
-        &:focus {
-          border-color: #7ab342;
-          outline: none;
-        }
-      }
-    }
-  }
+.Step4DSds003j .formGroupPhone .react-international-phone-input-container button {
+  border: 1px solid #ccc;
+  border-radius: 8px;
+  height: 100%;
+  background-color: #fff;
+}
 
-  .wrapper {
-    margin-bottom: 40px;
-    background: #fff;
-    padding: 20px;
-    border-radius: 8px;
-    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
-  }
+.Step4DSds003j .formGroupPhone .react-international-phone-input-container button:focus {
+  border-color: #7ab342;
+  outline: none;
+}
 
+.Step4DSds003j .wrapper {
+  margin-bottom: 40px;
+  background: #fff;
+  padding: 20px;
+  border-radius: 8px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+ .step2Size {
+  display: flex;
+  justify-content: space-between;
+  gap: 32px;
+}
+@media screen and (max-width: 1400px){
   .step2Size {
     display: flex;
+    flex-direction: column;
     justify-content: space-between;
     gap: 32px;
   }
-
-  .PassengerLIStCol {
-    flex: 1;
-    max-height: 550px;
-    overflow-y: auto;
-    border-right: 2px solid rgba(0, 0, 0, 0.1);
-    padding-right: 16px;
-
-    &::-webkit-scrollbar {
-      width: 6px;
-    }
-
-    &::-webkit-scrollbar-thumb {
-      background-color: #7ab342;
-      border-radius: 10px;
-    }
-
-    &::-webkit-scrollbar-track {
-      background-color: #eaeaea;
-    }
-  }
-
-  .CardWrapper {
-    flex-basis: 30%;
-
-    .flightCard {
-      background-color: #f3f9ed;
-      padding: 20px;
-      border-radius: 12px;
-      box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
-
-      .secTitle {
-        font-size: 18px;
-        font-weight: bold;
-        color: #333;
-      }
-
-      .details {
-        margin-top: 16px;
-
-        .title {
-          font-size: 16px;
-          font-weight: bold;
-          margin-bottom: 4px;
-          color: #555;
-        }
-
-        .para {
-          font-size: 14px;
-          color: #666;
-          margin-bottom: 8px;
-        }
-      }
-    }
-  }
-
-  .inputGroup input[type="number"] {
-    -moz-appearance: textfield;
-  }
-
-  .inputGroup input[type="number"]::-webkit-inner-spin-button,
-  .inputGroup input[type="number"]::-webkit-outer-spin-button {
-    -webkit-appearance: none;
-    margin: 0;
-  }
-
-  .weightOptionsWrapper {
-    display: flex;
-    flex-wrap: wrap;
-    gap: 16px;
-    margin-top: 16px;
-  }
-
-  .WeightOption {
-    flex: 1;
-    padding: 12px;
-    border: 1px solid #ccc;
-    border-radius: 8px;
-    text-align: center;
-    font-size: 14px;
-    font-weight: 600;
-    cursor: pointer;
-    transition: all 0.3s;
-
-    &:hover,
-    &.active {
-      background-color: #7ab342;
-      color: #fff;
-      border-color: #7ab342;
-    }
-  }
-
-  .mt3 {
-    margin-top: 16px;
-  }
-
-  .mt4 {
-    margin-top: 24px;
-  }
-
-  .mt5 {
-    margin-top: 32px;
-  }
-
-  .mt40 {
-    margin-top: 40px;
-  }
-
-  .mb3 {
-    margin-bottom: 24px;
-  }
 }
+
+ .PassengerLIStCol {
+  flex: 1;
+  max-height: 550px;
+  // min-width: 400px;
+  width: 2px;
+  overflow-y: auto;
+  // overflow-x: hidden;
+  border-right: 2px solid rgba(0, 0, 0, 0.1);
+  // padding-right: 16px;
+}
+ .PassengerLIStCol::-webkit-scrollbar {
+  width: 6px;
+}
+
+ .PassengerLIStCol::-webkit-scrollbar-thumb {
+  background-color: #7ab342;
+  border-radius: 10px;
+}
+
+ .PassengerLIStCol::-webkit-scrollbar-track {
+  background-color: #eaeaea;
+}
+
+ .CardWrapper {
+  flex-basis: 30%;
+}
+.CardWrapper .flightCard {
+  background-color: #f3f9ed;
+  padding: 20px;
+  border-radius: 12px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+ .CardWrapper .flightCard .secTitle {
+  font-size: 18px;
+  font-weight: bold;
+  color: #333;
+}
+
+ .CardWrapper .flightCard .details {
+  margin-top: 16px;
+}
+
+.Step4DSds003j .CardWrapper .flightCard .details .title {
+  font-size: 16px;
+  font-weight: bold;
+  margin-bottom: 4px;
+  color: #555;
+}
+
+ .CardWrapper .flightCard .details .para {
+  font-size: 14px;
+  color: #666;
+  margin-bottom: 8px;
+}
+
+.Step4DSds003j .inputGroup input[type="number"] {
+  -moz-appearance: textfield;
+}
+
+.Step4DSds003j .inputGroup input[type="number"]::-webkit-inner-spin-button,
+.Step4DSds003j .inputGroup input[type="number"]::-webkit-outer-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+
+ .weightOptionsWrapper {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 16px;
+  margin-top: 16px;
+}
+
+ .WeightOption {
+  flex: 1;
+  padding: 12px;
+  border: 1px solid #ccc;
+  border-radius: 8px;
+  text-align: center;
+  font-size: 14px;
+  font-weight: 600;
+  cursor: pointer;
+  transition: all 0.3s;
+}
+
+.Step4DSds003j .WeightOption:hover,
+.Step4DSds003j .WeightOption.active {
+  background-color: #7ab342;
+  color: #fff;
+  border-color: #7ab342;
+}
+
+ .mt3 {
+  margin-top: 16px;
+}
+
+ .mt4 {
+  margin-top: 24px;
+}
+
+ .mt5 {
+  margin-top: 32px;
+}
+
+ .mt40 {
+  margin-top: 40px;
+}
+
+ .mb3 {
+  margin-bottom: 24px;
+}
+

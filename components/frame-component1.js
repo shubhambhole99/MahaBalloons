@@ -121,247 +121,250 @@ const FrameComponent1 = ({ className = "" }) => {
 
   return (
     <>
-    <ToastContainer/>
-    <section className={[styles.headerParent, className].join(" ")}>
+      <ToastContainer />
+      <section className={[styles.headerParent, className].join(" ")}>
 
-      <div className={styles.header}>
+        <div className={styles.header}>
 
-        {/* Banner */}
-        <div className={styles.banner}>
-          <FrameComponent mahaBalloonAdventuresLogo="/maha-balloon-adventures-logo-2@2x.png" />
-          {/* Start */}
-          <div className={styles.mediumLengthHeroHeadlineGoParent}>
-            <h1 className={styles.mediumLengthHero}>
-              The Best Hot Air Balloon Experience in Dubai
-            </h1>
-            {/* <p className="red">hi</p> */}
-            <div className={styles.loremIpsumDolor}>
-              Maha Hot Air Balloon Dubai - where adventure meets serenity in the
-              skies. Let us take you on an exciting hot air balloon ride above
-              the desert, to catch Dubai’s breathtaking landscape unfold in
-              front of you. A once-in-a-lifetime experience of wonder and
-              adventure awaits!
+          {/* Banner */}
+          <div className={styles.banner}>
+            <div className={styles.navbarspace}>
+       
             </div>
-            {isSearch ? null : (
-              <button
-                className={styles.serachBtn32d}
-                onClick={() => {
-                  setIsSearch(true);
-                }}
-              >
-                <FiSearch size={16} />
-                {" "}
-                Search
-              </button>
-            )}
-            {/* asd */}
-            {isSearch ? (
-              <>
-                <div className={styles.bookingFieldk321}>
-                  <div
-                    className={styles.CloseIon}
-                    onClick={() => {
-                      setIsSearch(false);
-                    }}
-                  >
-                    <IoCloseCircleSharp className={styles.CloseIocnd} size={30} />
-                  </div>
-                  <div className={styles.itemBox}>
-                    <div className={styles.Icons}>
-                      <img src={calender} alt="dates" />
-                      {/* <h1 className={styles.red}>red</h1> */}
+            {/* <FrameComponent mahaBalloonAdventuresLogo="/maha-balloon-adventures-logo-2@2x.png" /> */}
+            {/* Start */}
+            <div className={styles.mediumLengthHeroHeadlineGoParent}>
+              <h1 className={styles.mediumLengthHero}>
+                The Best Hot Air Balloon Experience in Dubai
+              </h1>
+              {/* <p className="red">hi</p> */}
+              <div className={styles.loremIpsumDolor}>
+                Maha Hot Air Balloon Dubai - where adventure meets serenity in the
+                skies. Let us take you on an exciting hot air balloon ride above
+                the desert, to catch Dubai’s breathtaking landscape unfold in
+                front of you. A once-in-a-lifetime experience of wonder and
+                adventure awaits!
+              </div>
+              {isSearch ? null : (
+                <button
+                  className={styles.serachBtn32d}
+                  onClick={() => {
+                    setIsSearch(true);
+                  }}
+                >
+                  <FiSearch size={16} />
+                  {" "}
+                  Search
+                </button>
+              )}
+              {/* asd */}
+              {isSearch ? (
+                <>
+                  <div className={styles.bookingFieldk321}>
+                    <div
+                      className={styles.CloseIon}
+                      onClick={() => {
+                        setIsSearch(false);
+                      }}
+                    >
+                      <IoCloseCircleSharp className={styles.CloseIocnd} size={30} />
                     </div>
-                    <div className={styles.details} ref={wrapperRef}>
-                      <div className={styles.field}>Date</div>
-                      {openDatePicker ? (
-                        <div className={styles.dateNoewdk}>
-                          <CalenderCom
-                            setOpenDatePicker={setOpenDatePicker}
-                            wrapperRef={wrapperRef}
-                            value={value}
-                            setValue={setValue}
+                    <div className={styles.itemBox}>
+                      <div className={styles.Icons}>
+                        <img src={calender} alt="dates" />
+                        {/* <h1 className={styles.red}>red</h1> */}
+                      </div>
+                      <div className={styles.details} ref={wrapperRef}>
+                        <div className={styles.field}>Date</div>
+                        {openDatePicker ? (
+                          <div className={styles.dateNoewdk}>
+                            <CalenderCom
+                              setOpenDatePicker={setOpenDatePicker}
+                              wrapperRef={wrapperRef}
+                              value={value}
+                              setValue={setValue}
+                            />
+                          </div>
+                        ) : null}
+                        {/* <DatePickerComponent/> */}
+                        <div
+                          className={styles.value}
+                          onClick={() => setOpenDatePicker(!openDatePicker)}
+                        >
+                          {moment(Range1).format("MMMM DD")}
+                        </div>
+                      </div>
+                    </div>
+                    <div className={styles.itemBox}>
+                      <div className={styles.Icons}>
+                        <img src={clock} alt="packages" />
+                      </div>
+                      <div className={styles.details}>
+                        <div className={styles.field}>Package Type</div>
+                        <div className={styles.value}>
+                          <select
+                            className={styles.PackagesSelect}
+                            name="Package"
+                            id=""
+                            onChange={(e) => setSelectedPackage(e.target.value)}
+                            defaultValue={selectedPackage}
+                          >
+                            <option value="" disabled selected>
+                              Select a Package
+                            </option>
+                            {packagesData?.map((item) => (
+                              <option value={item?.id}>{item?.title}</option>
+                            ))}
+                          </select>
+                        </div>
+                      </div>
+                    </div>
+                    <div className={styles.itemBox}>
+                      <div className={styles.Icons}>
+                        <img src={ticket} alt="dates" />
+                      </div>
+                      <div className={styles.details}>
+                        <div className={styles.field}>Guests</div>
+                        <div className={styles.value}>
+                          Adult{" "}
+                          <input
+                            tooltip={"Adult"}
+                            className={styles.guest_amt}
+                            type="number"
+                            name="adult"
+                            value={guestsAmont?.adult}
+                            onChange={(e) => {
+                              if (e.target.value < 0) {
+                                return;
+                              }
+                              if (e.target.value > 7) {
+                                return;
+                              }
+                              setGuestsAmont((prev) => ({
+                                ...prev,
+                                adult: e.target.value,
+                              }));
+                            }}
+                          />{" "}
+                          ~ Child{" "}
+                          <input
+                            className={styles.guest_amt}
+                            type="number"
+                            name="child"
+                            value={guestsAmont?.child}
+                            onChange={(e) => {
+                              if (e.target.value < 0) {
+                                return;
+                              }
+                              if (e.target.value > 7) {
+                                return;
+                              }
+                              setGuestsAmont((prev) => ({
+                                ...prev,
+                                child: e.target.value,
+                              }));
+                            }}
                           />
                         </div>
-                      ) : null}
-                      {/* <DatePickerComponent/> */}
-                      <div
-                        className={styles.value}
-                        onClick={() => setOpenDatePicker(!openDatePicker)}
-                      >
-                        {moment(Range1).format("MMMM DD")}
                       </div>
                     </div>
-                  </div>
-                  <div className={styles.itemBox}>
-                    <div className={styles.Icons}>
-                      <img src={clock} alt="packages" />
+                    <div
+                      className={styles.searchIcon}
+                      onClick={() => {
+                        handleBookingUpdate();
+                      }}
+                    >
+                      <FiSearch size={24} />
                     </div>
-                    <div className={styles.details}>
-                      <div className={styles.field}>Package Type</div>
-                      <div className={styles.value}>
-                        <select
-                          className={styles.PackagesSelect}
-                          name="Package"
-                          id=""
-                          onChange={(e) => setSelectedPackage(e.target.value)}
-                          defaultValue={selectedPackage}
-                        >
-                          <option value="" disabled selected>
-                            Select a Package
-                          </option>
-                          {packagesData?.map((item) => (
-                            <option value={item?.id}>{item?.title}</option>
-                          ))}
-                        </select>
-                      </div>
-                    </div>
-                  </div>
-                  <div className={styles.itemBox}>
-                    <div className={styles.Icons}>
-                      <img src={ticket} alt="dates" />
-                    </div>
-                    <div className={styles.details}>
-                      <div className={styles.field}>Guests</div>
-                      <div className={styles.value}>
-                        Adult{" "}
-                        <input
-                          tooltip={"Adult"}
-                          className={styles.guest_amt}
-                          type="number"
-                          name="adult"
-                          value={guestsAmont?.adult}
-                          onChange={(e) => {
-                            if (e.target.value < 0) {
-                              return;
-                            }
-                            if (e.target.value > 7) {
-                              return;
-                            }
-                            setGuestsAmont((prev) => ({
-                              ...prev,
-                              adult: e.target.value,
-                            }));
-                          }}
-                        />{" "}
-                        ~ Child{" "}
-                        <input
-                          className={styles.guest_amt}
-                          type="number"
-                          name="child"
-                          value={guestsAmont?.child}
-                          onChange={(e) => {
-                            if (e.target.value < 0) {
-                              return;
-                            }
-                            if (e.target.value > 7) {
-                              return;
-                            }
-                            setGuestsAmont((prev) => ({
-                              ...prev,
-                              child: e.target.value,
-                            }));
-                          }}
-                        />
-                      </div>
-                    </div>
-                  </div>
-                  <div
-                    className={styles.searchIcon}
-                    onClick={() => {
-                      handleBookingUpdate();
-                    }}
-                  >
-                    <FiSearch size={24} />
-                  </div>
-                  <button
-                    className={styles.serachBtn}
-                    onClick={() => {
-                      handleBookingUpdate();
-                    }}
-                  >
-                    {" "}
-                    <FiSearch size={16} />
-                    Search
-                  </button>
-                  <Modal
-                    show={packagesSelectModal}
-                    onHide={() => setPackagesSelectModal(false)}
-                    size="md"
-                    aria-labelledby="contained-modal-title-vcenter"
-                    centered
-                  >
-                    <Modal.Body>
-                      <Row className={styles.gy3}>
-                        <Col xs={12}>
-                          <div className={styles.secTitle}>Select a Package</div>
-                        </Col>
-                        <Col xs={12}>
-                          <div className={styles.formGroup}>
-                            <select
-                              className={styles.selectOption}
-                              name="Package"
-                              id=""
-                              onChange={(e) => setSelectedPackage(e.target.value)}
-                              defaultValue={selectedPackage}
+                    <button
+                      className={styles.serachBtn}
+                      onClick={() => {
+                        handleBookingUpdate();
+                      }}
+                    >
+                      {" "}
+                      <FiSearch size={16} />
+                      Search
+                    </button>
+                    <Modal
+                      show={packagesSelectModal}
+                      onHide={() => setPackagesSelectModal(false)}
+                      size="md"
+                      aria-labelledby="contained-modal-title-vcenter"
+                      centered
+                    >
+                      <Modal.Body>
+                        <Row className={styles.gy3}>
+                          <Col xs={12}>
+                            <div className={styles.secTitle}>Select a Package</div>
+                          </Col>
+                          <Col xs={12}>
+                            <div className={styles.formGroup}>
+                              <select
+                                className={styles.selectOption}
+                                name="Package"
+                                id=""
+                                onChange={(e) => setSelectedPackage(e.target.value)}
+                                defaultValue={selectedPackage}
+                              >
+                                <option value="" disabled selected>
+                                  Select a Packages
+                                </option>
+                                <option value="MAHA CLASSIC PACKAGE">
+                                  MAHA CLASSIC PACKAGE
+                                </option>
+                                <option value="MAHA MAJESTIC PACKAGE">
+                                  MAHA MAJESTIC PACKAGE
+                                </option>
+                                <option value="MAHA ROYAL PACKAGE">
+                                  MAHA ROYAL PACKAGE
+                                </option>
+                                <option value="MAHA TWILIGHT OVERNIGHT">
+                                  MAHA TWILIGHT OVERNIGHT
+                                </option>
+                                <option value="CELESTIAL PRIVATE ROMANCE">
+                                  CELESTIAL PRIVATE ROMANCE
+                                </option>
+                                <option value="GROUP BOOKING">GROUP BOOKING</option>
+                                <option value="CORPORATE EVENT">CORPORATE EVENT</option>
+                                <option value="CELEBRATORY OCCASIONS">
+                                  CELEBRATORY OCCASIONS
+                                </option>
+                              </select>
+                            </div>
+                          </Col>
+                          <Col xs={12}>
+                            <button
+                              className={styles.btnNlPrimary}
+                              onClick={() => {
+                                if (!selectedPackage) {
+                                  toast.info(
+                                    "Please Select a Package to Start Booking"
+                                  );
+                                  return;
+                                }
+                                if (selectedPackage) {
+                                  dispatch(setBooking(true));
+                                  setPackagesSelectModal(false);
+                                  return;
+                                }
+                              }}
                             >
-                              <option value="" disabled selected>
-                                Select a Packages
-                              </option>
-                              <option value="MAHA CLASSIC PACKAGE">
-                                MAHA CLASSIC PACKAGE
-                              </option>
-                              <option value="MAHA MAJESTIC PACKAGE">
-                                MAHA MAJESTIC PACKAGE
-                              </option>
-                              <option value="MAHA ROYAL PACKAGE">
-                                MAHA ROYAL PACKAGE
-                              </option>
-                              <option value="MAHA TWILIGHT OVERNIGHT">
-                                MAHA TWILIGHT OVERNIGHT
-                              </option>
-                              <option value="CELESTIAL PRIVATE ROMANCE">
-                                CELESTIAL PRIVATE ROMANCE
-                              </option>
-                              <option value="GROUP BOOKING">GROUP BOOKING</option>
-                              <option value="CORPORATE EVENT">CORPORATE EVENT</option>
-                              <option value="CELEBRATORY OCCASIONS">
-                                CELEBRATORY OCCASIONS
-                              </option>
-                            </select>
-                          </div>
-                        </Col>
-                        <Col xs={12}>
-                          <button
-                            className={styles.btnNlPrimary}
-                            onClick={() => {
-                              if (!selectedPackage) {
-                                toast.info(
-                                  "Please Select a Package to Start Booking"
-                                );
-                                return;
-                              }
-                              if (selectedPackage) {
-                                dispatch(setBooking(true));
-                                setPackagesSelectModal(false);
-                                return;
-                              }
-                            }}
-                          >
-                            Book Now
-                          </button>
-                        </Col>
-                      </Row>
-                    </Modal.Body>
-                  </Modal>
-                </div>
-              </>
-            ) : null}
+                              Book Now
+                            </button>
+                          </Col>
+                        </Row>
+                      </Modal.Body>
+                    </Modal>
+                  </div>
+                </>
+              ) : null}
 
+            </div>
           </div>
-        </div>
 
-        {/*Ends Here */}
-        {/* <div className={styles.navLinkDropdown}>
+          {/*Ends Here */}
+          {/* <div className={styles.navLinkDropdown}>
           <div className={styles.linkFour}>Merchandise</div>
           <Image
             className={styles.chevronDownIcon}
@@ -370,7 +373,7 @@ const FrameComponent1 = ({ className = "" }) => {
             alt=""
           />
         </div> */}
-        {/* <div className={styles.megaMenu}>
+          {/* <div className={styles.megaMenu}>
           <div className={styles.menu}>
             <div className={styles.menuList}>
               <div className={styles.pageGroupOne}>Page group one</div>
@@ -542,9 +545,9 @@ const FrameComponent1 = ({ className = "" }) => {
             </div>
           </div>
         </div> */}
-      </div>
-     
-    </section>
+        </div>
+
+      </section>
     </>
   );
 };

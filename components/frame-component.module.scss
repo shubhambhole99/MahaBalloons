@@ -1,0 +1,422 @@
+.mahaBalloonAdventuresLogo2 {
+  width: 100%;
+  border-radius: 0px 0px 8px 8px;
+  object-fit: cover;
+  z-index: 1;
+}
+
+.linkTwo {
+  position: relative;
+  line-height: 150%;
+  display: inline-block;
+  min-width: 55px;
+  z-index: 1;
+}
+.linkFour {
+  position: relative;
+  line-height: 150%;
+  display: inline-block;
+  min-width: 88px;
+  z-index: 1;
+}
+.chevronDownIcon {
+  height: 24px;
+  width: 24px;
+  position: relative;
+  overflow: hidden;
+  flex-shrink: 0;
+  z-index: 1;
+}
+.linkFourParent {
+  display: flex;
+  flex-direction: row;
+  align-items: flex-start;
+  justify-content: flex-start;
+  gap: 4px;
+}
+.linkTwo1 {
+  position: relative;
+  line-height: 150%;
+  z-index: 1;
+}
+.linkTwo2 {
+  position: relative;
+  line-height: 150%;
+  display: inline-block;
+  min-width: 85px;
+  z-index: 1;
+}
+.linkTwo3 {
+  position: relative;
+  line-height: 150%;
+  display: inline-block;
+  min-width: 42px;
+  z-index: 1;
+}
+.linkFour1 {
+  position: relative;
+  line-height: 150%;
+  display: inline-block;
+  min-width: 80px;
+  z-index: 1;
+}
+.linkTwoParent {
+  display: flex;
+  // display: none;
+  flex-direction: row;
+  align-items: flex-start;
+  justify-content: flex-start;
+  gap: 16px;
+}
+
+.wishIcon {
+  height: 44px;
+  width: 44px;
+  position: relative;
+  z-index: 1;
+}
+.wishParent {
+  flex: 1;
+  display: flex;
+  flex-direction: row;
+  align-items: flex-start;
+  justify-content: flex-start;
+}
+.svgIcon {
+  height: 22px;
+  width: 22px;
+  position: relative;
+  z-index: 1;
+}
+.businessShortDesc {
+  text-decoration: none;
+  position: absolute;
+  margin: 0 !important;
+  top: -11px;
+  right: -4.9px;
+  line-height: 13px;
+  color: inherit;
+  display: inline-block;
+  min-width: 9px;
+  z-index: 2;
+}
+.svgParent {
+  display: flex;
+  flex-direction: row;
+  align-items: flex-start;
+  justify-content: flex-start;
+  position: relative;
+}
+.frameWrapper1 {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: flex-start;
+  padding: 11px 0px 0px;
+}
+.frameDiv {
+  flex: 1;
+  display: flex;
+  flex-direction: row;
+  align-items: flex-start;
+  justify-content: flex-start;
+  gap: 11px;
+}
+.button {
+  position: relative;
+  line-height: 150%;
+  display: inline-block;
+  min-width: 74px;
+  
+}
+.btnLogin {
+  height: 42px;
+  border-radius: 50px;
+  background-color: #7ab342;
+  border: 1px solid #7ab342;
+  box-sizing: border-box;
+  display: flex;
+  flex-direction: row;
+  align-items: flex-start;
+  justify-content: flex-start;
+  padding: 8px 19px 8px 20px;
+  z-index: 1;
+}
+.btnLoginWrapper {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: flex-start;
+  padding: 2px 0px 0px;
+  font-size: 16px;
+  font-family: Roboto;
+}
+.menuItemWithDropdown {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.dropdownIcon {
+  margin-left: 10px;
+  transition: transform 0.3s ease;
+}
+
+.menuItemWithDropdown:hover .dropdownIcon {
+  transform: rotate(180deg);
+}
+
+
+.frameGroup {
+  align-self: stretch;
+  display: flex;
+  flex-direction: row;
+  align-items: flex-start;
+  justify-content: flex-start;
+  gap: 27px;
+}
+
+.frameParent {
+  position: fixed;
+  border-bottom: 1px solid white;
+  // border: 1px solid red;
+
+  // top: 0;
+  // left: 0;
+  width: 100%;
+  height: 90px;
+  // overflow-y: scroll;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: center;
+  padding-top: 16px;
+  background-color: transparent;
+  transition: background-color 0.3s ease;
+  z-index: 3;
+}
+.parent{
+  // display: flex;
+  // border:1px solid red;
+  height: 60px;
+  width: 1400px;
+  display: flex;
+  // align-self: start;
+  // justify-content: space-around;
+  // justify-items: right;
+  // align-items: center;
+  padding: 16px 0px;
+  background-color: transparent;
+  transition: background-color 0.3s ease;
+  color: white;
+  // margin:auto;
+  // z-index: 3;
+}
+.frameWrapper {
+  // border:1px solid red;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: flex-start;
+  padding: 28px 0px 0px;
+  box-sizing: border-box;
+  max-width: 100%;
+  margin: auto;
+}
+
+.mahaBalloonAdventuresLogo2Wrapper {
+  // border: 1px solid red;
+  width: 100px;
+  display: flex;
+  // align-self: start;
+  // place-self: start;
+  // justify-self: start;
+  margin: auto;
+  margin-top: -2%;
+}
+
+.frameContainer {
+  // border: 1px solid red;
+  width: 261px;
+  // display: flex;
+  // display: none;
+  // flex-direction: column;
+  // align-items: flex-start;
+  // justify-content: flex-start;
+  padding: 18px 0px 0px;
+  box-sizing: border-box;
+  font-size: 13px;
+  font-family: Inter;
+  // margin: auto;
+}
+.hamburgerMenu {
+  flex-direction: column;
+  justify-content: space-between;
+  width: 30px;
+  height: 18px;
+  margin: auto;
+  cursor: pointer;
+  z-index: 10;
+}
+
+
+.scrolled {
+  background-color: #7ab342 ;
+  border-bottom: 1px solid white;
+}
+
+// Mobile
+
+// Hambureger
+
+
+.bar {
+  height: 3px;
+  width: 100%;
+  background-color: black;
+  border-radius: 10px;
+  transition: all 0.3s ease;
+}
+
+.linkContainer {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  gap: 16px;
+  transition: max-height 0.3s ease;
+  overflow: hidden;
+}
+
+.linkContainer.showMenu {
+  flex-direction: column;
+  max-height: 300px;
+}
+
+
+.white {
+  width: 100%;
+  // display: none;
+  height:1200px;
+  // overflow-y: scroll;
+  border: 50px solid white;
+  border-radius: 40px;
+  background-color: white;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  position: relative;
+  left: 110%; /* Initial position for animation */
+  transition: left 0.5s ease-in-out; /* Adds the smooth animation */
+  font-size: 40px;
+}
+
+.whitenew {
+  left: 0px; /* Final position after animation */
+  display: block;
+  // height:400px;
+  // overflow-y: scroll;
+
+}
+
+.container {
+  position: relative;
+  // overflow: hidden; /* Prevents overflow while animating */
+}
+
+
+.menuItem {
+  font-size: 18px;
+  font-weight: 500;
+  color: #333;
+  padding: 15px 20px;
+  width: inherit;
+  margin: 5px 0;
+  border: 1px solid #f0f0f0;
+  border-bottom: 1px solid rgb(215, 215, 215);
+  border-radius: 5px;
+  background-color: #fafafa;
+  cursor: pointer;
+  transition: background-color 0.3s ease, transform 0.2s ease;
+}
+
+.menuItem:hover {
+  background-color: #f8f9fa;
+  transform: scale(1.03);
+}
+
+
+
+
+
+@media screen and (max-width: 1480px) {
+  .parent{
+    width: 100%;
+  }
+}
+@media screen and (max-width: 1000px) {
+  .parent{
+    width: 100%;
+  }
+  .frameParent{
+    background-color: white;
+    height: 100px;
+
+  }
+  .frameParentscroll{
+    background-color: white;
+    overflow-y: auto;
+    overflow-x: hidden;
+    height: 300px;
+  
+  }
+  
+  .scrolled{
+    background-color: white;
+
+  }
+  .parent{
+    // max-width: 20px;
+    // border:1px solid green;
+    width: 100%;
+
+  }
+  .frameContainer{
+    display: none;
+  }
+  .linkTwoParent {
+    display: none;
+  }
+  .white {
+    // display: none;
+  }
+
+ 
+
+  .linkContainer {
+    display: none;
+    max-height: 0;
+  }
+
+  .linkContainer.showMenu {
+    display: flex;
+  }
+
+  .hamburgerMenu {
+    display: flex;
+    margin: auto;
+
+    margin-left: 30%;
+}
+}
+@media screen and (max-width: 450px) {
+  .frameContainer{
+    display: none;
+  }
+  .linkTwo1 {
+    display: none;
+  }
+  .parent{
+    // max-width: 20px;
+    // border:1px solid green;
+    width: 70%;
+  }
+}
+

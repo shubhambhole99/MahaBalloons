@@ -8,8 +8,9 @@ const TopNavigation = ({ className = "" }) => {
     <section className={[styles.topNavigation, className].join(" ")}>
       <div className={styles.header}>
         <div className={styles.banner}>
-          <FrameComponent/>
-        
+          {/* <FrameComponent/> */}
+          <div className="navbarspace"
+          ></div>
           <div className={styles.mediumLengthHeroHeadlineGoParent}>
             <h1 className={styles.mediumLengthHero}>Testimonials</h1>
             <div className={styles.loremIpsumDolor}>Home - Testimonials</div>

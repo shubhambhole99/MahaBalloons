@@ -237,24 +237,34 @@
 }
 
 .quickBooking {
-  background-color: #fff;
-  width: 100%;
-  overflow: hidden;
-  font-size: 16px;
-  color: #000;
-  // border:1px solid red;
-  // align-self: stretch;
-  // font-family: Roboto;
+  align-self: stretch;
+  // background-color: #fff;
+  // overflow: hidden;
   // display: flex;
-  // flex-direction: row;
+  // flex-direction: column;
+  align-self: stretch; /* Makes the element stretch to fill the available space */
+  display: flex; /* Enables flexbox layout */
+  flex-direction: row; /* Aligns children in a horizontal row */
+  align-items: center; /* Vertically centers children */
+  justify-content: center; /* Horizontally centers children */
+  flex-wrap: wrap; /* Allows children to wrap onto multiple lines */
+  align-content: flex-start; /* Aligns wrapped rows to the start */
+  gap: 1rem; /* Adds spacing between children */
+  max-width: 100%; /* Limits the width of the container */
+  // text-align: left; /* Aligns text to the left */
+  font-size: 1.25rem; 
   // align-items: center;
   // justify-content: center;
-  // align-content: start;
-  // gap: 40px;
+  
   // padding: 60px 80px;
+  // gap: 40px;
+  // text-align: left;
+  // font-size: 16px;
+  // color: #000;
+  // font-family: Roboto;
+  // border:1px solid red;
 }
 .child1{
-  // border:1px solid red;
   width: 1400px;
   display: flex;
   margin:auto;
